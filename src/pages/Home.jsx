@@ -227,7 +227,7 @@ export default function Home({
                   <img
                     src={productsec}
                     alt="Produção própria zona oeste"
-                    className="w-full h-[300px] sm:h-[520px] lg:h-[700px] object-cover"
+                    className="w-full h-[300px] sm:h-[420px] lg:h-[650px] object-cover"
                   />
                 </div>
               </div>
