@@ -83,7 +83,7 @@ export default function OutrosProdutosSlider() {
                   </button>
                 </div>
                 <div className="shrink-0 mt-5 order-1 lg:order-2">
-                  <img src={p.image} alt={p.title} className="h-24 w-auto sm:h-28 lg:h-22 object-cover" />
+                  <img src={p.image} alt={p.title} className="h-24 w-auto sm:h-28 lg:h-28 object-cover" />
                 </div>
               </article>
             </div>
