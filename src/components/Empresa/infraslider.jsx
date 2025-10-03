@@ -93,8 +93,8 @@ useEffect(() => {
     ],
   };
 
-  const prev = () => sliderRef.current?.slickPrev();
-  const next = () => sliderRef.current?.slickNext();
+  // const prev = () => sliderRef.current?.slickPrev();
+  // const next = () => sliderRef.current?.slickNext();
 
   return (
     <section className="bg-[#F3F6F7] py-12 sm:py-16 lg:py-20">
@@ -125,7 +125,6 @@ useEffect(() => {
                     {/* LEFT thumbnail (Prev) — hidden on mobile */}
                     <button
                       type="button"
-                      onClick={prev}
                       className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 focus:outline-none cursor-pointer"
                       aria-label="Slide anterior"
                     >
@@ -150,7 +149,6 @@ useEffect(() => {
                     {/* RIGHT thumbnail (Next) — hidden on mobile */}
                     <button
                       type="button"
-                      onClick={next}
                       className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 focus:outline-none cursor-pointer"
                       aria-label="Próximo slide"
                     >
