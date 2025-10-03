@@ -209,7 +209,7 @@ export default function Productions() {
               <div
                 className="rounded-3xl bg-[var(--color-whitecustom)] p-6 sm:p-8 ring-1 ring-slate-900/5 shadow-[0_15px_35px_0_rgba(4,58,83,0.15)]"
               >
-                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-40 lg:w-40">
+                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-30 lg:w-30">
                   <img
                     src={iso}
                     alt="ISO 14001"
@@ -223,7 +223,7 @@ export default function Productions() {
                 className="rounded-3xl bg-[var(--color-whitecustom)] p-6 sm:p-8 ring-1 ring-slate-900/5
                             shadow-[0_15px_35px_0_rgba(4,58,83,0.15)]"
               >
-                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-40 lg:w-40">
+                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-30 lg:w-30">
                   <img
                     src={grace}
                     alt="GRACE • Empresa Associada"
