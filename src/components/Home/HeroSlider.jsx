@@ -25,7 +25,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <section className="relative w-full h-[400px] sm:h-[500px] lg:h-[87vh]">
+    <section className="relative w-full h-[400px] sm:h-[500px] lg:h-[98vh]">
       {/* Background slider */}
       <Slider ref={sliderRef} {...settings}>
         {slides.map((image, idx) => (
