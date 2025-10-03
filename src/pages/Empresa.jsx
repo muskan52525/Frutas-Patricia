@@ -18,7 +18,7 @@ export default function EmpresaThirtyYears() {
     <div className="max-w-auto mx-auto">
       {/* hero section empresa */}
 
-      <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 pb-0 pt-20 lg:pt-57 md:pt-50 bg-[url('../src/assets/Home/bg.jpg')]">
+      <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 pb-0 pt-20 lg:pt-45 md:pt-40 bg-[url('../src/assets/Home/bg.jpg')]">
         <div className="relative mx-auto max-w-7xl">
           {/* Top row: title (left) + paragraph (right) */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-15 pb-10">
@@ -55,7 +55,7 @@ export default function EmpresaThirtyYears() {
               <img
                 src={hero2}
                 alt="Sede"
-                className="h-auto sm:h-[22vh] lg:h-[33.8vh] w-full object-cover"
+                className="h-auto sm:h-[23vh] lg:h-[33.8vh] w-full object-cover"
                 loading="lazy"
               />
             </figure>
@@ -73,7 +73,7 @@ export default function EmpresaThirtyYears() {
               <img
                 src={hero4}
                 alt="Frota"
-                className="h-auto sm:h-[22vh] lg:h-[33.8vh] w-full object-cover"
+                className="h-auto sm:h-[23vh] lg:h-[33.8vh] w-full object-cover"
                 loading="lazy"
               />
             </figure>
