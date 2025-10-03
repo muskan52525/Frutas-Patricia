@@ -247,6 +247,11 @@ export const data = [
           "Com produção de vinhos da região de Lisboa, a marca celebra a tradição, a paixão e a autenticidade. Inspirada no espírito familiar e na dedicação da arte vinícola, cada garrafa reflete o compromisso com a qualidade e a essência. Com o slogan Família, Amor e Alma, os seus vinhos são mais do que uma experiência sensorial - são um brinde aos momentos que realmente importam.",
         logo: mbrand7,
         thumb: pbrands7,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://madamepilar.pt/",
+        },
       },
     ],
   },
@@ -265,6 +270,11 @@ export const data = [
         ],
         logo: mbrand8,
         thumb: pbrands8,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://www.instagram.com/grupopatriciapilar/",
+        },
       },
       {
         id: "LLORETRANS",
@@ -276,6 +286,11 @@ export const data = [
           "Empresa especializada no transporte rodoviário de mercadorias, com foco no setor hortofrutícola.",
         logo: mbrand9,
         thumb: pbrands9,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://lloretrans.pt/",
+        },
       },
       {
         id: "TOMATES",
@@ -289,6 +304,11 @@ export const data = [
         ],
         logo: mbrand10,
         thumb: pbrands10,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://www.instagram.com/tomatesdooeste/",
+        },
       },
       {
         id: "MONTE",
@@ -303,6 +323,11 @@ export const data = [
         ],
         logo: mbrand11,
         thumb: pbrands11,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://montecristo.pt/",
+        },
       },
       {
         id: "DEMODOURO",
@@ -316,6 +341,11 @@ export const data = [
         ],
         logo: mbrand12,
         thumb: pbrands12,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://demodouro.pt/",
+        },
       },
       {
         id: "VINTAGE",
@@ -343,6 +373,11 @@ export const data = [
         ],
         logo: mbrand14,
         thumb: pbrands14,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://dolcefrutta.pt/",
+        },
       },
       {
         id: "VERDIM",
@@ -370,6 +405,11 @@ export const data = [
         ],
         logo: mbrand16,
         thumb: pbrands16,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://www.hortoriba.pt/",
+        },
       },
       {
         id: "LAPIFRUTAS",
@@ -381,6 +421,11 @@ export const data = [
           "A empresa assegura uma produção anual de cerca de 5.000 toneladas de fruta, com um foco constante na qualidade e na frescura. Certificada com as normas ISO 9001 e ISO 22000, realiza controlos rigorosos em todas as etapas do processo, desde a seleção até à distribuição, garantindo a rastreabilidade e um compromisso firme com a sustentabilidade ambiental.",
         logo: mbrand17,
         thumb: pbrands17,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://www.lapifrutas.com/",
+        },
       },
       {
         id: "POMMEIDEIAS",
@@ -408,6 +453,11 @@ export const data = [
         ],
         logo: mbrand19,
         thumb: pbrands19,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://ricotomeypatriciapilar.com/",
+        },
       },
       {
         id: "FRAMBOESA",
@@ -458,6 +508,11 @@ export const data = [
         ],
         logo: mbrand23,
         thumb: pbrands23,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://www.frutas-az.es/",
+        },
       },
       {
         id: "DEVTECH",
@@ -470,6 +525,11 @@ export const data = [
           "Desenvolve soluções integradas, desde gestão de redes sociais, branding e produção audiovisual, até ao desenvolvimento de websites e software à medida. Com uma equipa multidisciplinar, a Devtech foca-se em criar projetos personalizados, funcionais e visualmente impactantes, posicionando-se como um parceiro estratégico na transformação digital de marcas e negócios",
         logo: mbrand24,
         thumb: pbrands24,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://devtech.pt/",
+        },
       },
       {
         id: "SOCIEDADE",
@@ -496,6 +556,11 @@ export const data = [
         ],
         logo: mbrand26,
         thumb: pbrands26,
+        button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://www.melhorenergia.pt/",
+        },
       },
       {
         id: "D&D",
