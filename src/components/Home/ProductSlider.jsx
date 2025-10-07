@@ -76,14 +76,14 @@ export default function OutrosProdutosSlider() {
             <div key={p.id} className="px-3 py-5">
               <article className="grid lg:grid-cols-[55%_45%] items-center justify-between gap-3 rounded-2xl bg-[var(--color-whitecustom)] px-7 py-12">
                 <div className="max-w-full sm:max-w-xl lg:max-w-lg order-2 lg:order-1">
-                  <h3 className="text-lg sm:text-3xl font-extrabold text-[#111827]">{p.title}</h3>
-                  <p className="mt-2 text-sm text-[var(--color-dark)] leading-relaxed">{p.blurb}</p>
+                  <h3 className="text-lg sm:text-3xl font-extrabold text-[#111827] text-center md:text-left">{p.title}</h3>
+                  <p className="mt-2 text-sm text-[var(--color-dark)] leading-relaxed text-center md:text-left">{p.blurb}</p>
                   <button className="mt-4 inline-flex items-center rounded-full bg-[var(--color-prime)] cursor-pointer px-4 py-1.5 text-lg font-semibold text-[var(--color-whitecustom)] hover:bg-[var(--color-prime)]">
                     ver mais
                   </button>
                 </div>
                 <div className="shrink-0 mt-5 order-1 lg:order-2">
-                  <img src={p.image} alt={p.title} className="h-24 w-auto sm:h-28 lg:h-28 object-cover" />
+                  <img src={p.image} alt={p.title} className="h-auto w-auto sm:h-28 lg:h-28 object-cover" />
                 </div>
               </article>
             </div>
