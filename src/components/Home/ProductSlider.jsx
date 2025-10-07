@@ -75,10 +75,10 @@ export default function OutrosProdutosSlider() {
           {products.map((p) => (
             <div key={p.id} className="px-3 py-5">
               <article className="grid lg:grid-cols-[55%_45%] items-center justify-between gap-3 rounded-2xl bg-[var(--color-whitecustom)] px-7 py-12">
-                <div className="max-w-full sm:max-w-xl lg:max-w-lg order-2 lg:order-1">
+                <div className="max-w-full sm:max-w-xl lg:max-w-lg order-2 lg:order-1 grid justify-center md:justify-left">
                   <h3 className="text-lg sm:text-3xl font-extrabold text-[#111827] text-center md:text-left">{p.title}</h3>
                   <p className="mt-2 text-sm text-[var(--color-dark)] leading-relaxed text-center md:text-left">{p.blurb}</p>
-                  <button className="mt-4 inline-flex items-center grid justify-center md:justify-left rounded-full bg-[var(--color-prime)] cursor-pointer px-4 py-1.5 text-lg font-semibold text-[var(--color-whitecustom)] hover:bg-[var(--color-prime)]">
+                  <button className="mt-4 inline-flex items-center rounded-full bg-[var(--color-prime)] cursor-pointer px-4 py-1.5 text-lg font-semibold text-[var(--color-whitecustom)] hover:bg-[var(--color-prime)]">
                     ver mais
                   </button>
                 </div>
