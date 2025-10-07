@@ -46,7 +46,7 @@ export default function Header() {
                 geral@patriciapilar.pt
               </a>
             </span>
-             <a href="#recrutamento" className="hover:opacity-80 hidden sm:block">
+             <a href="#recrutamento" className="hover:opacity-80 sm:block">
               Recrutamento
             </a>
            
