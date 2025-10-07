@@ -39,7 +39,7 @@ export default function Productions() {
                 </p>
               </div>
               {/* Right: Image */}
-              <div className="order-first lg:order-none">
+              <div className="order-2 lg:order-none">
                 <div className="overflow-hidden rounded-l-2xl shadow-md">
                   <img
                     src={productsec}
