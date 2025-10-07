@@ -17,9 +17,9 @@ export default function Productions() {
       <div className="product py-5">
         <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20">
           <div className="mx-auto max-w-full pl-0 sm:pl-6 lg:pl-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-50">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-60">
               {/* Left: Text content */}
-              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-center grid px-5 ml-0 md:ml-0  lg:ml-[220px]">
+              <div className="text-center lg:text-left justify-end grid">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <span className="text-[var(--color-prime)]">
                     O melhor da produção nacional
