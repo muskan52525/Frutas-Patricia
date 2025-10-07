@@ -114,7 +114,7 @@ useEffect(() => {
                     {s.title}
                   </h2>
 
-                  <p className="mt-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+                  <p className="mt-6 text-slate-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
                     {s.desc}
                   </p>
                 </div>
