@@ -76,8 +76,8 @@ export default function BrandMarqueeSlick({
     if (w >= 1280) setSlidesToShow(9);
     else if (w >= 1024) setSlidesToShow(7);
     else if (w >= 768) setSlidesToShow(5);
-    else if (w >= 640) setSlidesToShow(4);
-    else setSlidesToShow(4);
+    else if (w >= 640) setSlidesToShow(3);
+    else setSlidesToShow(3);
   };
 
   useEffect(() => {

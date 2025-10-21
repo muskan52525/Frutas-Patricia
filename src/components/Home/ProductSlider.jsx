@@ -156,6 +156,7 @@ export default function OutrosProdutosSlider() {
         <Slider {...settings}>
           {products.map((p) => (
             <div key={p.id} className="px-3 py-5">
+              {/* lg:grid-cols-2 -> lg:grid-cols-[55%_45%] */}
               <article className="grid lg:grid-cols-2 items-center justify-between gap-3 rounded-2xl bg-[var(--color-whitecustom)] px-7 py-12">
                 <div className="max-w-full sm:max-w-xl lg:max-w-lg order-2 lg:order-1">
                   <h3 className="text-lg sm:text-3xl font-extrabold text-[#111827] text-center sm:text-start">

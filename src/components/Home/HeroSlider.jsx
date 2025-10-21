@@ -25,13 +25,13 @@ export default function HeroSlider() {
   };
 
   return (
-    <section className="relative w-full h-[400px] sm:h-[500px] lg:h-[87vh]">
+    <section className="relative w-full h-[400px] sm:h-[500px] lg:h-[98vh]">
       {/* Background slider */}
       <Slider ref={sliderRef} {...settings}>
         {slides.map((image, idx) => (
           <div key={idx}>
             <div
-              className="w-full h-[400px] sm:h-[500px] lg:h-[87vh] bg-cover bg-center"
+              className="w-full h-[400px] sm:h-[500px] lg:h-[98vh] bg-cover bg-center"
               style={{ backgroundImage: `url(${image})` }}
             />
           </div>
@@ -41,7 +41,7 @@ export default function HeroSlider() {
       {/* Static content overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center lg:items-end px-6 lg:px-20 text-center lg:text-right z-10">
         <h2 className="italic text-[var(--color-whitecustom)] text-2xl sm:text-3xl lg:text-[52px] font-bold leading-snug max-w-4xl">
-          Há <span className="text-[var(--color-prime)]">30 anos</span> a levar o melhor da terra até si!
+          Há <span className="text-[var(--color-whitecustom) md:text-[var(--color-prime)]">30 anos</span> a levar o melhor da terra até si!
         </h2>
         <p className="mt-4 text-[var(--color-whitecustom)] text-sm sm:text-base lg:text-xl leading-relaxed max-w-2xl">
           Produtos de qualidade superior, escolhidos e aprovados por consumidores que valorizam o melhor da produção nacional. A sua confiança é o nosso maior orgulho.

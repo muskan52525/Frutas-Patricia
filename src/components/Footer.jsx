@@ -17,7 +17,7 @@
 
   const rightPages = [
     { label: "Recrutamento", href: "/job" },
-    { label: "Leilão", href: "/auction" },
+    { label: "Leilão", href: "https://leilao.patriciapilar.pt/login.php" },
     { label: "Apoios", href: "/support" },
     { label: "Códigos de Conduta", href: "/code-of-ethics" },
   ];
@@ -106,7 +106,9 @@
                 />
               </div>
               <p className="mt-5 max-w-xs text-[var(--color-gray2)] text-center sm:text-start">
-                Empresa dedicada à produção, comercialização e distribuição de produtos hortofrutícolas.
+                Empresa dedicada à produção, <br/>
+                comercialização e distribuição <br/>
+                de produtos hortofrutícolas.
               </p>
 
               {/* Socials */}
@@ -130,6 +132,8 @@
             <div className="md:col-span-2 ">
               <h3 className="text-xl font-semibold text-[var(--color-prime)] text-center sm:text-start">
                 Páginas
+              {/* <h3 className="text-xl font-semibold text-[var(--color-prime)]">
+                Menu */} 
               </h3>
               <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
                 {leftPages.map((i) => (
@@ -145,7 +149,7 @@
             {/* Pages column 2 */}
             <div className="md:col-span-2 text-center sm:text-start">
               <h3 className="text-xl font-semibold text-[var(--color-prime)]">
-                Páginas
+                Úteis
               </h3>
               <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
                 {rightPages.map((i) => (

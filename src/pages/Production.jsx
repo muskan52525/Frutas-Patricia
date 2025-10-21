@@ -17,7 +17,7 @@ export default function Productions() {
       <div className="product py-5">
         <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20">
           <div className="mx-auto max-w-full pl-0 sm:pl-6 lg:pl-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-50">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-60">
               {/* Left: Text content */}
               <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-center grid px-5 ml-0">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
@@ -81,7 +81,7 @@ export default function Productions() {
                 </p>
               </div>
               {/* Right: Image */}
-              <div className="order-first lg:order-none">
+              <div className="order-2 lg:order-none">
                 <div className="overflow-hidden justify-end flex">
                   <img
                     src={map}
@@ -209,7 +209,7 @@ export default function Productions() {
               <div
                 className="rounded-3xl bg-[var(--color-whitecustom)] p-6 sm:p-8 ring-1 ring-slate-900/5 shadow-[0_15px_35px_0_rgba(4,58,83,0.15)]"
               >
-                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-40 lg:w-40">
+                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-30 lg:w-30">
                   <img
                     src={iso}
                     alt="ISO 14001"
@@ -223,7 +223,7 @@ export default function Productions() {
                 className="rounded-3xl bg-[var(--color-whitecustom)] p-6 sm:p-8 ring-1 ring-slate-900/5
                             shadow-[0_15px_35px_0_rgba(4,58,83,0.15)]"
               >
-                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-40 lg:w-40">
+                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-30 lg:w-30">
                   <img
                     src={grace}
                     alt="GRACE • Empresa Associada"

@@ -55,7 +55,7 @@ export default function EmpresaThirtyYears() {
               <img
                 src={hero2}
                 alt="Sede"
-                className="h-auto sm:h-[22vh] lg:h-[33.8vh] w-full object-cover"
+                className="h-auto sm:h-[23vh] lg:h-[33.8vh] w-full object-cover"
                 loading="lazy"
               />
             </figure>
@@ -73,7 +73,7 @@ export default function EmpresaThirtyYears() {
               <img
                 src={hero4}
                 alt="Frota"
-                className="h-auto sm:h-[22vh] lg:h-[33.8vh] w-full object-cover"
+                className="h-auto sm:h-[23vh] lg:h-[33.8vh] w-full object-cover"
                 loading="lazy"
               />
             </figure>

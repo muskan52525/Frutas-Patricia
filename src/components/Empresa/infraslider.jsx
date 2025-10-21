@@ -75,7 +75,7 @@ useEffect(() => {
     infinite: true,
    fade: true,
     speed: 600,
-   autoplay: false,     
+   autoplay: true,     
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -93,8 +93,8 @@ useEffect(() => {
     ],
   };
 
-  const prev = () => sliderRef.current?.slickPrev();
-  const next = () => sliderRef.current?.slickNext();
+  // const prev = () => sliderRef.current?.slickPrev();
+  // const next = () => sliderRef.current?.slickNext();
 
   return (
     <section className="bg-[#F3F6F7] py-12 sm:py-16 lg:py-20">
@@ -114,7 +114,7 @@ useEffect(() => {
                     {s.title}
                   </h2>
 
-                  <p className="mt-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+                  <p className="mt-6 text-slate-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
                     {s.desc}
                   </p>
                 </div>
@@ -125,7 +125,6 @@ useEffect(() => {
                     {/* LEFT thumbnail (Prev) — hidden on mobile */}
                     <button
                       type="button"
-                      onClick={prev}
                       className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 focus:outline-none cursor-pointer"
                       aria-label="Slide anterior"
                     >
@@ -150,7 +149,6 @@ useEffect(() => {
                     {/* RIGHT thumbnail (Next) — hidden on mobile */}
                     <button
                       type="button"
-                      onClick={next}
                       className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 focus:outline-none cursor-pointer"
                       aria-label="Próximo slide"
                     >

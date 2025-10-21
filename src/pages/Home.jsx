@@ -89,7 +89,7 @@ export default function Home({
         {/* certification Section */}
         <CertificationHero />
       </div>
-      <div className="counter py-5 md:py-25">
+      <div className="counter py-5 md:py-8">
       <section className="w-full bg-[var(--color-whitecustom)]" ref={ref}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 items-center">
@@ -190,7 +190,7 @@ export default function Home({
       {/* product */}
       <div className="product py-5 md:py-25">
         <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20">
-          <div className="mx-auto max-w-full pl-4 sm:pl-6 lg:pl-8">
+          <div className="mx-auto max-w-full px-4 sm:pl-6 lg:pl-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-60">
               {/* Left: Text content */}
               <div className="text-center lg:text-left justify-end grid">
@@ -227,7 +227,7 @@ export default function Home({
                   <img
                     src={productsec}
                     alt="Produção própria zona oeste"
-                    className="w-full h-[300px] sm:h-[520px] lg:h-[700px] object-cover"
+                    className="w-full h-[300px] sm:h-[420px] lg:h-[650px] object-cover"
                   />
                 </div>
               </div>
