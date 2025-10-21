@@ -57,7 +57,7 @@ export default function Distribution() {
                         rounded-4xl md:rounded-full shadow-xl ring-1 ring-black/5
                         px-6 sm:px-10 py-8"
           >
-            <ul className="grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-y-0 sm:gap-x-12 text-center max-w-2xl">
+            <ul className="grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-y-0 sm:gap-x-12 text-center w-full">
               {stats.map((s, i) => (
                 <li
                   key={i}
@@ -103,16 +103,19 @@ export default function Distribution() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-5 mx-0 sm:mx-6 lg:mx-40 md:-mx-5">
             {/* Card 1 */}
             <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col max-w-full lg:max-w-sm">
+              <div className="flex justify-center sm:justify-start">
+
               <img
                 src={icon1}
                 alt=""
                 className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                 loading="lazy"
               />
-              <h3 className="text-2xl sm:text-2xl font-bold">
+              </div>
+              <h3 className="text-2xl sm:text-2xl font-bold text-center sm:text-start">
                 Grande Capacidade
               </h3>
-              <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] w-full">
+              <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] w-full text-center sm:text-start">
                 <p>
                   Oferece transporte seguro e rápido, nacional e internacional,
                   com uma frota de veículos pesados frigoríficos equipados com
@@ -124,16 +127,19 @@ export default function Distribution() {
 
             {/* Card 2 */}
             <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col max-w-full lg:max-w-sm">
+             <div className="flex justify-center sm:justify-start">
+
               <img
                 src={icon3}
                 alt=""
                 className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                 loading="lazy"
               />
-              <h3 className="text-2xl sm:text-2xl font-bold">
+             </div>
+              <h3 className="text-2xl sm:text-2xl font-bold text-center sm:text-start">
                 Transporte Internacional
               </h3>
-              <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] ">
+              <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] text-center sm:text-start ">
                 <p>
                   Transporte seguro e rápido nacional e internacional com foco
                   no mercado ibérico, operando também noutros países europeus e

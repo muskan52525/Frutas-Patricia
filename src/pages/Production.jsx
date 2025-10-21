@@ -19,7 +19,7 @@ export default function Productions() {
           <div className="mx-auto max-w-full pl-0 sm:pl-6 lg:pl-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-50">
               {/* Left: Text content */}
-              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-center grid px-5 ml-0 lg:ml-[280px]">
+              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-center grid px-5 ml-0">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <span className="text-[var(--color-prime)]">
                     O melhor da produção nacional
@@ -59,7 +59,7 @@ export default function Productions() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-50">
               {/* Left: Text content */}
               <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-end grid px-5">
-                <h2 className="text-3xl sm:text-4xl md:text-3xl lg:text-[60px] font-bold leading-tight tracking-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <br />
                   <span className="text-[var(--color-whitecustom)]">
                     Produção própria:
@@ -68,13 +68,13 @@ export default function Productions() {
                   </span>
                 </h2>
 
-                <p className="mt-6 text-[var(--color-whitecustom)] text-justify text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p className="mt-6 text-[var(--color-whitecustom)] text-justify text-base sm:text-lg  leading-relaxed max-w-lg mx-auto lg:mx-0">
                   Localizada entre as serras de Montejunto, Aires e Candeeiros,
                   a região do Oeste é privilegiada por um conjunto de
                   carcaterísticas que tornam o seu ecossistemas único em
                   Portugal.
                 </p>
-                <p className="mt-6 text-[var(--color-whitecustom)] text-justify text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p className="mt-6 text-[var(--color-whitecustom)] text-justify text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
                   O equilíbrio entre a brisa marítima e a temperatura constante
                   ao longo do ano faz desta uma das melhores áreas da Europa
                   para a agricultura.
@@ -185,11 +185,11 @@ export default function Productions() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: copy */}
             <div>
-              <h2 className="text-center sm:text-start text-4xl sm:text-5xl lg:text-[60px] font-bold text-slate-900">
+              <h2 className="text-center sm:text-start text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight text-slate-900">
                 Sustentabilidade
               </h2>
 
-              <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg lg:text-xl leading-relaxed text-justify">
+              <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed text-center sm:text-start">
                 Na Frutas Patrícia Pilar, assumimos o compromisso de adoptar
                 práticas mais sustentáveis, promovendo o equilíbrio com o meio
                 ambiente através da escolha consciente de materiais.
@@ -205,7 +205,7 @@ export default function Productions() {
             </div>
 
             {/* Right: two square cards */}
-            <div className="flex flex-col gap-8 items-center lg:items-end">
+            <div className="flex flex-col gap-8 items-center">
               <div
                 className="rounded-3xl bg-[var(--color-whitecustom)] p-6 sm:p-8 ring-1 ring-slate-900/5 shadow-[0_15px_35px_0_rgba(4,58,83,0.15)]"
               >

@@ -19,7 +19,7 @@
     { label: "Recrutamento", href: "/job" },
     { label: "Leilão", href: "/auction" },
     { label: "Apoios", href: "/support" },
-    { label: "Código de ética e conduta", href: "/code-of-ethics" },
+    { label: "Códigos de Conduta", href: "/code-of-ethics" },
   ];
 
   function Social({ href, label, children }) {
@@ -27,6 +27,8 @@
       <a
         href={href}
         aria-label={label}
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-prime)] text-[var(--color-whitecustom)] transition hover:bg-[#27a95b]"
       >
         <span className="text-lg">{children}</span>
@@ -104,21 +106,21 @@
                 />
               </div>
               <p className="mt-5 max-w-xs text-[var(--color-gray2)] text-center sm:text-start">
-                Empresa de importação e exportação em A-do-Cunhados e na Maceira
+                Empresa dedicada à produção, comercialização e distribuição de produtos hortofrutícolas.
               </p>
 
               {/* Socials */}
               <div className="mt-6 flex items-center gap-3 justify-center sm:justify-start">
-                <Social href="#" label="Facebook">
+                <Social href="https://www.facebook.com/frutaspatriciapilar.lda" label="Facebook">
                   <FaFacebookF />
                 </Social>
-                <Social href="#" label="Instagram">
+                <Social href="https://www.instagram.com/frutaspatriciapilar/" label="Instagram">
                   <FaInstagram />
                 </Social>
-                <Social href="#" label="LinkedIn">
+                <Social href="https://www.linkedin.com/company/frutaspatriciapilar/" label="LinkedIn">
                   <FaLinkedinIn />
                 </Social>
-                <Social href="#" label="YouTube">
+                <Social href="https://www.youtube.com/@frutaspatriciapilar6362" label="YouTube">
                   <FaYoutube />
                 </Social>
               </div>
@@ -126,12 +128,12 @@
 
             {/* Pages column 1 */}
             <div className="md:col-span-2 ">
-              <h3 className="text-xl font-semibold text-[var(--color-prime)]">
+              <h3 className="text-xl font-semibold text-[var(--color-prime)] text-center sm:text-start">
                 Páginas
               </h3>
               <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
                 {leftPages.map((i) => (
-                  <li key={i.label}>
+                  <li key={i.label} className="text-center sm:text-start">
                     <a className="hover:text-emerald-700" href={i.href}>
                       {i.label}
                     </a>

@@ -7,7 +7,7 @@ export default function HistoriaWithSvgArrow() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Heading + intro (optional) */}
         <header className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">
             A nossa História
           </h2>
           <p className="mt-5 text-[var(--color-dark)] leading-relaxed text-base sm:text-lg">

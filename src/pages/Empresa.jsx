@@ -18,7 +18,7 @@ export default function EmpresaThirtyYears() {
     <div className="max-w-auto mx-auto">
       {/* hero section empresa */}
 
-      <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 pb-0 pt-20 lg:pt-57 md:pt-50 bg-[url('../src/assets/Home/bg.jpg')]">
+      <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 pb-0 pt-[30px] lg:pt-[100px] md:pt-50 bg-[url('../src/assets/Home/bg.jpg')]">
         <div className="relative mx-auto max-w-7xl">
           {/* Top row: title (left) + paragraph (right) */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-15 pb-10">
@@ -138,7 +138,7 @@ export default function EmpresaThirtyYears() {
         <section className="bg-[#F2F5F6] py-12 sm:py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {/* Title + short intro */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-15 mb-10 sm:mb-15">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-15 mb-10 sm:mb-15 items-center">
               <div className="lg:col-span-6">
                 <h2 className="text-3xl text-center sm:text-start sm:text-4xl lg:text-5xl font-bold text-[var(--color-dark)] leading-tight">
                   <span className="block">Linhas</span>

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import email from "../../assets/Contact/email.png";
 import phone from "../../assets/Contact/phone.png";
 import map from "../../assets/Contact/map.png";
+import ContactBg from "../../assets/Contact/contactBg.jpg"
 
 /* ------------- department data for the modal ------------- */
 const departments = [
@@ -92,12 +93,15 @@ export default function ContactStrip() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <section className="py-12 sm:py-16 lg:py-40 bg-cover bg-center bg-[url('../../assets/Home/bg.jpg')]">
+    <section className="py-12 sm:py-16 lg:py-40 bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: `url(${ContactBg})`}}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Card: Email */}
           <article className="text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
-            <div className="flex-1 items-center gap-3">
+            <div className="flex justify-between flex-col">
+              <div>
+              <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
                 <img src={email} alt="" />
               </span>
@@ -107,6 +111,8 @@ export default function ContactStrip() {
             <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
               Envie-nos um email com a sua questão e respondemos com a maior brevidade.
             </p>
+            </div>
+            <div>
 
             <button
               onClick={() => window.location.href = "mailto:geral@patriciapilar.pt"}
@@ -114,11 +120,16 @@ export default function ContactStrip() {
             >
               geral@patriciapilar.pt
             </button>
+            </div>
+            </div>
+
           </article>
 
           {/* Card: Telefone */}
-          <article className="text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
-            <div className="flex-1 items-center gap-3">
+          <article className="flex text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
+          <div className="flex justify-between flex-col" >
+             <div>
+             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
                 <img src={phone} alt="" />
               </span>
@@ -128,8 +139,10 @@ export default function ContactStrip() {
             <p className="mt-1 text-sm text-slate-600">
               Ligue caso necessite de uma resposta imediata.
             </p>
+           </div>
 
-            <a
+            <div>
+              <a
               href="tel:+351261982465"
               className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
             >
@@ -150,10 +163,13 @@ export default function ContactStrip() {
                 </svg>
               </span>
             </a>
+            </div>
+          </div>
           </article>
 
           {/* Card: Localização */}
           <article className=" text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
+          <div className="flex justify-between flex-col">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
                 <img src={map} alt="" />
@@ -190,6 +206,7 @@ export default function ContactStrip() {
                 </svg>
               </span>
             </a>
+            </div>
           </article>
         </div>
       </div>
