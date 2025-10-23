@@ -30,7 +30,7 @@ import brand26 from "../../assets/Comman/brand26.png";
 
 
 const DEFAULT_LOGOS = [
-  { src: brand1, alt: "Demo Douro" },
+  // { src: brand1, alt: "Demo Douro" },
   { src: brand2, alt: "Hortoriba" },
   { src: brand3, alt: "Vitam Pavel" },
   { src: brand4, alt: "QLT" },
@@ -98,7 +98,7 @@ export default function BrandMarqueeSlick({
     arrows: false,
     dots: false,
     infinite: logos.length > slidesToShow,
-    speed: 450,
+    speed: 350,
     slidesToShow,
     slidesToScroll: 1,
     swipeToSlide: true,

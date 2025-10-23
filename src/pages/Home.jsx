@@ -124,7 +124,7 @@ export default function Home({
 
       {/* infra section */}
       <div className="infra">
-        <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20">
+        <section className="w-full bg-[var(--color-whitecustom)] py-8 lg:py-15">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-18 items-center">
               {/* Left: Text */}
@@ -227,7 +227,7 @@ export default function Home({
                   <img
                     src={productsec}
                     alt="Produção própria zona oeste"
-                    className="w-full h-[300px] sm:h-[420px] lg:h-[650px] object-cover"
+                    className="w-full h-[300px] sm:h-[400px] lg:h-[550px] object-cover"
                   />
                 </div>
               </div>

@@ -40,7 +40,7 @@ export default function CertificationHero({
               <img
                 src={imageSrc}
                 alt="Fresh tomatoes on the vine"
-                className="h-[250px] sm:h-[420px] lg:h-[650px] w-full object-cover"
+                className="h-[250px] sm:h-[420px] lg:h-[550px] w-full object-cover"
                 loading="eager"
               />
             </div>

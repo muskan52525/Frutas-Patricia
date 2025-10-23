@@ -42,38 +42,38 @@ export default function EmpresaThirtyYears() {
 
           {/* Images row: 4 cards, responsive */}
           <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-1.5">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 md:mt-4 lg:mt-5">
               <img
                 src={hero1}
                 alt="Fundadores"
-                className="h-auto sm:h-[32vh] lg:h-[42.8vh] w-full object-cover"
+                className="h-auto sm:h-full  w-full object-cover"
                 loading="lazy"
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-53">
               <img
                 src={hero2}
                 alt="Sede"
-                className="h-auto sm:h-[23vh] lg:h-[33.8vh] w-full object-cover"
+                className="h-auto sm:h-full w-full object-cover"
                 loading="lazy"
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-1.5">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-2.5">
               <img
                 src={hero3}
                 alt="Estufas"
-                className="h-auto sm:h-[32vh] lg:h-[42.8vh] w-full object-cover"
+                className="h-auto sm:h-full  w-full object-cover"
                 loading="lazy"
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-55">
               <img
                 src={hero4}
                 alt="Frota"
-                className="h-auto sm:h-[23vh] lg:h-[33.8vh] w-full object-cover"
+                className="h-auto sm:h-full w-full object-cover"
                 loading="lazy"
               />
             </figure>
