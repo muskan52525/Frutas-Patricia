@@ -170,6 +170,11 @@ export const data = [
           "Nascida com o objetivo de proporcionar ao consumidor a experiência de consumo do melhor tomate produzido em Portugal, a Crush opera com os mais sofisticados meios de produção e controle de qualidade, estabelecidos na zona Oeste do país. Uma das mais importantes e ricas áreas do nosso país onde o clima e o ecossistema se unem de forma a criar um dos melhores locais da Europa para a produção de tomate. A Crush produz várias tipologias de tomate, conseguindo um fornecimento que abrange quase a totalidade do ano.",
         logo: mbrand1,
         thumb: pbrands1,
+            button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://madamepilar.pt/",
+        },
       },
       {
         id: "WESTFARM",
@@ -183,6 +188,11 @@ export const data = [
           "A Westfarm é uma marca dedicada a variedades de artigos premium. Qualidade extra, frescura e apresentação, são as suas características.",
         logo: mbrand2,
         thumb: pbrands2,
+            button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://madamepilar.pt/",
+        },
       },
       {
         id: "MR.RED",
@@ -197,6 +207,11 @@ export const data = [
         ],
         logo: mbrand3,
         thumb: pbrands3,
+            button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://madamepilar.pt/",
+        },
       },
       {
         id: "LuxNuts",
@@ -210,6 +225,11 @@ export const data = [
         ],
         logo: mbrand4,
         thumb: pbrands4,
+            button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://madamepilar.pt/",
+        },
       },
       {
         id: "dodu",
@@ -223,6 +243,11 @@ export const data = [
         ],
         logo: mbrand5,
         thumb: pbrands5,
+            button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://madamepilar.pt/",
+        },
       },
       {
         id: "quintas",
@@ -236,6 +261,11 @@ export const data = [
         ],
         logo: mbrand6,
         thumb: pbrands6,
+            button: {
+          show: true,
+          label: "Saber mais",
+          link: "https://madamepilar.pt/",
+        },
       },
       {
         id: "MADAME PILAR",

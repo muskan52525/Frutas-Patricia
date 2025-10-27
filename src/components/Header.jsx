@@ -128,7 +128,7 @@ export default function Header() {
                 <img
                   src="/logo.png"
                   alt="Patrícia Pilar"
-                  className="h-26 w-27.5 rounded-full"
+                  className="h-26 w-27.5"
                 />
               </a>
             </div>
