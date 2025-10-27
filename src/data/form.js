@@ -387,7 +387,7 @@ export const data = [
           "A Vintage Fruit dedica-se ao fornecimento e distribuição de variedades exóticas, como manga, papaia, abacate e maracujá, com especial destaque para as importações da América do Sul.",
           "Localizada numa região estratégica, a empresa assegura uma cadeia de abastecimento ágil e controlada, garantindo frescura, qualidade e disponibilidade contínua ao longo do ano.",
         ],
-        logo: mbrand13,
+        logo: mbrand14,
         thumb: pbrands13,
       },
       {
@@ -401,7 +401,7 @@ export const data = [
           "Com uma operação que abrange desde grandes superfícies até o comércio local, a empresa é reconhecida pela sua capacidade de resposta às exigências do mercado e pela relação próxima com os produtores.",
           "Comprometida em oferecer produtos de qualidade superior, a Dolce Fruta assegura eficiência e transparência em todos os processos, com foco na satisfação do cliente e consumidor.",
         ],
-        logo: mbrand14,
+        logo: mbrand15,
         thumb: pbrands14,
         button: {
           show: true,
@@ -419,7 +419,7 @@ export const data = [
           "Empresa situada na sub-região do Alentejo Central, dedicada ao cultivo de pêssegos, nectarinas e pêssegos paraguaios. Beneficiando de condições climáticas e de solo ideais, a empresa assegura frutos frescos, saborosos e visualmente apelativos, destacando-se no segmento premium da fruticultura nacional.",
           "Combinando práticas agrícolas sustentáveis com uma colheita cuidadosa, a Verdimparável tem como objetivo proporcionar aos seus clientes uma experiência de qualidade excecional, garantindo a sua total satisfação",
         ],
-        logo: mbrand15,
+        logo: mbrand13,
         thumb: pbrands15,
       },
       {
