@@ -359,24 +359,24 @@ export const data = [
           link: "https://montecristo.pt/",
         },
       },
-      {
-        id: "DEMODOURO",
-        name: "DEMODOURO",
-        short: "Produtora de maçãs, cerejas e castanhas da encosta do Douro.",
-        mheading:
-          "A Demodouro dedica-se à produção e comercialização de frutas como maçãs, uvas e cerejas provenientes da bela encosta do Douro.",
-        story: [
-          "Empresa portuguesa especializada na produção e comercialização de frutas frescas, com foco na tradição e respeito pelo meio ambiente. Localizada nas encostas do Douro e nas terras do Demo, no norte de Portugal, dedica-se principalmente à produção de maçã, cereja e castanha, sendo a maçã o seu principal produto.",
-          "Trabalhando em estreita colaboração com produtores locais, a empresa assegura a frescura e qualidade dos frutos, garantindo que são colhidos no ponto ideal de maturação para preservar o sabor e a autenticidade da sua origem.",
-        ],
-        logo: mbrand12,
-        thumb: pbrands12,
-        button: {
-          show: true,
-          label: "Saber mais",
-          link: "https://demodouro.pt/",
-        },
-      },
+      // {
+      //   id: "DEMODOURO",
+      //   name: "DEMODOURO",
+      //   short: "Produtora de maçãs, cerejas e castanhas da encosta do Douro.",
+      //   mheading:
+      //     "A Demodouro dedica-se à produção e comercialização de frutas como maçãs, uvas e cerejas provenientes da bela encosta do Douro.",
+      //   story: [
+      //     "Empresa portuguesa especializada na produção e comercialização de frutas frescas, com foco na tradição e respeito pelo meio ambiente. Localizada nas encostas do Douro e nas terras do Demo, no norte de Portugal, dedica-se principalmente à produção de maçã, cereja e castanha, sendo a maçã o seu principal produto.",
+      //     "Trabalhando em estreita colaboração com produtores locais, a empresa assegura a frescura e qualidade dos frutos, garantindo que são colhidos no ponto ideal de maturação para preservar o sabor e a autenticidade da sua origem.",
+      //   ],
+      //   logo: mbrand12,
+      //   thumb: pbrands12,
+      //   button: {
+      //     show: true,
+      //     label: "Saber mais",
+      //     link: "https://demodouro.pt/",
+      //   },
+      // },
       {
         id: "VINTAGE",
         name: "VINTAGE FRUIT",
