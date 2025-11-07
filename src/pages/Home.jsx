@@ -42,7 +42,7 @@ export default function Home({
           {/* Title */}
           <div className="content grid grid-cols-1 lg:grid-cols-2 justify-between pt-8 gap-5 md:gap-20 ">
             <h1 className="text-3xl md:text-6xl max-w-lg font-bold mb-4 justify-end "> 
-              Produtos hortofrutículas <br /> de qualidade
+              Produtos hortofrutícolas <br /> de qualidade
             </h1>
 
             {/* Description */}

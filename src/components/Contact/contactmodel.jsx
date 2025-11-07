@@ -183,6 +183,7 @@ export default function ContactStrip() {
               Estamos disponíveis para o receber nas nossas instalações.
             </p>
 
+            <div>
             <a
               href="https://maps.app.goo.gl/CVMjXaqMgQmVcpV16"
               target="_blank"
@@ -206,6 +207,8 @@ export default function ContactStrip() {
                 </svg>
               </span>
             </a>
+
+            </div>
             </div>
           </article>
         </div>
