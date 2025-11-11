@@ -32,11 +32,11 @@ export default function CertificationHero({
 
   return (
     <section className="w-full bg-[var(--color-whitecustom)]">
-      <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-0 py-12 lg:py-20">
+      <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-0 py-12 pt-4 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-30 items-center">
           {/* Left: Image with badge */}
           <div className="relative order-2 lg:order-1">
-            <div className="overflow-hidden rounded-e-2xl shadow-md">
+            <div className="overflow-hidden rounded-2xl sm:rounded-none sm:rounded-e-2xl shadow-md">
               <img
                 src={imageSrc}
                 alt="Fresh tomatoes on the vine"
@@ -77,7 +77,7 @@ export default function CertificationHero({
             <div className="mt-8 flex justify-center lg:justify-start">
               <button
                 onClick={onCtaClick}
-                className="inline-flex items-center gap-5 rounded-full px-6 py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 cursor-pointer"
+                className="inline-flex items-center gap-5 rounded-full px-5 py-2  sm:px-6 sm:py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 cursor-pointer"
               >
                 {ctaText}
                 <div className="arrow bg-[#27a95b] rounded-full p-1">

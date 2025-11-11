@@ -98,18 +98,19 @@ export default function BrandMarqueeSlick({
     arrows: false,
     dots: false,
     infinite: logos.length > slidesToShow,
-    speed: 350,
+    speed: 4000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
     slidesToShow,
     slidesToScroll: 1,
-    swipeToSlide: true,
+    swipeToSlide: false,
     touchMove: true,
-    autoplay: false,
-    cssEase: "linear",
   };
 
   return (
     <section
-      className={`${className} py-3 sm:py-4`}
+      className={`${className} py-0 sm:py-4`}
       onMouseEnter={() => pauseOnHover && setPaused(true)}
       onMouseLeave={() => pauseOnHover && setPaused(false)}
     >
@@ -120,7 +121,7 @@ export default function BrandMarqueeSlick({
               <img
                 src={logo.src}
                 alt={logo.alt || "brand"}
-                className="h-30 sm:h-30 w-full py-3 object-contain mx-auto select-none"
+                className="h-30 sm:h-30 w-full py-0 object-contain mx-auto select-none"
                 draggable="false"
                 loading="lazy"
               />

@@ -202,7 +202,7 @@
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 justify-center">
               <li>
                 <a className="hover:text-[#009B3E]" href="/code-of-ethics">
-                  Código de ética e conduta
+                  Códigos de Conduta
                 </a>
               </li>
               <li>

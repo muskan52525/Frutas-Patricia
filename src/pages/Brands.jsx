@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { data as allData } from "../data/form.js";
+import rightArrow from "../assets/Home/rightarrow.svg";
 
 export default function ProductsPage() {
   const marcas = Array.isArray(allData)
@@ -92,19 +93,19 @@ export default function ProductsPage() {
                   </p>
                 )}
               </div>
-              <div className="flex justify-center sm:justify-start"> 
-
-              {active?.button?.show && (
-  <Link
-    to={active.button.link}
-    className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-prime)] px-6 py-3 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-  >
-    {active.button.label}
-    <span className="inline-grid place-items-center rounded-full bg-[#27a95b] p-1">
-      <img src="../src/assets/Home/rightarrow.svg" alt="" />
-    </span>
-  </Link>
-)}
+              <div className="flex justify-center sm:justify-start">
+                {active?.button?.show && (
+                  <Link
+                    to={active.button.link}
+                    className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-prime)] px-6 py-3 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                  >
+                    {active.button.label}
+                    <span className="inline-grid place-items-center rounded-full bg-[#27a95b] p-1">
+                      {/* <img src="../src/assets/Home/rightarrow.svg" alt="" /> */}
+                      <img src={rightArrow} alt="Arrow" />
+                    </span>
+                  </Link>
+                )}
               </div>
             </div>
 

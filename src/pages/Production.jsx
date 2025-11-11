@@ -40,7 +40,7 @@ export default function Productions() {
               </div>
               {/* Right: Image */}
               <div className="order-first lg:order-none">
-                <div className="overflow-hidden rounded-l-2xl shadow-md">
+                <div className="overflow-hidden  rounded-l-2xl shadow-md">
                   <img
                     src={productsec}
                     alt="Produção própria zona oeste"

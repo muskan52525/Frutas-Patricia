@@ -18,10 +18,10 @@ export default function EmpresaThirtyYears() {
     <div className="max-w-auto mx-auto">
       {/* hero section empresa */}
 
-      <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 pb-0 pt-[30px] lg:pt-[100px] md:pt-50 bg-[url('../src/assets/Home/bg.jpg')]">
+      <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 sm:pb-0 pt-[30px] lg:pt-[100px] md:pt-50 bg-[url('../src/assets/Home/bg.jpg')] pb-[30px]">
         <div className="relative mx-auto max-w-7xl">
           {/* Top row: title (left) + paragraph (right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-15 pb-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-15 pb-10 mt-3">
             <div className="lg:col-span-1 text-[var(--color-whitecustom)] text-center lg:text-left md:text-center max-w-2xl">
               <p className="text-2xl sm:text-3xl lg:text-[60px] font-bold italic">
                 +30 anos
@@ -124,7 +124,7 @@ export default function EmpresaThirtyYears() {
                 <img
                   src={propria2}
                   alt="Tomates na estufa"
-                  className="w-full h-[240px] sm:h-[320px] md:h-[460px] object-cover"
+                  className="w-full h-[280px] sm:h-[320px] md:h-[460px] object-cover"
                   loading="lazy"
                 />
               </figure>
@@ -157,7 +157,7 @@ export default function EmpresaThirtyYears() {
             {/* Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Card 1 */}
-              <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col">
+              <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col items-center sm:items-start">
                 <img
                   src={icon1}
                   alt=""
@@ -165,7 +165,7 @@ export default function EmpresaThirtyYears() {
                   loading="lazy"
                 />
                 <h3 className="text-2xl sm:text-2xl font-bold">Produção</h3>
-                <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)]">
+                <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] text-center sm:text-start">
                   <p>
                     Na Frutas Patrícia Pilar, a qualidade começa com a nossa
                     terra.
@@ -186,7 +186,7 @@ export default function EmpresaThirtyYears() {
               </article>
 
               {/* Card 2 */}
-              <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col">
+              <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col items-center sm:items-start">
                 <img
                   src={icon2}
                   alt=""
@@ -196,7 +196,7 @@ export default function EmpresaThirtyYears() {
                 <h3 className="text-2xl sm:text-2xl font-bold">
                   Comercialização
                 </h3>
-                <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)]">
+                <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] text-center sm:text-start">
                   <p>
                     O nosso compromisso vai muito além da entrega: procuramos
                     sempre criar parcerias duradouras com os nossos clientes.
@@ -214,7 +214,7 @@ export default function EmpresaThirtyYears() {
               </article>
 
               {/* Card 3 */}
-              <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col">
+              <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col items-center sm:items-start">
                 <img
                   src={icon3}
                   alt=""
@@ -222,7 +222,7 @@ export default function EmpresaThirtyYears() {
                   loading="lazy"
                 />
                 <h3 className="text-2xl sm:text-2xl font-bold">Distribuição</h3>
-                <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)]">
+                <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] text-center sm:text-start">
                   <p>A excelência dos nossos produtos vai além da produção.</p>
                   <p>
                     Com uma logística eficiente e ágil, asseguramos que os
