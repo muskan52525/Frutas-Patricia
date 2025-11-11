@@ -22,7 +22,8 @@ export default function Productions() {
               <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-start grid px-5 ml-0">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <span className="text-[var(--color-prime)]">
-                    O melhor da produção nacional
+                    O melhor da <br />
+                    produção nacional
                   </span>
                 </h2>
 
@@ -97,7 +98,7 @@ export default function Productions() {
 
       {/* lelio section */}
       <div className="lelio">
-        <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20" id="home-production">
+        <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20 lg:pb-10" id="home-production">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
             <div id="certifications" className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-22 items-center">
               {/* Right: Image */}
@@ -139,7 +140,7 @@ export default function Productions() {
 
       {/* logo */}
       <div className="logo">
-        <section className="bg-white py-20">
+        <section className="bg-white py-5">
           <div className="mx-auto max-w-7xl px-4 lg:px-0">
             <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-x-10 gap-y-8">
               <div className="flex items-center justify-center">

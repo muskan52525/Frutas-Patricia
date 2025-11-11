@@ -13,6 +13,24 @@ export default function ProductsPage() {
     : [];
 
   const [active, setActive] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  console.log("Active ID:", active?.id);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 640;
+      setIsMobile(mobile);
+      console.log("📱 Window resized, isMobile =", mobile);
+    };
+
+    handleResize(); // run on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // 👇 Add this inside your component, not outside
+  console.log("🔍 Current isMobile:", isMobile);
 
   // --- modal helpers ---
   const onClose = useCallback(() => setActive(null), []);
@@ -29,6 +47,15 @@ export default function ProductsPage() {
       window.removeEventListener("keydown", onKey);
     };
   }, [active, onClose]);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 640);
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  console.log("isMobile:", isMobile);
 
   return (
     <section className="bg-[#F5F7F8] py-12 sm:py-16 lg:py-25">
@@ -94,18 +121,35 @@ export default function ProductsPage() {
                 )}
               </div>
               <div className="flex justify-center sm:justify-start">
-                {active?.button?.show && (
-                  <Link
-                    to={active.button.link}
-                    className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-prime)] px-6 py-3 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-                  >
-                    {active.button.label}
-                    <span className="inline-grid place-items-center rounded-full bg-[#27a95b] p-1">
-                      {/* <img src="../src/assets/Home/rightarrow.svg" alt="" /> */}
-                      <img src={rightArrow} alt="Arrow" />
-                    </span>
-                  </Link>
-                )}
+               {active?.button?.show &&
+  !(
+    isMobile &&
+    [
+      "crush",
+      "westfarm",
+      "mrred",
+      "luxnuts",
+      "dodu",
+      "quintas",
+    ].includes(
+      active?.id
+        ?.toLowerCase()
+        .normalize("NFD") // break accented characters (ã → a + ˜)
+        .replace(/[\u0300-\u036f]/g, "") // remove accent marks
+        .replace(/[^a-z0-9]/g, "") // remove spaces, dots, etc.
+    )
+  ) && (
+    <Link
+      to={active.button.link}
+      className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-prime)] px-6 py-3 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+    >
+      {active.button.label}
+      <span className="inline-grid place-items-center rounded-full bg-[#27a95b] p-1">
+        <img src={rightArrow} alt="Arrow" />
+      </span>
+    </Link>
+  )}
+
               </div>
             </div>
 
