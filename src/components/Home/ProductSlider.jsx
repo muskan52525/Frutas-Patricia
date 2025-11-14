@@ -13,6 +13,8 @@ import productslider7 from "../../assets/Home/productslider7.png";
 import productslider8 from "../../assets/Home/productslider8.png";
 import productslider9 from "../../assets/Home/productslider9.png";
 import productslider10 from "../../assets/Home/productslider10.png";
+import productslider4 from "../../assets/Home/productslider4.jpg";
+
 
 const products = [
   {
@@ -60,13 +62,13 @@ const products = [
       "As batatas doces são armazenadas num local fresco, mas não escuro e húmido e fr...",
     image: productslider3,
   },
-  {
-    id: 8,
-    title: "Feijão Verde",
-    blurb:
-      "A pré-refrigeração é feita após a colheita, de forma a não comprometer o tempo de con...",
-    image: productslider6,
-  },
+  // {
+  //   id: 8,
+  //   title: "Feijão Verde",
+  //   blurb:
+  //     "A pré-refrigeração é feita após a colheita, de forma a não comprometer o tempo de con...",
+  //   image: productslider6,
+  // },
   {
     id: 9,
     title: "Abóbora Butternut",
@@ -86,7 +88,7 @@ const products = [
     title: "Abóbora Musquée",
     blurb:
       "É feito num local seco, arejado, com temperatura entre 10º a 14ºC e humidade ...",
-    image: productslider3,
+    image: productslider4,
   },
   {
     id: 12,
@@ -124,7 +126,7 @@ export default function OutrosProdutosSlider() {
     infinite: true,
     speed: 450,
     slidesToShow,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     dotsClass: "slick-dots custom-dots",
     customPaging: () => <button className="dot" />,
     appendDots: (dots) => (

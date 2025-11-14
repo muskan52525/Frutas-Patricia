@@ -31,7 +31,7 @@ export default function HeroSlider() {
         {slides.map((image, idx) => (
           <div key={idx}>
             <div
-              className="w-full h-[400px] sm:h-[500px] lg:h-[98vh] bg-cover bg-center"
+              className="w-full h-[400px] sm:h-[500px] lg:h-[98vh] bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${image})` }}
             />
           </div>
