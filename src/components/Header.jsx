@@ -36,7 +36,7 @@ export default function Header() {
       {/* Top bar */}
       <div className="bg-[var(--color-prime)] text-[var(--color-whitecustom)] text-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
-          <div className="flex justify-between sm:justify-start gap-6">
+          <div className="flex justify-between sm:justify-start gap-6 width-full">
             <span>
               Email:{" "}
               <a

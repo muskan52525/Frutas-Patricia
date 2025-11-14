@@ -51,7 +51,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 md:mt-[100px]">
               <img
                 src={hero2}
                 alt="Sede"
@@ -69,7 +69,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 md:mt-[100px] sm:mt-21.5">
               <img
                 src={hero4}
                 alt="Frota"

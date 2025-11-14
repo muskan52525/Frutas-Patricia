@@ -8,7 +8,7 @@ export default function HistoriaWithSvgArrow() {
         {/* Heading + intro (optional) */}
         <header className="text-center max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">
-            A nossa História
+            A Nossa História
           </h2>
           <p className="mt-5 text-[var(--color-dark)] leading-relaxed text-base sm:text-lg">
             A Frutas Patrícia Pilar foi fundada em 1992 com o objetivo de

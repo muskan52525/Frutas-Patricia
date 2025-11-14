@@ -105,12 +105,14 @@ useEffect(() => {
               {/* 1-col on mobile/tablet (text above, image below); 12-col on desktop */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                 {/* Text */}
-                <div className="lg:col-span-5 flex flex-col sm:items-start items-center justify-center">
-                  <span className="inline-flex items-center rounded-full bg-[var(--color-prime)] text-white px-5 py-2 text-sm font-semibold shadow-sm">
-                    {s.tag}
-                  </span>
+                <div className="lg:col-span-5 flex flex-col justify-center sm:justify-start min-h-[360px]">
+                  <div className="flex justify-center sm:justify-start">
+                    <span className="inline-flex items-center justify-center rounded-full bg-[var(--color-prime)] text-white px-5 py-2 text-sm font-semibold shadow-sm w-[130px]">
+                      {s.tag}
+                    </span>
+                  </div>
 
-                  <h2 className="mt-6 whitespace-pre-line text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0F172A]">
+                  <h2 className="mt-6 whitespace-pre-line text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0F172A]  sm:text-start text-center">
                     {s.title}
                   </h2>
 
