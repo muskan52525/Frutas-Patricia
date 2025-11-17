@@ -36,8 +36,9 @@ export default function Header() {
       {/* Top bar */}
       <div className="bg-[var(--color-prime)] text-[var(--color-whitecustom)] text-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
-          <div className="flex justify-between sm:justify-start gap-6 width-full">
-            <span>
+          <div className="flex justify-between sm:justify-start gap-6 w-full sm:w-auto">
+            <div>
+              <span>
               Email:{" "}
               <a
                 href="mailto:geral@patriciapilar.pt"
@@ -46,9 +47,10 @@ export default function Header() {
                 geral@patriciapilar.pt
               </a>
             </span>
-             <a href="#recrutamento" className="hover:opacity-80 block">
+            </div>
+             <p className="hover:opacity-80 block cursor-pointer">
               Recrutamento
-            </a>
+            </p>
            
           </div>
           <div className="hidden sm:flex items-center gap-4 text-right">

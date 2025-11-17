@@ -411,13 +411,13 @@ export const data = [
       },
       {
         id: "VERDIM",
-        name: "VERDIM PARÁVEL",
+        name: "VERDIMPARÁVEL",
         short: "Produtora de pêssegos, nectarinas e paraguaios.",
         mheading:
-          "O Grupo Patrícia Pilar é um conjunto empresarial consolidado, com mais de 25 empresas em diversas áreas de atuação.",
+          "Especializada na produção de frutas de qualidade premium, a Verdimparável combina tradição e inovação para entregar o melhor aos seus clientes",
         story: [
-          "Empresa situada na sub-região do Alentejo Central, dedicada ao cultivo de pêssegos, nectarinas e pêssegos paraguaios. Beneficiando de condições climáticas e de solo ideais, a empresa assegura frutos frescos, saborosos e visualmente apelativos, destacando-se no segmento premium da fruticultura nacional.",
-          "Combinando práticas agrícolas sustentáveis com uma colheita cuidadosa, a Verdimparável tem como objetivo proporcionar aos seus clientes uma experiência de qualidade excecional, garantindo a sua total satisfação",
+          "Empresa situada na sub-região do Alentejo Central, dedicada ao cultivo de pêssegos,nectarinas e pêssegos paraguaios. Beneficiando de condições climáticas e de solo ideais,a empresa assegura frutos frescos, saborosos e visualmente apelativos, destacando-se no segmento premium da fruticultura nacional.",
+          "Combinando práticas agrícolas sustentáveis com uma colheita cuidadosa, a Verdimparável tem como objetivo proporcionar aos seus clientes uma experiência de qualidade excecional, garantindo a sua total satisfação.",
         ],
         logo: mbrand15,
         thumb: pbrands13,
@@ -459,7 +459,7 @@ export const data = [
       },
       {
         id: "POMMEIDEIAS",
-        name: "MONTE CRISTO",
+        name: "Pommeideias",
         short: "Empresa agrícola especializada na produção de maçãs.",
         mheading:
           "Empresa agrícola especializada na produção de maçãs de variedades de alta qualidade.",

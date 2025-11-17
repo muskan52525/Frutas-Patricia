@@ -47,7 +47,7 @@ export default function Home({
 
             {/* Description */}
             <div className="textcontent flex items-center">
-              <p className="text-sm  text-center sm:text-start md:text-lg max-w-lg mb-8 ">
+              <p className="text-lg  text-center sm:text-start md:text-lg max-w-lg mb-8 ">
                 A Frutas Patrícia Pilar, é uma empresa 100% nacional, criada com
                 o objetivo de fornecer o mercado hortofrutícola nacional e
                 internacional, assente na produção, distribuição e

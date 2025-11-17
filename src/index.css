@@ -61,3 +61,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 640px) {
+  .mobile-fixed-text {
+    min-height: 300px; /* adjust until text area stays fixed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

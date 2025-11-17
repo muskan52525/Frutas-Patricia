@@ -69,13 +69,13 @@ export default function Productions() {
                   </span>
                 </h2>
 
-                <p className="mt-6 text-[var(--color-whitecustom)] text-justify text-base sm:text-lg  leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p className="mt-6 text-[var(--color-whitecustom)] text-center sm:text-justify text-base sm:text-lg  leading-relaxed max-w-lg mx-auto lg:mx-0">
                   Localizada entre as serras de Montejunto, Aires e Candeeiros,
                   a região do Oeste é privilegiada por um conjunto de
                   carcaterísticas que tornam o seu ecossistemas único em
                   Portugal.
                 </p>
-                <p className="mt-6 text-[var(--color-whitecustom)] text-justify text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p className="mt-6 text-[var(--color-whitecustom)] text-center sm:text-justify text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
                   O equilíbrio entre a brisa marítima e a temperatura constante
                   ao longo do ano faz desta uma das melhores áreas da Europa
                   para a agricultura.

@@ -5,10 +5,9 @@ import slider2 from "../../assets/Empresa/slider2.png";
 import slider3 from "../../assets/Empresa/slider3.png";
 import slider4 from "../../assets/Empresa/slider4.png";
 
-
 export default function InfraestruturasSlider() {
   const sliderRef = useRef(null);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
 
   const slides = [
     {
@@ -52,7 +51,7 @@ export default function InfraestruturasSlider() {
       },
     },
   ];
-useEffect(() => {
+  useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 640);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -67,15 +66,14 @@ useEffect(() => {
     }
   }, [isMobile]);
 
-
   const settings = {
     dots: false,
-    dotsClass: "slick-dots mobile-dots", 
+    dotsClass: "slick-dots mobile-dots",
     arrows: false,
     infinite: true,
-   fade: true,
+    fade: true,
     speed: 600,
-   autoplay: true,     
+    autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -84,7 +82,7 @@ useEffect(() => {
       {
         breakpoint: 640, // mobile
         settings: {
-          dots: true, 
+          dots: true,
           fade: false, // fade must be false for mobile infinite scroll
           swipe: true, // enable touch swipe
           infinite: true, // infinite scroll on mobile
@@ -105,7 +103,12 @@ useEffect(() => {
               {/* 1-col on mobile/tablet (text above, image below); 12-col on desktop */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                 {/* Text */}
-                <div className="lg:col-span-5 flex flex-col justify-center sm:justify-start min-h-[360px]">
+                <div
+                  className="lg:col-span-5 flex flex-col justify-center sm:justify-start 
+               min-h-[360px] 
+               sm:min-h-[360px]
+               mobile-fixed-text"
+                >
                   <div className="flex justify-center sm:justify-start">
                     <span className="inline-flex items-center justify-center rounded-full bg-[var(--color-prime)] text-white px-5 py-2 text-sm font-semibold shadow-sm w-[130px]">
                       {s.tag}
