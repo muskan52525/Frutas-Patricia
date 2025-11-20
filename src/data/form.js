@@ -614,36 +614,36 @@ export const data = [
        {
         id: 1,
         title: "Código de Ética e Conduta Grupo Patrícia Pilar",
-        link: "pdfs/codigoDeEtica.pdf",
+        link: "pdf/codigoDeEtica.pdf",
       },
       {
         id: 2,
         title:
           "Código de Boa Conduta para a Prevenção e Combate ao Assédio no Trabalho",
-        link: "pdfs/codigoBoa.pdf",
+        link: "pdf/codigoBoa.pdf",
       },
       {
         id: 3,
         title:
           "Código de Conduta para Prevenção da Corrupção e Infrações Conexas",
-        link: "pdfs/CódigoDeConduta.pdf",
+        link: "pdf/CódigoDeConduta.pdf",
       },
       {
         id: 4,
         title:
           "Plano de Prevenção de Riscos de Corrupção e Infrações Conexas (PPR)",
-          link: "pdfs/planDePrevencao.pdf",
+          link: "pdf/planDePrevencao.pdf",
       },
       {
         id: 5,
         title: "Regulamento de Comunicação de Infrações",
-        link: "pdfs/RegulamentoDe.pdf",
+        link: "pdf/RegulamentoDe.pdf",
       },
       {
         id: 6,
         title:
           "Código de Conduta de Proteção de Dados - RGPD Grupo Patrícia Pilar",
-        link: "pdfs/codigoDeConducta.pdf",
+        link: "pdf/codigoDeConducta.pdf",
       },
     ]
 
