@@ -171,7 +171,7 @@ export const data = [
         logo: mbrand1,
         thumb: pbrands1,
             button: {
-          show: true,
+          show: false,
           label: "Saber mais",
           link: "https://madamepilar.pt/",
         },
@@ -189,7 +189,7 @@ export const data = [
         logo: mbrand2,
         thumb: pbrands2,
             button: {
-          show: true,
+          show: false,
           label: "Saber mais",
           link: "https://madamepilar.pt/",
         },
@@ -208,7 +208,7 @@ export const data = [
         logo: mbrand3,
         thumb: pbrands3,
             button: {
-          show: true,
+          show: false,
           label: "Saber mais",
           link: "https://madamepilar.pt/",
         },
@@ -226,7 +226,7 @@ export const data = [
         logo: mbrand4,
         thumb: pbrands4,
             button: {
-          show: true,
+          show: false,
           label: "Saber mais",
           link: "https://madamepilar.pt/",
         },
@@ -244,7 +244,7 @@ export const data = [
         logo: mbrand5,
         thumb: pbrands5,
             button: {
-          show: true,
+          show: false,
           label: "Saber mais",
           link: "https://madamepilar.pt/",
         },
@@ -262,7 +262,7 @@ export const data = [
         logo: mbrand6,
         thumb: pbrands6,
             button: {
-          show: true,
+          show: false,
           label: "Saber mais",
           link: "https://madamepilar.pt/",
         },
@@ -614,36 +614,36 @@ export const data = [
        {
         id: 1,
         title: "Código de Ética e Conduta Grupo Patrícia Pilar",
-        link: "#",
+        link: "pdfs/codigoDeEtica.pdf",
       },
       {
         id: 2,
         title:
           "Código de Boa Conduta para a Prevenção e Combate ao Assédio no Trabalho",
-        link: "#",
+        link: "pdfs/codigoBoa.pdf",
       },
       {
         id: 3,
         title:
           "Código de Conduta para Prevenção da Corrupção e Infrações Conexas",
-        link: "#",
+        link: "pdfs/CódigoDeConduta.pdf",
       },
       {
         id: 4,
         title:
           "Plano de Prevenção de Riscos de Corrupção e Infrações Conexas (PPR)",
-        link: "#",
+          link: "pdfs/planDePrevencao.pdf",
       },
       {
         id: 5,
         title: "Regulamento de Comunicação de Infrações",
-        link: "#",
+        link: "pdfs/RegulamentoDe.pdf",
       },
       {
         id: 6,
         title:
           "Código de Conduta de Proteção de Dados - RGPD Grupo Patrícia Pilar",
-        link: "#",
+        link: "pdfs/codigoDeConducta.pdf",
       },
     ]
 

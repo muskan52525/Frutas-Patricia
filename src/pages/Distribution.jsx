@@ -62,7 +62,7 @@ export default function Distribution() {
               {stats.map((s, i) => (
                 <li
                   key={i}
-                  className="flex flex-col items-center justify-center pr-7"
+                  className="flex flex-col items-center justify-center sm:pr-7"
                 >
                   <span className="text-3xl sm:text-4xl lg:text-[60px] font-bold leading-none">
                     {s.value}
@@ -109,7 +109,7 @@ export default function Distribution() {
               <img
                 src={icon1}
                 alt=""
-                className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
+                className="h-30 w-30 mb-4 sm:mb-6 opacity-95"
                 loading="lazy"
               />
               </div>
@@ -133,7 +133,7 @@ export default function Distribution() {
               <img
                 src={icon3}
                 alt=""
-                className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
+                className="h-30 w-30 mb-4 sm:mb-6 opacity-95"
                 loading="lazy"
               />
              </div>
