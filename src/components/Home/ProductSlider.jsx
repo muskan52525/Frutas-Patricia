@@ -4,16 +4,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 
-import productslider1 from "../../assets/Home/productslider1.png";
-import productslider2 from "../../assets/Home/productslider2.png";
-import productslider3 from "../../assets/Home/productslider3.png";
-import productslider5 from "../../assets/Home/productslider5.png";
-import productslider6 from "../../assets/Home/productslider6.png";
-import productslider7 from "../../assets/Home/productslider7.png";
-import productslider8 from "../../assets/Home/productslider8.png";
-import productslider9 from "../../assets/Home/productslider9.png";
-import productslider10 from "../../assets/Home/productslider10.png";
-import productslider4 from "../../assets/Home/productslider4.jpg";
+import productslider1 from "../../assets/Home/ABÓBORA-BUTTERNUT.png";
+import productslider2 from "../../assets/Home/ABÓBORA-COMPRIDA.png";
+import productslider3 from "../../assets/Home/BATATA-DOCE.png";
+import productslider5 from "../../assets/Home/COURGETE.png";
+import productslider6 from "../../assets/Home/FEIJÃO-VERDE.png";
+import productslider7 from "../../assets/Home/MAÇÃ-FUJI.png";
+import productslider8 from "../../assets/Home/MAÇÃ-ROYAL-GALA.png";
+import productslider9 from "../../assets/Home/MAÇÃ-REINETA.png";
+import productslider10 from "../../assets/Home/PERA-ROCHA.png";
+import productslider4 from "../../assets/Home/ABÓBORA-MUSQUEE.png";
 
 
 const products = [

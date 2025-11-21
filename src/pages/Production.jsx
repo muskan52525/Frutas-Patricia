@@ -19,7 +19,7 @@ export default function Productions() {
           <div className="mx-auto max-w-full pl-0 sm:pl-6 lg:pl-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-60">
               {/* Left: Text content */}
-              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-start grid px-5 ml-0">
+              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-end grid px-5 ml-0">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <span className="text-[var(--color-prime)]">
                     O melhor da <br />
@@ -59,7 +59,7 @@ export default function Productions() {
           <div className="mx-auto max-w-full pl-0 sm:pl-6 lg:pl-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-50">
               {/* Left: Text content */}
-              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-start grid px-5">
+              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-end grid px-5">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <br />
                   <span className="text-[var(--color-whitecustom)]">
@@ -69,13 +69,13 @@ export default function Productions() {
                   </span>
                 </h2>
 
-                <p className="mt-6 text-[var(--color-whitecustom)] text-center sm:text-justify text-base sm:text-lg  leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p className="mt-6 text-[var(--color-whitecustom)] text-center sm:text-left text-base sm:text-lg  leading-relaxed max-w-lg mx-auto lg:mx-0">
                   Localizada entre as serras de Montejunto, Aires e Candeeiros,
                   a região do Oeste é privilegiada por um conjunto de
                   carcaterísticas que tornam o seu ecossistemas único em
                   Portugal.
                 </p>
-                <p className="mt-6 text-[var(--color-whitecustom)] text-center sm:text-justify text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p className="mt-6 text-[var(--color-whitecustom)] text-center sm:text-left text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
                   O equilíbrio entre a brisa marítima e a temperatura constante
                   ao longo do ano faz desta uma das melhores áreas da Europa
                   para a agricultura.

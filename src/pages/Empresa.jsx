@@ -46,7 +46,7 @@ export default function EmpresaThirtyYears() {
               <img
                 src={hero1}
                 alt="Fundadores"
-                className="[32vh] lg:h-[42.8vh] w-full object-cover"
+                className="[32vh] lg:h-[100%] w-full object-cover"
                 loading="lazy"
               />
             </figure>
@@ -55,7 +55,7 @@ export default function EmpresaThirtyYears() {
               <img
                 src={hero2}
                 alt="Sede"
-                className="h-auto sm:h-[23vh] lg:h-[33.8vh] w-full object-cover"
+                className="h-auto sm:h-[23vh] lg:h-[100%] w-full object-cover"
                 loading="lazy"
               />
             </figure>
@@ -64,7 +64,7 @@ export default function EmpresaThirtyYears() {
               <img
                 src={hero3}
                 alt="Estufas"
-                className="h-auto sm:h-[32vh] lg:h-[42.8vh]  w-full object-cover"
+                className="h-auto sm:h-[32vh] lg:h-[100%]  w-full object-cover"
                 loading="lazy"
               />
             </figure>
@@ -73,7 +73,7 @@ export default function EmpresaThirtyYears() {
               <img
                 src={hero4}
                 alt="Frota"
-                className="h-auto sm:h-[23vh] lg:h-[33.8vh] w-full object-cover"
+                className="h-auto sm:h-[23vh] lg:h-[100%] w-full object-cover"
                 loading="lazy"
               />
             </figure>
