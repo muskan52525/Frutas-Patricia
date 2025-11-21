@@ -96,7 +96,7 @@ import pbrands24 from "../assets/Brands/pbrands24.png";
 import pbrands25 from "../assets/Brands/pbrands25.png";
 import pbrands26 from "../assets/Brands/pbrands26.png";
 import pbrands27 from "../assets/Brands/pbrands27.png";
-import pdf1 from "../assets/pdf/Código de Boa Conduta para a Prevenção e Combate ao Assédio no Trabalho_Grupo Patrícia Pilar.pdf";
+import pdf1 from "../assets/pdf/codigo-boa-conduta-prevencao-assedio.pdf";
 
 export const data = [
   {
