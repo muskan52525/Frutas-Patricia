@@ -96,7 +96,6 @@ import pbrands24 from "../assets/Brands/pbrands24.png";
 import pbrands25 from "../assets/Brands/pbrands25.png";
 import pbrands26 from "../assets/Brands/pbrands26.png";
 import pbrands27 from "../assets/Brands/pbrands27.png";
-import pdf1 from "../assets/pdf/codigo-boa-conduta-prevencao-assedio.pdf";
 
 export const data = [
   {
@@ -615,37 +614,37 @@ export const data = [
        {
         id: 1,
         title: "Código de Ética e Conduta Grupo Patrícia Pilar",
-        link: "pdf/Código de Ética e Conduta_Grupo Patricia Pilar.pdf",
+        link: "pdf/Codigodeetica.pdf",
       },
       {
         id: 2,
         title:
           "Código de Boa Conduta para a Prevenção e Combate ao Assédio no Trabalho",
-        link: pdf1,
+        link: "pdf/Codigodeboa.pdf",
       },
       {
         id: 3,
         title:
           "Código de Conduta para Prevenção da Corrupção e Infrações Conexas",
-        link: "pdf/Código de Conduta para Prevenção da Corrupção e Infrações Conexas_Grupo Patrícia Pilar.pdf",
+        link: "pdf/CodigodeConduta.pdf",
       },
       {
         id: 4,
         title:
           "Plano de Prevenção de Riscos de Corrupção e Infrações Conexas (PPR)",
-          link: "pdf/Plano de Prevenção de Riscos de Corrupção e Infrações Conexas (PPR)_Grupo Patrícia Pilar.pdf",
+          link: "pdf/PlanodeRiscos.pdf",
       },
       {
         id: 5,
         title: "Regulamento de Comunicação de Infrações",
-        link: "pdf/Regulamento de Comunicação de Infrações_Grupo Patrícia Pilar.pdf",
+        link: "pdf/Regulamento.pdf",
         
       },
       {
         id: 6,
         title:
           "Código de Conduta de Proteção de Dados - RGPD Grupo Patrícia Pilar",
-        link: "pdf/Código de Conduta de Proteção de Dados - RGPD_Grupo Patrícia Pilar.pdf",
+        link: "pdf/CodigoRGPD.pdf",
       },
     ]
 
