@@ -620,7 +620,7 @@ export const data = [
         id: 2,
         title:
           "Código de Boa Conduta para a Prevenção e Combate ao Assédio no Trabalho",
-        link: "pdf/Codigodeboa.pdf",
+        link: "https://trueflava.site/benial/CodigodeBoa.pdf",
       },
       {
         id: 3,
