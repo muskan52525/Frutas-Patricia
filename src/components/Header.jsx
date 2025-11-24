@@ -48,9 +48,9 @@ export default function Header() {
               </a>
             </span>
             </div>
-             <p className="hover:opacity-80 block cursor-pointer">
+             <a href="/job" className="hover:opacity-80 block cursor-pointer">
               Recrutamento
-            </p>
+            </a>
            
           </div>
           <div className="hidden sm:flex items-center gap-4 text-right">
