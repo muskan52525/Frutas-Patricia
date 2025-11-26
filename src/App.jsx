@@ -1,9 +1,9 @@
 import Header from "../src/components/Header.jsx";
 import Footer from "../src/components/Footer.jsx";
-import Production from "./pages/Production.jsx";
-import Distribution from "./pages/Distribution.jsx";
+import Production from "./pages/producao.jsx";
+import Distribution from "./pages/distribuicao.jsx";
 import Auction from "./pages/Auction.jsx";
-import Brands from "./pages/Brands.jsx";
+import Brands from "./pages/marcas.jsx";
 import Job from "./pages/Job.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import Ethics from "./pages/Ethics.jsx";
@@ -34,9 +34,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/empresa" element={<Empresa />} />
         <Route path="/produtos" element={<Produtos />} />
-        <Route path="/production" element={<Production />} />
-        <Route path="/brands" element={<Brands />} />
-        <Route path="/distribution" element={<Distribution />} />
+        <Route path="/producao" element={<Production />} />
+        <Route path="/marcas" element={<Brands />} />
+        <Route path="/distribuicao" element={<Distribution />} />
         <Route path="/auction" element={<Auction />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

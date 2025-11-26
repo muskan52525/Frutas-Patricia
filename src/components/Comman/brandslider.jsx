@@ -121,7 +121,7 @@ export default function BrandMarqueeSlick({
               <img
                 src={logo.src}
                 alt={logo.alt || "brand"}
-                className="h-30 sm:h-30 w-full py-0 object-contain mx-auto select-none"
+                className="h-full sm:h-30 w-full py-0 object-contain mx-auto select-none"
                 draggable="false"
                 loading="lazy"
               />

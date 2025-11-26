@@ -90,12 +90,12 @@ const products = [
       "É feito num local seco, arejado, com temperatura entre 10º a 14ºC e humidade ...",
     image: productslider4,
   },
-  {
-    id: 12,
-    title: "Abóbora Comprida",
-    blurb: "Armazenamento em atmosfera controlada ou em frio normal.",
-    image: productslider10,
-  },
+  // {
+  //   id: 12,
+  //   title: "Abóbora Comprida",
+  //   blurb: "Armazenamento em atmosfera controlada ou em frio normal.",
+  //   image: productslider10,
+  // },
 ]; 
 
 
@@ -120,28 +120,33 @@ export default function OutrosProdutosSlider() {
     navigate("/produtos");
   };
 
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 450,
-    slidesToShow,
-    slidesToScroll: 2,
-    dotsClass: "slick-dots custom-dots",
-    customPaging: () => <button className="dot" />,
-    appendDots: (dots) => (
-      <div className="mt-8">
-        <ul className="custom-dots-row">{dots}</ul>
-      </div>
-    ),
-  };
+ const settings = {
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 450,
+  slidesToShow: slidesToShow,
+  slidesToScroll: slidesToShow,
+  autoplay: true,
+  autoplaySpeed: 10000,
+  mobileFirst: false,   // <-- THIS FIXES THE MOBILE BREAKPOINT
+
+  dotsClass: "slick-dots custom-dots",
+  customPaging: () => <button className="dot" />,
+  appendDots: (dots) => (
+    <div className="mt-8">
+      <ul className="custom-dots-row">{dots}</ul>
+    </div>
+  ),
+};
+
 
 
   return (
     <section className="w-full bg-[var(--color-graycustom)] py-12 sm:py-16 lg:py-25">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-between">
-          <h2 className="text-2xl sm:text-3xl lg:text-[60px] font-bold text-[var(--color-dark)]">
+          <h2 className="text-3xl sm:text-3xl lg:text-[48px] font-bold text-[var(--color-dark)]">
             Outros produtos
           </h2>
           <button
@@ -159,7 +164,7 @@ export default function OutrosProdutosSlider() {
           {products.map((p) => (
             <div key={p.id} className="px-3 py-5">
               {/* lg:grid-cols-2 -> lg:grid-cols-[55%_45%] */}
-              <article className="grid lg:grid-cols-2 items-center justify-between gap-3 rounded-2xl bg-[var(--color-whitecustom)] px-7 py-12">
+              <article className="grid lg:grid-cols-2 items-center justify-between gap-3 rounded-2xl bg-[var(--color-whitecustom)] px-7 py-12 h-[275px]">
                 <div className="max-w-full sm:max-w-xl lg:max-w-lg order-2 lg:order-1">
                   <h3 className="text-lg sm:text-3xl font-extrabold text-[#111827] text-center sm:text-start">
                     {p.title}

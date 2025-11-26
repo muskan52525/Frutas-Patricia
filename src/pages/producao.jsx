@@ -87,7 +87,7 @@ export default function Productions() {
                   <img
                     src={map}
                     alt="Produção própria zona oeste"
-                    className="w-[82%] h-auto sm:h-auto md:h-auto lg:h-[82vh] object-contain justify-end flex"
+                    className="w-[75%] h-auto sm:h-auto md:h-auto lg:h-[82vh] object-contain justify-end flex"
                   />
                 </div>
               </div>

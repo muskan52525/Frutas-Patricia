@@ -21,12 +21,12 @@ export default function EmpresaThirtyYears() {
       <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 sm:pb-0 pt-[30px] lg:pt-[100px] md:pt-50 bg-[url('../src/assets/Home/bg.jpg')] pb-[30px]">
         <div className="relative mx-auto max-w-7xl">
           {/* Top row: title (left) + paragraph (right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-15 pb-10 mt-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-15 pb-5 mt-6">
             <div className="lg:col-span-1 text-[var(--color-whitecustom)] text-center lg:text-left md:text-center max-w-2xl">
-              <p className="text-2xl sm:text-3xl lg:text-[60px] font-bold italic">
+              <p className="text-2xl sm:text-3xl lg:text-[48px] font-bold italic">
                 +30 anos
               </p>
-              <h2 className="mt-1 text-3xl sm:text-4xl lg:text-[60px] font-extrabold leading-tight">
+              <h2 className="mt-1 text-3xl sm:text-4xl lg:text-[48px] font-extrabold leading-tight">
                 Frutas Patrícia Pilar
               </h2>
             </div>

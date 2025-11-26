@@ -382,10 +382,9 @@ export const data = [
         name: "VINTAGE FRUIT",
         short: "Importação e exportação de frutas exóticas de qualidade.",
         mheading:
-          "Especializada na comercialização por grosso de frutas frescas, com um foco na importação de produtos tropicais de alta qualidade.",
+          "A Vintage Fruit dedica-se ao fornecimento e distribuição de variedades exóticas, como manga, papaia, abacate e maracujá, com especial destaque para as importações da América do Sul. ",
         story: [
-          "A Vintage Fruit dedica-se ao fornecimento e distribuição de variedades exóticas, como manga, papaia, abacate e maracujá, com especial destaque para as importações da América do Sul.",
-          "Localizada numa região estratégica, a empresa assegura uma cadeia de abastecimento ágil e controlada, garantindo frescura, qualidade e disponibilidade contínua ao longo do ano.",
+          "Localizada numa região estratégica, a empresa assegura uma cadeia de abastecimento ágil e controlada, garantindo frescura, qualidade e disponibilidade contínua ao longo do ano. ",
         ],
         logo: mbrand13,
         thumb: pbrands14,
@@ -427,11 +426,11 @@ export const data = [
         name: "HORTORIBA",
         short:
           "Dedicada à produção e comercialização de fruta e produtos hortícolas.",
-        story:
+        mheading:
           "A HortoRiba estabelece padrões rigorosos em todas as etapas de produção, garantindo a satisfação dos seus clientes e a excelência dos seus produtos.",
-        mheading: [
+        story: [
           "Empresa especializada no comércio por grosso de fruta e produtos hortofrutícolas, que oferece uma solução integrada, incluindo processamento, embalamento, conservação e distribuição.",
-          "Com um forte compromisso com a eficiência operacional e a segurança alimentar, oferece produtos frescos, de origem controlada e de elevada qualidade",
+          "Com um forte compromisso com a eficiência operacional e a segurança alimentar, oferece produtos frescos, de origem controlada e de elevada qualidade.",
         ],
         logo: mbrand16,
         thumb: pbrands16,

@@ -41,7 +41,7 @@ export default function Home({
         <div className="max-w-7xl w-full justify-center text-[var(--color-whitecustom)] item-center text-center md:text-left pt-8 gap-10">
           {/* Title */}
           <div className="content grid grid-cols-1 lg:grid-cols-2 justify-between pt-8 gap-5 md:gap-20 ">
-            <h1 className="text-3xl md:text-6xl max-w-lg font-bold mb-4 justify-end "> 
+            <h1 className="text-3xl md:text-5xl max-w-lg font-bold mb-4 justify-end "> 
               Produtos hortofrutícolas <br /> de qualidade
             </h1>
 
@@ -190,7 +190,7 @@ export default function Home({
       {/* product */}
       <div className="product py-5 md:py-25">
         <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20">
-          <div className="mx-auto max-w-full px-4 sm:pl-6 lg:pl-8">
+          <div className="mx-auto max-w-full px-4 lg:px-0 sm:pl-6 lg:pl-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-60">
               {/* Left: Text content */}
               <div className="text-center lg:text-left justify-end grid">

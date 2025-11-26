@@ -58,13 +58,13 @@ export default function InfraestruturasSlider() {
   }, []);
 
   useEffect(() => {
-    if (isMobile) {
+    // if (isMobile) {
       const interval = setInterval(() => {
         sliderRef.current?.slickNext();
-      }, 3000);
+      }, 10000);
       return () => clearInterval(interval);
-    }
-  }, [isMobile]);
+    // }
+  }, []);
 
   const settings = {
     dots: false,
@@ -73,7 +73,7 @@ export default function InfraestruturasSlider() {
     infinite: true,
     fade: true,
     speed: 600,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,

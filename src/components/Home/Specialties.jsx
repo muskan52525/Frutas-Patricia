@@ -49,10 +49,10 @@ export default function Specialties() {
         </div>
 
         {/* Title */}
-        <h2 className="text-3xl md:text-6xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
           As nossas especialidades
         </h2>
-        <p className="text-center text-lg md:text-xl text-[var(--color-gray2)] max-w-4xl mx-auto mb-12">
+        <p className="text-center text-lg md:text-lg text-[var(--color-gray2)] max-w-4xl mx-auto mb-12">
           Produtos de grande qualidade disponíveis todo o ano e distribuídos
           nacional e internacionalmente.
         </p>
@@ -71,8 +71,8 @@ export default function Specialties() {
               />
               <div className="card-content">
                 <h3 className="font-bold text-2xl mb-2">{item.name}</h3>
-                <p className="text-lg text-[var(--color-gray2)] pb-5">{item.description1}</p>
-                <p className="text-lg text-[var(--color-gray2)]">{item.description2}</p>
+                <p className="text-base text-[var(--color-gray2)] pb-5">{item.description1}</p>
+                <p className="text-base text-[var(--color-gray2)]">{item.description2}</p>
               </div>
             </div>
           ))}

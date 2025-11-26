@@ -13,9 +13,9 @@ import cross from "../assets/Home/cross.svg";
 const navItems = [
   { label: "Empresa", href: "/empresa" },
   { label: "Produtos", href: "/produtos" },
-  { label: "Produção", href: "/production" },
-  { label: "Marcas", href: "/brands" },
-  { label: "Distribuição", href: "/distribution" },
+  { label: "Produção", href: "/producao" },
+  { label: "Marcas", href: "/marcas" },
+  { label: "Distribuição", href: "/distribuicao" },
   { label: "Leilão", href: "https://leilao.patriciapilar.pt/login.php" },
   { label: "Contactos", href: "/contact" },
 ];

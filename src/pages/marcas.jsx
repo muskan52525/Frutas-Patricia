@@ -62,10 +62,10 @@ export default function ProductsPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* ====== MARCAS DO GRUPO ====== */}
         <header className="text-center max-w-3xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl lg:text-[60px] font-extrabold text-slate-900">
+          <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-extrabold text-slate-900">
             Marcas do Grupo
           </h1>
-          <p className="my-8 text-[14px] md:text-[22px] text-[var(--color-dark)]">
+          <p className="my-8 text-[14px] md:text-[18px] text-[var(--color-dark)]">
             O Grupo Patrícia Pilar reúne marcas complementares que, em conjunto,
             asseguram uma resposta abrangente às exigências do mercado,
             reforçando a posição do grupo como referência no setor.
@@ -79,7 +79,7 @@ export default function ProductsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-extrabold text-slate-900">
             Empresas do grupo
           </h2>
-          <p className="my-8 text-[14px] md:text-[22px] text-[var(--color-dark)]">
+          <p className="my-8 text-[14px] md:text-[18px] text-[var(--color-dark)]">
             Com uma estratégia focada na expansão e na colaboração, o Grupo
             Patrícia Pilar tem consolidado a sua presença no setor, assegurando
             competitividade e capacidade de resposta às necessidades do mercado.

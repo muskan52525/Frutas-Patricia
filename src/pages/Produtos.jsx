@@ -5,18 +5,18 @@ import { data as allData } from "../data/form.js";
 
 /* ---------- small UI blocks ---------- */
 const ProductCard = ({ name, img, showInfo = true }) => (
-  <article className="group rounded-2xl bg-white p-8 sm:p-5 lg:p-8 shadow-[0_4px_23.5px_0px_rgba(0,0,0,0.26)] ring-1 ring-slate-900/5">
+  <article className="group rounded-2xl bg-white p-8 sm:p-5 lg:p-5 shadow-[0_4px_23.5px_0px_rgba(0,0,0,0.26)] ring-1 ring-slate-900/5">
     <div className="products">
       <div className="h-20 sm:h-24 lg:h-28 flex items-center justify-center">
         <img
           src={img}
           alt={name}
-          className="h-30 lg:h-40 w-auto object-contain group-hover:scale-[1.02] transition"
+          className="h-30 lg:h-40 w-auto mt-4 object-cover group-hover:scale-[1.02] transition"
           loading="lazy"
         />
       </div>
 
-      <h3 className="mt-4 text-center text-[18px] sm:text-[20px] lg:text-[24px] font-normal text-slate-900 min-h-[1.9rem]">
+      <h3 className="mt-6 text-center text-[18px] sm:text-[20px] lg:text-[24px] font-normal text-slate-900 min-h-[1.9rem]">
         {name}
       </h3>
 
@@ -49,10 +49,10 @@ export default function Produtos() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
         {/* Section 1 (static text) */}
         <header className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-[60px] font-bold text-slate-900">
+          <h2 className="text-3xl sm:text-3xl lg:text-[48px] font-bold text-slate-900">
             As nossas especialidades
           </h2>
-          <p className="mt-3 text-xs sm:text-sm lg:text-xl pb-8 text-slate-700">
+          <p className="mt-3 text-xs sm:text-sm lg:text-lg pb-8 text-slate-700">
             Oferecemos uma gama diversificada de produtos de alta qualidade,
             disponíveis durante todo o ano e com distribuição garantida nos
             mercados nacional e internacional.
@@ -64,7 +64,7 @@ export default function Produtos() {
 
         {/* Section 2 (static title; no "Mais info") */}
         <header className="text-center max-w-3xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-[60px] py-8 font-bold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl lg:text-[48px] py-8 pt-30 font-bold text-slate-900">
             Produtos embalados
           </h2>
         </header>

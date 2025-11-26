@@ -10,8 +10,8 @@
   const leftPages = [
     { label: "Empresa", href: "/empresa" },
     { label: "Produtos", href: "/produtos" },
-    { label: "Produção", href: "/production" },
-    { label: "Distribuição", href: "/distribution" },
+    { label: "Produção", href: "/producao" },
+    { label: "Distribuição", href: "/distribuicao" },
     { label: "Contactos", href: "/contact" },
   ];
 
@@ -196,7 +196,7 @@
         </div>
 
         {/* bottom bar */}
-        <div className="bg-[var(--color-graycustom)]">
+        <div className="hidden lg:block bg-[var(--color-graycustom)]">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-4 text-sm font-medium text-[#92A7B0] md:flex-row">
             <p>©2025 DEVTECH.</p>
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 justify-center">
@@ -216,6 +216,28 @@
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="lg:hidden bg-[var(--color-graycustom)]">
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-4 text-sm font-medium text-[#92A7B0] md:flex-row">
+            <ul className="flex text-center items-center gap-x-6 gap-y-2 justify-center">
+              <li>
+                <a className="hover:text-[#009B3E]" href="/code-of-ethics">
+                  Códigos de Conduta
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-[#009B3E]" href="support">
+                  Apoios
+                </a>
+              </li>
+              <li>
+                <a className="hover:text-[#009B3E]" href="privacy-policy">
+                  Política de privacidade
+                </a>
+              </li>
+            </ul>
+            <p>©2025 DEVTECH.</p>
           </div>
         </div>
       </footer>

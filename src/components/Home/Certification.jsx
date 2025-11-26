@@ -15,7 +15,7 @@ export default function CertificationHero({
   const navigate = useNavigate();
 
   const onCtaClick = () => {
-    navigate("/production#certifications");
+    navigate("/producao#certifications");
 
     setTimeout(() => {
       const section = document.getElementById("certifications");
