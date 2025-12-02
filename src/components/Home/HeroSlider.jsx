@@ -1,16 +1,23 @@
 "use client";
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import banner1 from "../../assets/Home/Banner1.png";
-import banner2 from "../../assets/Home/Banner2.png";
-import banner3 from "../../assets/Home/Banner3.png";
-import banner4 from "../../assets/Home/Banner4.png";
-import banner5 from "../../assets/Home/Banner5.png";
+import banner1 from "../../assets/Home/Banner1_LAPTOP.png";
+import banner2 from "../../assets/Home/Banner2_LAPTOP.png";
+import banner3 from "../../assets/Home/Banner3_LAPTOP.png";
+import banner4 from "../../assets/Home/Banner4_LAPTOP.png";
+import banner5 from "../../assets/Home/Banner5_LAPTOP.png";
+import banner1mobile from "../../assets/Home/Banner1_MOBILE.png";
+import banner2mobile from "../../assets/Home/Banner2_MOBILE.png";
+import banner3mobile from "../../assets/Home/Banner3_MOBILE.png";
+import banner4mobile from "../../assets/Home/Banner4_MOBILE.png";
+import banner5mobile from "../../assets/Home/Banner5_MOBILE.png";
 
 export default function HeroSlider() {
   const sliderRef = useRef(null);
 
   const slides = [banner1, banner2, banner3, banner4, banner5];
+
+  const slidesmobile = [banner1mobile, banner2mobile, banner3mobile, banner4mobile, banner5mobile];
 
   const settings = {
     dots: false,
@@ -31,7 +38,19 @@ export default function HeroSlider() {
         {slides.map((image, idx) => (
           <div key={idx}>
             <div
-              className="w-full h-[400px] sm:h-[500px] lg:h-[98vh] bg-cover bg-center bg-no-repeat"
+              className="hidden lg:block md:block w-full h-[400px] sm:h-[500px] lg:h-[98vh] bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${image})` }}
+            />
+          </div>
+        ))}
+      </Slider>
+
+      {/* Mobile Slider */}
+      <Slider ref={sliderRef} {...settings}>
+        {slidesmobile.map((image, idx) => (
+          <div key={idx}>
+            <div
+              className="lg:hidden md:hidden w-full h-[400px] sm:h-[500px] lg:h-[98vh] bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${image})` }}
             />
           </div>

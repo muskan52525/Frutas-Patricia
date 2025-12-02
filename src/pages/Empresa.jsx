@@ -12,6 +12,10 @@ import hero1 from "../assets/Empresa/hero1.png";
 import hero2 from "../assets/Empresa/hero2.png";
 import hero3 from "../assets/Empresa/hero3.png";
 import hero4 from "../assets/Empresa/hero4.png";
+import hero1mobile from "../assets/Empresa/image1.png";
+import hero2mobile from "../assets/Empresa/image2.png";
+import hero3mobile from "../assets/Empresa/image3.png";
+import hero4mobile from "../assets/Empresa/image4.png";
 
 export default function EmpresaThirtyYears() {
   return (
@@ -41,7 +45,7 @@ export default function EmpresaThirtyYears() {
           </div>
 
           {/* Images row: 4 cards, responsive */}
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="hidden lg:flex md:flex mt-10 grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
             <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-[23px]">
               <img
                 src={hero1}
@@ -72,6 +76,43 @@ export default function EmpresaThirtyYears() {
             <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 md:mt-[100px] sm:mt-21.5">
               <img
                 src={hero4}
+                alt="Frota"
+                className="h-auto sm:h-[23vh] lg:h-[100%] w-full object-cover"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+          <div className="lg:hidden md:hidden mt-10 grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-[23px]">
+              <img
+                src={hero1mobile}
+                alt="Fundadores"
+                className="[32vh] lg:h-[100%] w-full object-cover"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 md:mt-[100px]">
+              <img
+                src={hero2mobile}
+                alt="Sede"
+                className="h-auto sm:h-[23vh] lg:h-[100%] w-full object-cover"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-[23px]">
+              <img
+                src={hero3mobile}
+                alt="Estufas"
+                className="h-auto sm:h-[32vh] lg:h-[100%]  w-full object-cover"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 md:mt-[100px] sm:mt-21.5">
+              <img
+                src={hero4mobile}
                 alt="Frota"
                 className="h-auto sm:h-[23vh] lg:h-[100%] w-full object-cover"
                 loading="lazy"
