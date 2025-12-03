@@ -12,10 +12,10 @@ import hero1 from "../assets/Empresa/hero1.png";
 import hero2 from "../assets/Empresa/hero2.png";
 import hero3 from "../assets/Empresa/hero3.png";
 import hero4 from "../assets/Empresa/hero4.png";
-import hero1mobile from "../assets/Empresa/image1.png";
-import hero2mobile from "../assets/Empresa/image2.png";
-import hero3mobile from "../assets/Empresa/image3.png";
-import hero4mobile from "../assets/Empresa/image4.png";
+import hero1mobile from "../assets/Empresa/Image1.png";
+import hero2mobile from "../assets/Empresa/Image2.png";
+import hero3mobile from "../assets/Empresa/Image3.png";
+import hero4mobile from "../assets/Empresa/Image4.png";
 
 export default function EmpresaThirtyYears() {
   return (
