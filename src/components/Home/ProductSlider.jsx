@@ -128,7 +128,7 @@ export default function OutrosProdutosSlider() {
   slidesToShow: slidesToShow,
   slidesToScroll: slidesToShow,
   autoplay: true,
-  autoplaySpeed: 10000,
+  autoplaySpeed: 5000,
   mobileFirst: false,   // <-- THIS FIXES THE MOBILE BREAKPOINT
 
   dotsClass: "slick-dots custom-dots",
@@ -164,7 +164,7 @@ export default function OutrosProdutosSlider() {
           {products.map((p) => (
             <div key={p.id} className="px-3 py-5">
               {/* lg:grid-cols-2 -> lg:grid-cols-[55%_45%] */}
-              <article className="grid lg:grid-cols-2 items-center justify-between gap-3 rounded-2xl bg-[var(--color-whitecustom)] px-7 py-12 h-[275px]">
+              <article className="grid lg:grid-cols-2 items-center justify-between gap-3 rounded-2xl bg-[var(--color-whitecustom)] px-5 py-5 md:h-[275px] h-[375px]">
                 <div className="max-w-full sm:max-w-xl lg:max-w-lg order-2 lg:order-1">
                   <h3 className="text-lg sm:text-3xl font-extrabold text-[#111827] text-center sm:text-start">
                     {p.title}
