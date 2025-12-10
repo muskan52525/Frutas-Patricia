@@ -128,7 +128,7 @@ export default function OutrosProdutosSlider() {
   slidesToShow: slidesToShow,
   slidesToScroll: slidesToShow,
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   mobileFirst: false,   // <-- THIS FIXES THE MOBILE BREAKPOINT
 
   dotsClass: "slick-dots custom-dots",
