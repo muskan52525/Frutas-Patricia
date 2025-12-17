@@ -16,8 +16,10 @@ import hero1mobile from "../assets/Empresa/Image1.png";
 import hero2mobile from "../assets/Empresa/Image2.png";
 import hero3mobile from "../assets/Empresa/Image3.png";
 import hero4mobile from "../assets/Empresa/Image4.png";
+import { useTranslation } from "react-i18next";
 
 export default function EmpresaThirtyYears() {
+  const { t } = useTranslation();
   return (
     <div className="max-w-auto mx-auto">
       {/* hero section empresa */}
@@ -28,18 +30,16 @@ export default function EmpresaThirtyYears() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-15 pb-5 mt-6">
             <div className="lg:col-span-1 text-[var(--color-whitecustom)] text-center lg:text-left md:text-center max-w-2xl">
               <p className="text-2xl sm:text-3xl lg:text-[48px] font-bold italic">
-                +30 anos
+                +30 {t("empresa.anos")}
               </p>
               <h2 className="mt-1 text-3xl sm:text-4xl lg:text-[48px] font-extrabold leading-tight">
-                Frutas Patrícia Pilar
+                {t("empresa.bannertitle")}
               </h2>
             </div>
 
             <div className="lg:col-span-1 text-[var(--color-whitecustom)] text-justify flex justify-end max-w-xl">
               <p className="text-base sm:text-lg leading-relaxed max-w-sm mx-auto lg:mx-0">
-                A Frutas Patrícia Pilar é uma empresa familiar pertencente à 2ª
-                geração de empresários agrícolas, geração essa que iniciou esta
-                atividade na Lourinhã há mais de 30 anos.
+                {t("empresa.bannertext")}
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function EmpresaThirtyYears() {
             </figure>
           </div>
           <div className="lg:hidden md:hidden mt-10 grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-[23px]">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl bg-white/5">
               <img
                 src={hero1mobile}
                 alt="Fundadores"
@@ -92,7 +92,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 md:mt-[100px]">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl bg-white/5 mt-0 sm:mt-21.5 md:mt-[100px]">
               <img
                 src={hero2mobile}
                 alt="Sede"
@@ -101,7 +101,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-[23px]">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl bg-white/5">
               <img
                 src={hero3mobile}
                 alt="Estufas"
@@ -110,7 +110,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 md:mt-[100px] sm:mt-21.5">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl bg-white/5 mt-0 md:mt-[100px] sm:mt-21.5">
               <img
                 src={hero4mobile}
                 alt="Frota"
@@ -134,17 +134,10 @@ export default function EmpresaThirtyYears() {
             {/* Heading + copy */}
             <div className="text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-dark)]">
-                Produção Própria
+                {t("empresa.propriatitle")}
               </h2>
               <p className="mt-5 max-w-4xl mx-auto text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed">
-                O tomate é o nosso principal produto, representando cerca de 70%
-                da nossa atividade e sendo o artigo com maior crescimento. Em
-                colaboração com os nossos produtores, somos o maior produtor
-                nacional de tomate para consumo em fresco, atendendo a todos os
-                canais de distribuição. Além disso, a nossa oferta abrange
-                também uma variedade de produtos hortícolas, como batata-doce,
-                cenoura, abóbora, feijão verde, maçãs Fuji, Royal Gala e
-                Reineta, além da prestigiada Pera Rocha.
+                {t("empresa.propriatext")}
               </p>
             </div>
 
@@ -182,15 +175,14 @@ export default function EmpresaThirtyYears() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-15 mb-10 sm:mb-15 items-center">
               <div className="lg:col-span-6">
                 <h2 className="text-3xl text-center sm:text-start sm:text-4xl lg:text-5xl font-bold text-[var(--color-dark)] leading-tight">
-                  <span className="block">Linhas</span>
-                  <span className="block">Estratégicas</span>
+                  <span className="block">{t("empresa.linhatitlep1")}</span>
+                  <span className="block">{t("empresa.linhatitlep2")}</span>
                 </h2>
               </div>
 
               <div className="lg:col-span-6 flex justify-end">
                 <p className="text-center sm:text-start text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-sm">
-                  Conheça as nossas vertentes de atuação e o nosso compromisso
-                  com a excelência.
+                 {t("empresa.linhastext")}
                 </p>
               </div>
             </div>
@@ -205,23 +197,19 @@ export default function EmpresaThirtyYears() {
                   className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                   loading="lazy"
                 />
-                <h3 className="text-2xl sm:text-2xl font-bold">Produção</h3>
+                <h3 className="text-2xl sm:text-2xl font-bold">{t("empresa.card1title")}</h3>
                 <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] text-center sm:text-start">
                   <p>
-                    Na Frutas Patrícia Pilar, a qualidade começa com a nossa
-                    terra.
+                    {t("empresa.card1para1")}
                   </p>
                   <p>
-                    Com mais de 30 anos de experiência, cultivamos frutas e
-                    legumes frescos com todo o cuidado e respeito pela natureza.
+                    {t("empresa.card1para2")}
                   </p>
                   <p>
-                    Os nossos processos produtivos são rigorosos, garantindo
-                    alimentos saudáveis, saborosos e livres de agrotóxicos.
+                    {t("empresa.card1para3")}
                   </p>
                   <p>
-                    Trabalhamos com tecnologias de ponta e práticas sustentáveis
-                    para levar o melhor da nossa colheita.
+                    {t("empresa.card1para4")}
                   </p>
                 </div>
               </article>
@@ -235,21 +223,17 @@ export default function EmpresaThirtyYears() {
                   loading="lazy"
                 />
                 <h3 className="text-2xl sm:text-2xl font-bold">
-                  Comercialização
+                  {t("empresa.card2title")}
                 </h3>
                 <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] text-center sm:text-start">
                   <p>
-                    O nosso compromisso vai muito além da entrega: procuramos
-                    sempre criar parcerias duradouras com os nossos clientes.
+                    {t("empresa.card2para1")}
                   </p>
                   <p>
-                    A Frutas Patrícia Pilar é uma referência na comercialização
-                    de frutas e legumes de alta qualidade, oferecendo soluções
-                    personalizadas e atendimento especializado.
+                    {t("empresa.card2para2")}
                   </p>
                   <p>
-                    Há mais de 30 anos, somos sinónimo de confiança, qualidade e
-                    excelência no mercado hortofrutícola.
+                    {t("empresa.card2para3")}
                   </p>
                 </div>
               </article>
@@ -262,18 +246,14 @@ export default function EmpresaThirtyYears() {
                   className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                   loading="lazy"
                 />
-                <h3 className="text-2xl sm:text-2xl font-bold">Distribuição</h3>
+                <h3 className="text-2xl sm:text-2xl font-bold">{t("empresa.card3title")}</h3>
                 <div className="mt-4 space-y-3 text-sm sm:text-base leading-relaxed text-[var(--color-whitecustom)] text-center sm:text-start">
-                  <p>A excelência dos nossos produtos vai além da produção.</p>
+                  <p>{t("empresa.card3para1")}</p>
                   <p>
-                    Com uma logística eficiente e ágil, asseguramos que os
-                    nossos produtos chegam frescos e no ponto certo aos nossos
-                    clientes.
+                    {t("empresa.card3para2")}
                   </p>
                   <p>
-                    Com décadas de experiência no mercado, compreendemos a
-                    importância de pontualidade e qualidade na entrega,
-                    conquistando a confiança dos nossos clientes.
+                    {t("empresa.card3para3")}
                   </p>
                 </div>
               </article>
@@ -301,25 +281,15 @@ export default function EmpresaThirtyYears() {
               {/* Left: Text content */}
               <div className="text-center lg:text-left">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
-                  <span className="text-[var(--color-prime)]">Leilão:</span>
+                  <span className="text-[var(--color-prime)]">{t("empresa.lileotitle1")}</span>
                   <br />
                   <span className="text-[var(--color-dark)]">
-                    a ligação direta
+                    {t("empresa.lileotitle2")}
                   </span>
                 </h2>
 
                 <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  O nosso leilão estabelece uma ligação direta entre produção e
-                  comércio tradicional, com parcerias baseadas na qualidade,
-                  segurança alimentar e alinhamento com a nossa gama de
-                  produtos. Garantimos estabilidade na oferta e soluções
-                  eficazes para o escoamento, assegurando o fornecimento
-                  contínuo dos produtos mais procurados e complementando a
-                  produção com capacidade comercial instalada. Os nossos canais
-                  de distribuição permitem escoar a capacidade produtiva com
-                  condições justas e competitivas, para que os produtores se
-                  concentrem na excelência da produção enquanto nós tratamos da
-                  comercialização com eficácia.
+                 {t("empresa.lileotext")}
                 </p>
               </div>
             </div>

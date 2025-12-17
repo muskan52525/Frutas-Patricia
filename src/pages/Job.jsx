@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-
+import { useTranslation } from "react-i18next";
 
 const UserIcon = (props) => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" {...props}>
@@ -160,6 +160,7 @@ export default function JobPage() {
       setSending(false);
     }
   }
+  const { t } = useTranslation();
 
   return (
     <main className="bg-[var(--color-whitecustom)] py-12 sm:py-16 lg:py-30">
@@ -167,11 +168,11 @@ export default function JobPage() {
         {/* Heading */}
         <header className="text-center max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-slate-900">
-            Preencha o formulário
+            {t("recruitment.pagetitle")}
           </h1>
           <p className="mt-5 text-slate-700 text-base sm:text-lg">
-            Contacte-nos se tiver qualquer dúvida sobre a nossa empresa. <br />
-            Iremos responder-lhe o mais brevemente possível.
+            {t("recruitment.text1")} <br />
+            {t("recruitment.text2")}
           </p>
         </header>
 
@@ -184,7 +185,7 @@ export default function JobPage() {
           <Field
             id="name"
             icon={<UserIcon />}
-            placeholder="Nome"
+            placeholder={t("contactos.name")}
             value={name}
             onChange={setName}
             error={touched ? errors.name : ""}
@@ -193,7 +194,7 @@ export default function JobPage() {
             id="email"
             type="email"
             icon={<MailIcon />}
-            placeholder="Email"
+            placeholder={t("contactos.email")}
             value={mail}
             onChange={setMail}
             error={touched ? errors.mail : ""}
@@ -201,7 +202,7 @@ export default function JobPage() {
           <Field
             id="phone"
             icon={<PhoneIcon />}
-            placeholder="Contacto"
+            placeholder={t("contactos.contact")}
             value={phone}
             onChange={setPhone}
             error={touched ? errors.phone : ""}
@@ -248,14 +249,14 @@ export default function JobPage() {
                 className="h-5 w-5 rounded border-slate-300 text-[var(--color-prime)] focus:ring-emerald-500"
               />
               <span className="text-slate-700">
-                Aceitar{" "}
+                {t("contactos.accept")}{" "}
                 <a
                   className="text-[var(--color-prime)] font-semibold hover:underline"
                   href="/privacy-policy"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Política de Privacidade
+                  {t("contactos.privacypolicy")}
                 </a>
               </span>
             </label>
@@ -289,7 +290,7 @@ export default function JobPage() {
         {/* success notice */}
         {sent && (
           <div className="mt-6 rounded-lg bg-emerald-50 px-4 py-3 text-emerald-800">
-            Obrigado! Recebemos a sua candidatura.
+            {t("recruitment.sucessmsg")}
           </div>
         )}
       </div>

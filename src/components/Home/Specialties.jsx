@@ -3,58 +3,54 @@ import tomate from "../../assets/Home/tomate.png";
 import capisum from "../../assets/Home/capsicum.png";
 import courgate from "../../assets/Home/courgate.png";
 import apple from "../../assets/Home/apple.png";
-
+import { useTranslation } from "react-i18next";
 
 
 const products = [
   {
-    name: "Tomate Salada",
-    description1:
-      "Caracteriza-se pela casca fina e polpa firme.",
-    description2: "Tem sabor suave e é conhecido pela sua excelente frescura e facilidade de consumo.",
+    name: "item1name",
+    description1: "item1description1",
+    description2: "item1description2",
     image: tomate,
   },
   {
-    name: "Pimento",
-    description1:
-      "Caracteriza-se pela casca fina e textura firme.",
-    description2: "Tem sabor suave e é conhecido pela sua excelente frescura e facilidade de consumo.",
+    name: "item2name",
+    description1: "item2description1",
+    description2: "item2description2",
     image: capisum,
   },
   {
-    name: "Courgete",
-    description1:
-      "Caracteriza-se pela sua forma alongada e pele lisa.",
-    description2: "Tem sabor delicado e cremoso, sendo conhecida pela sua excelente frescura e facilidade de consumo.",
+    name: "item3name",
+    description1: "item3description1",
+    description2: "item3description2",
     image: courgate,
   },
   {
-    name: "Maçã Fuji",
-    description1:
-      "Caracteriza-se pela casca densa e crocante, com tons vermelho-claro e polpa branca.",
-    description2: "Tem um sabor muito doce, com pouca acidez.",
+    name: "item4name",
+    description1: "item4description1",
+    description2: "item4description2",
     image: apple  ,
   },
 ];
 
 export default function Specialties() {
+  const { t } = useTranslation();
   return (
     <section className="py-10 md:py-16 bg-[var(--color-whitecustom)]">
       <div className="max-w-6xl mx-auto px-4">
         {/* Tag */}
         <div className="flex justify-center mb-6">
           <span className="bg-[var(--color-prime)] text-[var(--color-whitecustom)] px-4 py-1 rounded-full text-lg font-regular">
-            Produtos
+            {t("home.specialitytag")}
           </span>
         </div>
 
         {/* Title */}
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
-          As nossas especialidades
+          {t("home.specialitytitle")}
         </h2>
         <p className="text-center text-lg md:text-lg text-[var(--color-gray2)] max-w-4xl mx-auto mb-12">
-          Produtos de grande qualidade disponíveis todo o ano e distribuídos
-          nacional e internacionalmente.
+          {t("home.specialitytext")}
         </p>
 
         {/* Grid */}
@@ -70,9 +66,9 @@ export default function Specialties() {
                 className="w-40 h-40 object-contain mx-auto mb-4"
               />
               <div className="card-content">
-                <h3 className="font-bold text-2xl mb-2">{item.name}</h3>
-                <p className="text-base text-[var(--color-gray2)] pb-5">{item.description1}</p>
-                <p className="text-base text-[var(--color-gray2)]">{item.description2}</p>
+                <h3 className="font-bold text-2xl mb-2">{t(`home.products.${item.name}`)}</h3>
+                <p className="text-base text-[var(--color-gray2)] pb-5">{t(`home.products.${item.description1}`)}</p>
+                <p className="text-base text-[var(--color-gray2)]">{t(`home.products.${item.description2}`)}</p>
               </div>
             </div>
           ))}

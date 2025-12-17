@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import arrow from "../../assets/Home/rightarrow.svg"
+import arrow from "../../assets/Home/rightarrow.svg";
+import { useTranslation } from "react-i18next";
 
 export default function JoinTeam() {
   const [sent, setSent] = useState(false);
@@ -62,23 +63,23 @@ export default function JoinTeam() {
     setCvName("");
     setTimeout(() => setSent(false), 3000);
   };
+  const { t } = useTranslation();
 
   return (
     <section className="bg-[#F2F5F6] py-12 sm:py-16 lg:py-25">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <header className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-extrabold text-slate-900">
-            Junte-se à nossa equipa!
+            {t("contactos.teamformtitle")}
           </h2>
           <p className="mt-3 text-slate-600">
-            Estamos sempre à procura de talentos excecionais para se juntarem à
-            nossa equipa e contribuírem para o nosso sucesso contínuo.
+            {t("contactos.teamformtext")}
           </p>
         </header>
 
         {sent && (
           <div className="mt-6 rounded-lg bg-emerald-50 px-4 py-3 text-emerald-800">
-            Obrigado! A sua candidatura foi enviada com sucesso.
+            {t("contactos.sucessmsg")}
           </div>
         )}
 
@@ -108,7 +109,7 @@ export default function JoinTeam() {
               type="text"
               required
               minLength={2}
-              placeholder="Nome"
+              placeholder={t("contactos.name")}
               className="w-full rounded-lg border border-slate-300 bg-white py-3 px-3 pl-10 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
             />
           </div>
@@ -133,7 +134,7 @@ export default function JoinTeam() {
               name="email"
               type="email"
               required
-              placeholder="Email"
+              placeholder={t("contactos.email")}
               className="w-full rounded-lg border border-slate-300 bg-white py-3 px-3 pl-10 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
             />
           </div>
@@ -158,7 +159,7 @@ export default function JoinTeam() {
               name="phone"
               type="tel"
               required
-              placeholder="Contacto"
+              placeholder={t("contactos.contact")}
               pattern="[0-9 +()\-]{9,}"
               title="Introduza um contacto válido"
               className="w-full rounded-lg border border-slate-300 bg-white py-3 px-3 pl-10 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
@@ -185,7 +186,7 @@ export default function JoinTeam() {
               name="role"
               type="text"
               required
-              placeholder="Cargo/Departamento"
+              placeholder={t("contactos.role")}
               className="w-full rounded-lg border border-slate-300 bg-white py-3 px-3 pl-10 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
             />
           </div>
@@ -206,7 +207,7 @@ export default function JoinTeam() {
                   <div className="arrow bg-[#27a95b] rounded-full p-1 -rotate-90">
                     <img src={arrow} alt="" />
                   </div>
-                  Carregue o seu CV.
+                  {t("contactos.attachcv")}
                 </span>
               </label>
 
@@ -214,7 +215,7 @@ export default function JoinTeam() {
                 {cvName ? (
                   <strong className="text-slate-700">{cvName}</strong>
                 ) : (
-                  <>Formatos suportados: PDF, TXT, WORD DOC</>
+                  <>{t("contactos.supportedformat")}</>
                 )}
               </span>
             </div>
@@ -230,12 +231,12 @@ export default function JoinTeam() {
                 className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-600"
               />
               <span>
-                Aceitar{" "}
+                {t("contactos.accept")}{" "}
                 <a
                   href="/privacy-policy"
                   className="text-emerald-700 font-medium hover:underline"
                 >
-                  Política de Privacidade
+                  {t("contactos.privacypolicy")}
                 </a>
               </span>
             </label>
@@ -244,7 +245,7 @@ export default function JoinTeam() {
               type="submit"
               className="mx-auto sm:mx-0 ml-auto inline-flex items-center gap-2 rounded-full bg-[var(--color-prime)] cursor-pointer px-6 py-2.5 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
             >
-              Enviar Candidatura
+              {t("contactos.submitteamform")}
               <div className="arrow bg-[#27a95b] rounded-full p-1">
                 <img src={arrow} alt="" />
               </div>

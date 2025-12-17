@@ -95,19 +95,18 @@ export default function BrandMarqueeSlick({
   }, [interval, paused, logos.length]);
 
   const settings = {
-    arrows: false,
-    dots: false,
-    infinite: logos.length > slidesToShow,
-    speed: 4000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    slidesToShow,
-    slidesToScroll: 1,
-    swipeToSlide: false,
-    touchMove: true,
-  };
-
+  arrows: false,
+  dots: false,
+  infinite: logos.length > slidesToShow,
+  speed: 3000,
+  autoplay: true,
+  autoplaySpeed: 0,   // IMPORTANT for continuous scroll
+  cssEase: "linear",
+  slidesToShow,
+  slidesToScroll: 1,
+  swipeToSlide: false,
+  touchMove: true,
+};
   return (
     <section
       className={`${className} py-0 sm:py-4`}

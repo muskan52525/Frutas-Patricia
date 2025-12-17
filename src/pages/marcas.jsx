@@ -3,6 +3,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { data as allData } from "../data/form.js";
 import rightArrow from "../assets/Home/rightarrow.svg";
+import { useTranslation } from "react-i18next";
 
 export default function ProductsPage() {
   const marcas = Array.isArray(allData)
@@ -56,6 +57,7 @@ export default function ProductsPage() {
   }, []);
 
   console.log("isMobile:", isMobile);
+  const { t } = useTranslation();
 
   return (
     <section className="bg-[#F5F7F8] py-12 sm:py-16 lg:py-25">
@@ -63,12 +65,10 @@ export default function ProductsPage() {
         {/* ====== MARCAS DO GRUPO ====== */}
         <header className="text-center max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-extrabold text-slate-900">
-            Marcas do Grupo
+            {t("marcas.title1")}
           </h1>
           <p className="my-8 text-[14px] md:text-[18px] text-[var(--color-dark)]">
-            O Grupo Patrícia Pilar reúne marcas complementares que, em conjunto,
-            asseguram uma resposta abrangente às exigências do mercado,
-            reforçando a posição do grupo como referência no setor.
+            {t("marcas.text1")}
           </p>
         </header>
 
@@ -77,12 +77,10 @@ export default function ProductsPage() {
         {/* ====== EMPRESAS DO GRUPO ====== */}
         <header className="text-center max-w-3xl mx-auto mt-16 sm:mt-20 lg:mt-24">
           <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-extrabold text-slate-900">
-            Empresas do grupo
+            {t("marcas.title2")}
           </h2>
           <p className="my-8 text-[14px] md:text-[18px] text-[var(--color-dark)]">
-            Com uma estratégia focada na expansão e na colaboração, o Grupo
-            Patrícia Pilar tem consolidado a sua presença no setor, assegurando
-            competitividade e capacidade de resposta às necessidades do mercado.
+            {t("marcas.text2")}
           </p>
         </header>
 
@@ -95,12 +93,12 @@ export default function ProductsPage() {
           <div className="flex flex-col justify-center items-center sm:text-start sm:grid sm:grid-cols-1 md:grid-cols-2 gap-8 p-5">
             <div className="w-full">
               <h3 className="text-center sm:text-start text-3xl sm:text-4xl font-extrabold text-slate-900">
-                {active.name}
+                {t(`marcas.${active.name}`)}
               </h3>
 
               {active.mheading && (
                 <p className="mt-6 text-[var(--color-dark)] font-bold text-justify text-[14px] md:text-[18px] leading-relaxed">
-                  {active.mheading}
+                  {t(`marcas.${active.mheading}`)}
                 </p>
               )}
 
@@ -111,7 +109,7 @@ export default function ProductsPage() {
                       key={i}
                       className="text-justify text-[14px] md:text-[18px]"
                     >
-                      {para}
+                      {t(`marcas.${para}`)}
                     </p>
                   ))
                 ) : (
@@ -143,7 +141,7 @@ export default function ProductsPage() {
                       to={active.button.link}
                       className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-prime)] px-6 py-3 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
                     >
-                      {active.button.label}
+                      {t(`marcas.${active.button.label}`)}
                       <span className="inline-grid place-items-center rounded-full bg-[#27a95b] p-1">
                         <img src={rightArrow} alt="Arrow" />
                       </span>
@@ -167,6 +165,7 @@ export default function ProductsPage() {
 }
 
 function CardsGrid({ items, onCardClick }) {
+  const { t } = useTranslation();
   return (
     <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       {items.map((it) => (
@@ -186,7 +185,7 @@ function CardsGrid({ items, onCardClick }) {
 
           {it.short && (
             <p className="text-center sm:text-start mt-4 text-base text-[var(--color-dark)] leading-relaxed line-clamp-3">
-              {it.short}
+              {t(`marcas.${it.short}`)}
             </p>
           )}
 
@@ -198,7 +197,7 @@ function CardsGrid({ items, onCardClick }) {
               }}
               className="inline-flex items-center gap-2 text-[var(--color-prime)] font-bold hover:text-emerald-700"
             >
-              Mais info
+             {t("marcas.cardbutton")}
             </Link>
           </div>
         </article>

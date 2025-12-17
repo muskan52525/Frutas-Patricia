@@ -11,6 +11,7 @@ import banner2mobile from "../../assets/Home/Banner2_MOBILE.png";
 import banner3mobile from "../../assets/Home/Banner3_MOBILE.png";
 import banner4mobile from "../../assets/Home/Banner4_MOBILE.png";
 import banner5mobile from "../../assets/Home/Banner5_MOBILE.png";
+import { useTranslation } from "react-i18next";
 
 export default function HeroSlider() {
   const sliderRef = useRef(null);
@@ -30,6 +31,8 @@ export default function HeroSlider() {
     autoplaySpeed: 4000, 
     cssEase: "ease",    
   };
+
+  const { t } = useTranslation();
 
   return (
     <section className="relative w-full h-[400px] sm:h-[500px] lg:h-[98vh]">
@@ -60,10 +63,10 @@ export default function HeroSlider() {
       {/* Static content overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center lg:items-end px-6 lg:px-20 text-center lg:text-right z-10">
         <h2 className="italic text-[var(--color-whitecustom)] text-2xl sm:text-3xl lg:text-[52px] font-bold leading-snug max-w-4xl">
-          Há <span className="text-[var(--color-whitecustom) md:text-[var(--color-prime)]">30 anos</span> a levar o melhor da terra até si!
+          {t("home.herosliderh1")} <span className="text-[var(--color-whitecustom) md:text-[var(--color-prime)]">{t("home.herosliderh2")}</span> {t("home.herosliderh3")}
         </h2>
         <p className="mt-4 text-[var(--color-whitecustom)] text-sm sm:text-base lg:text-xl leading-relaxed max-w-2xl">
-          Produtos de qualidade superior, escolhidos e aprovados por consumidores que valorizam o melhor da produção nacional. A sua confiança é o nosso maior orgulho.
+          {t("home.herotext")}
         </p>
       </div>
     </section>

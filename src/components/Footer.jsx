@@ -6,20 +6,21 @@
     FaYoutube,
   } from "react-icons/fa";
   import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
+  import { useTranslation } from "react-i18next";
 
   const leftPages = [
-    { label: "Empresa", href: "/empresa" },
-    { label: "Produtos", href: "/produtos" },
-    { label: "Produção", href: "/producao" },
-    { label: "Distribuição", href: "/distribuicao" },
-    { label: "Contactos", href: "/contact" },
+    { label: "header.empresa", href: "/empresa" },
+    { label: "header.produtos", href: "/produtos" },
+    { label: "header.producao", href: "/producao" },
+    { label: "header.distribuicao", href: "/distribuicao" },
+    { label: "header.contactos", href: "/contact" },
   ];
 
   const rightPages = [
-    { label: "Recrutamento", href: "/job" },
-    { label: "Leilão", href: "https://leilao.patriciapilar.pt/login.php" },
-    { label: "Apoios", href: "/support" },
-    { label: "Códigos de Conduta", href: "/code-of-ethics" },
+    { label: "header.recrutamento", href: "/job" },
+    { label: "header.leilao", href: "https://leilao.patriciapilar.pt/login.php" },
+    { label: "footer.apoios", href: "/support" },
+    { label: "footer.codigos", href: "/code-of-ethics" },
   ];
 
   function Social({ href, label, children }) {
@@ -71,6 +72,8 @@
     </div>
   );
 
+  
+
   return (
     <li className="max-w-full">
       {href ? (
@@ -91,6 +94,7 @@
 
 
   export default function Footer() {
+    const { t } = useTranslation();
     return (
       <footer className="bg-[var(--color-whitecustom)]">
         {/* main grid */}
@@ -106,9 +110,9 @@
                 />
               </div>
               <p className="mt-5 max-w-xs text-[var(--color-gray2)] text-center sm:text-start">
-                Empresa dedicada à produção, <br/>
-                comercialização e distribuição <br/>
-                de produtos hortofrutícolas.
+                {t("footer.text1")} <br/>
+                {t("footer.text2")} <br/>
+                {t("footer.text3")}
               </p>
 
               {/* Socials */}
@@ -131,7 +135,7 @@
             {/* Pages column 1 */}
             <div className="md:col-span-2 ">
               <h3 className="text-xl font-semibold text-[var(--color-prime)] text-center sm:text-start">
-                Páginas
+                {t("footer.col1")}
               {/* <h3 className="text-xl font-semibold text-[var(--color-prime)]">
                 Menu */} 
               </h3>
@@ -139,7 +143,7 @@
                 {leftPages.map((i) => (
                   <li key={i.label} className="text-center sm:text-start">
                     <a className="hover:text-emerald-700" href={i.href}>
-                      {i.label}
+                      {t(i.label)}
                     </a>
                   </li>
                 ))}
@@ -149,13 +153,13 @@
             {/* Pages column 2 */}
             <div className="md:col-span-2 text-center sm:text-start">
               <h3 className="text-xl font-semibold text-[var(--color-prime)]">
-                Úteis
+                {t("footer.col2")}
               </h3>
               <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
                 {rightPages.map((i) => (
                   <li key={i.label}>
                     <a className="hover:text-emerald-700" href={i.href}>
-                      {i.label}
+                      {t(i.label)}
                     </a>
                   </li>
                 ))}
@@ -165,7 +169,7 @@
             {/* Contacts */}
             <div className="md:col-span-4 sm:text-start text-center">
               <h3 className="text-xl font-semibold text-[var(--color-prime)]">
-                Contactos
+                {t("footer.col3")}
               </h3>
               <ul className="mt-5 space-y-4 text-[var(--color-gray2)]">
                 <Contact
@@ -202,17 +206,17 @@
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 justify-center">
               <li>
                 <a className="hover:text-[#009B3E]" href="/code-of-ethics">
-                  Códigos de Conduta
+                  {t("footer.codigos")}
                 </a>
               </li>
               <li>
                 <a className="hover:text-[#009B3E]" href="support">
-                  Apoios
+                  {t("footer.apoios")}
                 </a>
               </li>
               <li>
                 <a className="hover:text-[#009B3E]" href="privacy-policy">
-                  Política de privacidade
+                  {t("footer.política")}
                 </a>
               </li>
             </ul>
@@ -223,17 +227,17 @@
             <ul className="flex text-center items-center gap-x-6 gap-y-2 justify-center">
               <li>
                 <a className="hover:text-[#009B3E]" href="/code-of-ethics">
-                  Códigos de Conduta
+                  {t("footer.codigos")}
                 </a>
               </li>
               <li>
                 <a className="hover:text-[#009B3E]" href="support">
-                  Apoios
+                  {t("footer.apoios")}
                 </a>
               </li>
               <li>
                 <a className="hover:text-[#009B3E]" href="privacy-policy">
-                  Política de privacidade
+                  {t("footer.política")}
                 </a>
               </li>
             </ul>

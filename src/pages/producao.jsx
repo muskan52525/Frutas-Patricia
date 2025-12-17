@@ -1,7 +1,6 @@
 import React from "react";
 import BrandMarqueeSlick from "../components/Comman/brandslider.jsx";
 import productsec from "../assets/Home/productsec.jpg";
-import map from "../assets/production/mapp.png";
 import brand1 from "../assets/production/brand1.png";
 import brand2 from "../assets/production/brand2.png";
 import brand3 from "../assets/production/brand3.png";
@@ -11,32 +10,27 @@ import grace from "../assets/production/grace.png";
 
 import lelio from "../assets/Empresa/lelio.png";
 
+import { useTranslation } from "react-i18next";
+
 export default function Productions() {
+  const { t } = useTranslation();
   return (
     <div className="max-w-auto mx-auto">
       <div className="product py-5">
-        <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20">
+        <section className="w-full bg-[var(--color-whitecustom)] py-8 lg:py-20">
           <div className="mx-auto max-w-full pl-0 sm:pl-6 lg:pl-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-60">
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 gap-12 items-center lg:gap-60">
               {/* Left: Text content */}
               <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-end grid px-5 ml-0">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <span className="text-[var(--color-prime)]">
-                    O melhor da <br />
-                    produção nacional
+                    {t("producao.producaoheadingp1")} <br />
+                    {t("producao.producaoheadingp2")}
                   </span>
                 </h2>
 
                 <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  Orgulhamo-nos de produzir uma vasta gama de produtos em
-                  diferentes regiões de Portugal, aproveitando ao máximo as
-                  particularidades de cada território. A diversidade dos solos e
-                  os microclimas únicos de norte a sul permitem-nos cultivar com
-                  excelência, respeitando o ritmo da natureza e valorizando o
-                  que cada região tem de melhor. Esta abordagem garante produtos
-                  autênticos, com identidade própria, e reforça o nosso
-                  compromisso com a produção nacional, sustentável e de
-                  qualidade.
+                  {t("producao.producaotext")}
                 </p>
               </div>
               {/* Right: Image */}
@@ -63,29 +57,24 @@ export default function Productions() {
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <br />
                   <span className="text-[var(--color-whitecustom)]">
-                    Produção própria:
+                    {t("producao.propiaheadingp1")}
                     <br />
-                    a importância da <br /> Zona Oeste
+                    {t("producao.propiaheadingp2")} <br /> {t("producao.propiaheadingp3")}
                   </span>
                 </h2>
 
                 <p className="mt-6 text-[var(--color-whitecustom)] text-center sm:text-left text-base sm:text-lg  leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  Localizada entre as serras de Montejunto, Aires e Candeeiros,
-                  a região do Oeste é privilegiada por um conjunto de
-                  carcaterísticas que tornam o seu ecossistemas único em
-                  Portugal.
+                  {t("producao.propiatext1")}
                 </p>
                 <p className="mt-6 text-[var(--color-whitecustom)] text-center sm:text-left text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  O equilíbrio entre a brisa marítima e a temperatura constante
-                  ao longo do ano faz desta uma das melhores áreas da Europa
-                  para a agricultura.
+                  {t("producao.propiatext2")}
                 </p>
               </div>
               {/* Right: Image */}
               <div className="order-2 lg:order-none">
                 <div className="overflow-hidden justify-end flex">
                   <img
-                    src={map}
+                    src={t("producao.PTMap")}
                     alt="Produção própria zona oeste"
                     className="w-[75%] h-auto sm:h-auto md:h-auto lg:h-[82vh] object-contain justify-end flex"
                   />
@@ -115,22 +104,15 @@ export default function Productions() {
               {/* Left: Text content */}
               <div className="text-center lg:text-left">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
-                  <span className="text-[var(--color-prime)]">Qualidade:</span>
+                  <span className="text-[var(--color-prime)]">{t("producao.qualidadetitle")}</span>
                   <br />
                   <span className="text-[var(--color-dark)]">
-                    as nossas certificações
+                    {t("producao.qualidadesubtitle")}
                   </span>
                 </h2>
 
                 <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  O nosso Departamento de Qualidade da trabalha continuamente de
-                  forma a implementar diversas normas, que visam assegurar e
-                  garantir a segurança alimentar do consumidor final. Desde o
-                  processo de seleção do fornecedor, passando pelo
-                  acompanhamento técnico das culturas em campo, garantido a
-                  melhor conservação dos produtos na nossa central e terminando
-                  com uma seleção dos melhores produtos que chegam até ao
-                  consumidor diariamente, com a melhor frescura e qualidade.
+                  {t("producao.qualidadetext")}
                 </p>
               </div>
             </div>
@@ -187,21 +169,11 @@ export default function Productions() {
             {/* Left: copy */}
             <div>
               <h2 className="text-center sm:text-start text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight text-slate-900">
-                Sustentabilidade
+                {t("producao.sustentabilidadetitle")}
               </h2>
 
               <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed text-center sm:text-start">
-                Na Frutas Patrícia Pilar, assumimos o compromisso de adoptar
-                práticas mais sustentáveis, promovendo o equilíbrio com o meio
-                ambiente através da escolha consciente de materiais.
-                Paralelamente, investimos na cultura interna da empresa,
-                incutindo em toda a equipa uma atitude responsável e alinhada
-                com estes valores. Acreditamos que a responsabilidade ambiental
-                deve ser encarada como um ato de consciência, e não apenas como
-                uma obrigação. Como reflexo deste compromisso, somos
-                certificados com a norma ISO 14001 e associados à GRACE –
-                Empresas Responsáveis, reforçando a nossa dedicação à
-                sustentabilidade e à melhoria contínua.
+                {t("producao.sustentabilidadetext")}
               </p>
             </div>
 

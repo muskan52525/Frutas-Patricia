@@ -3,14 +3,15 @@ import imagetomato from "../../assets/Home/tomatotree.jpg";
 import badgetomato from "../../assets/Home/portugal.png";
 import arrow from "../../assets/Home/rightarrow.svg";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function CertificationHero({
   imageSrc = imagetomato,
   badgeSrc = badgetomato,
-  titleHighlight = "Qualidade:",
-  title = "as nossas\ncertificações",
-  description = "O nosso Departamento de Qualidade da trabalha continuamente de forma a implementar diversas normas, que visam assegurar e garantir a segurança alimentar do consumidor final.",
-  ctaText = "Ver mais",
+  titleHighlight = "certificates.titleHighlight",
+  title = "certificates.title",
+  description = "certificates.description",
+  ctaText = "certificates.ctaText",
 }) {
   const navigate = useNavigate();
 
@@ -29,6 +30,8 @@ export default function CertificationHero({
       }
     }, 100);
   };
+
+  const { t } = useTranslation();
 
   return (
     <section className="w-full bg-[var(--color-whitecustom)]">
@@ -62,16 +65,16 @@ export default function CertificationHero({
           <div className="order-1 lg:order-2 text-center lg:text-left flex flex-col items-center lg:items-start">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
               <span className="text-[var(--color-prime)]">
-                {titleHighlight}
+                {t(titleHighlight)}
               </span>
               <br />
               <span className="text-[var(--color-dark)] whitespace-pre-line">
-                {title}
+                {t(title)}
               </span>
             </h1>
 
             <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg">
-              {description}
+              {t(description)}
             </p>
 
             <div className="mt-8 flex justify-center lg:justify-start">
@@ -79,7 +82,7 @@ export default function CertificationHero({
                 onClick={onCtaClick}
                 className="inline-flex items-center gap-5 rounded-full px-5 py-2  sm:px-6 sm:py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 cursor-pointer"
               >
-                {ctaText}
+                {t(ctaText)}
                 <div className="arrow bg-[#27a95b] rounded-full p-1">
                   <img src={arrow} alt="" />
                 </div>

@@ -8,16 +8,17 @@ import pt from "../assets/Flag/pt.png";
 import fb from "../assets/Comman/facebook-fill.svg";
 import ina from "../assets/Comman/instagram-fill.svg";
 import cross from "../assets/Home/cross.svg";
+import { useTranslation } from "react-i18next";
 
 
 const navItems = [
-  { label: "Empresa", href: "/empresa" },
-  { label: "Produtos", href: "/produtos" },
-  { label: "Produção", href: "/producao" },
-  { label: "Marcas", href: "/marcas" },
-  { label: "Distribuição", href: "/distribuicao" },
-  { label: "Leilão", href: "https://leilao.patriciapilar.pt/login.php" },
-  { label: "Contactos", href: "/contact" },
+  { label: "header.empresa", href: "/empresa" },
+  { label: "header.produtos", href: "/produtos" },
+  { label: "header.producao", href: "/producao" },
+  { label: "header.marcas", href: "/marcas" },
+  { label: "header.distribuicao", href: "/distribuicao" },
+  { label: "header.leilao", href: "https://leilao.patriciapilar.pt/login.php" },
+  { label: "header.contactos", href: "/contact" },
 ];
 
 const languages = [
@@ -30,6 +31,7 @@ export default function Header() {
   const [activeLang, setActiveLang] = useState("pt");
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   return (
     <header className="sticky top-0 z-[60] w-full">
@@ -49,12 +51,12 @@ export default function Header() {
             </span>
             </div>
              <a href="/job" className="hover:opacity-80 block cursor-pointer">
-              Recrutamento
+              {t("header.recrutamento")}
             </a>
            
           </div>
           <div className="hidden sm:flex items-center gap-4 text-right">
-            <span className="sm:inline">Segue-nos nas redes sociais</span>
+            <span className="sm:inline">{t("header.social")}</span>
             <a href="https://www.facebook.com/frutaspatriciapilar.lda/" className="hover:opacity-80">
               <img src={fb} alt="" />
             </a>
@@ -100,7 +102,7 @@ export default function Header() {
                     href={item.href}
                     className="text-[var(--color-gray2)] hover:text-[var(--color-prime)] transition-colors"
                   >
-                    {item.label}
+                    {t(item.label)}
                   </a>
                 </li>
               ) : (
@@ -116,7 +118,7 @@ export default function Header() {
                       }`
                     }
                   >
-                    {item.label}
+                    {t(item.label)}
                   </NavLink>
                 </li>
               )
@@ -146,7 +148,7 @@ export default function Header() {
                       href={item.href}
                       className="text-[var(--color-gray2)] hover:text-[var(--color-prime)] transition-colors"
                     >
-                      {item.label}
+                      {t(item.label)}
                     </a>
                   </li>
                 ) : (
@@ -162,7 +164,7 @@ export default function Header() {
                         }`
                       }
                     >
-                      {item.label}
+                      {t(item.label)}
                     </NavLink>
                   </li>
                 )
@@ -188,20 +190,15 @@ export default function Header() {
                       <button
                         key={lang.code}
                         onClick={() => {
+                          i18n.changeLanguage(lang.code);  // <-- This actually switches the language
                           setActiveLang(lang.code);
                           setLangOpen(false);
                         }}
                         className={`h-8 w-8 rounded-full overflow-hidden border-2 transition cursor-pointer ${
-                          activeLang === lang.code
-                            ? "border-emerald-600"
-                            : "border-transparent"
+                          activeLang === lang.code ? "border-emerald-600" : "border-transparent"
                         }`}
                       >
-                        <img
-                          src={lang.src}
-                          alt={lang.label}
-                          className="h-full w-full object-cover"
-                        />
+                        <img src={lang.src} alt={lang.label} className="h-full w-full object-cover" />
                       </button>
                     ))}
                   </div>

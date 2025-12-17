@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import arrow from "../../assets/Home/rightarrow.svg"
+import arrow from "../../assets/Home/rightarrow.svg";
+import { useTranslation } from "react-i18next";
 
 export default function AuctionContactSimple() {
   const [sent, setSent] = useState(false);
@@ -21,25 +22,25 @@ export default function AuctionContactSimple() {
     form.reset();
     setTimeout(() => setSent(false), 3000);
   };
-
+  const { t } = useTranslation();
   return (
     <section className="bg-[var(--color-whitecustom)] py-12 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <header className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-extrabold text-[var(--color-dark)]">
-            Envie-nos uma mensagem.
+            {t("contactos.formtitle")}
           </h2> 
           <p className="mt-3 text-[var(--color-gray2)]">
-            Contacte-nos através do formulário. 
+            {t("contactos.formsubtitle")} 
             <br className="hidden sm:block" />
-           A sua mensagem será respondida com a maior brevidade.
+           {t("contactos.formsubtitle2")}
           </p>
           <div className="mt-6 h-px bg-slate-200" />
         </header>
 
         {sent && (
           <div className="mt-6 rounded-lg bg-[var(--color-whitecustom)] px-4 py-3 text-emerald-800">
-            Obrigado! A sua mensagem foi enviada com sucesso.
+            {t("contactos.sucessmsg")}
           </div>
         )}
 
@@ -65,7 +66,7 @@ export default function AuctionContactSimple() {
               type="text"
               required
               minLength={2}
-              placeholder="Nome"
+              placeholder={t("contactos.name")}
               className="w-full rounded-lg border border-slate-300 bg-white py-3 pl-10 px-3 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
             />
           </div>
@@ -86,7 +87,7 @@ export default function AuctionContactSimple() {
               name="email"
               type="email"
               required
-              placeholder="Email"
+              placeholder={t("contactos.email")}
               className="w-full rounded-lg border border-slate-300 bg-white py-3 pl-10 pr-3 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
             />
           </div>
@@ -107,7 +108,7 @@ export default function AuctionContactSimple() {
               name="phone"
               type="tel"
               required
-              placeholder="Contacto"
+              placeholder={t("contactos.contact")}
               pattern="[0-9 +()\-]{9,}"
               title="Introduza um contacto válido"
               className="w-full rounded-lg border border-slate-300 bg-white py-3 pl-10 px-3 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
@@ -130,7 +131,7 @@ export default function AuctionContactSimple() {
               name="subject"
               type="text"
               required
-              placeholder="Assunto"
+              placeholder={t("contactos.subject")}
               className="w-full rounded-lg border border-slate-300 bg-white py-3 pl-10 px-3 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
             />
           </div>
@@ -151,7 +152,7 @@ export default function AuctionContactSimple() {
               name="message"
               required
               rows={6}
-              placeholder="Como podemos ajudar?"
+              placeholder={t("contactos.message")}
               className="w-full pl-10 rounded-lg border border-slate-300 bg-white p-3 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
             />
           </div>
@@ -166,12 +167,12 @@ export default function AuctionContactSimple() {
                 className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-600 placeholder:text-[#92A7B0]"
               />
               <span>
-                Aceitar{" "}
+                {t("contactos.accept")}{" "}
                 <a
                   href="/privacy-policy"
                   className="text-[var(--color-prime)] font-medium hover:underline"
                 >
-                  Política de Privacidade
+                  {t("contactos.privacypolicy")}
                 </a>
               </span>
             </label>
@@ -180,7 +181,7 @@ export default function AuctionContactSimple() {
               type="submit"
               className="mx-auto sm:mx-0 ml-auto inline-flex items-center gap-4 rounded-full bg-[var(--color-prime)] px-6 py-2.5 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 cursor-pointer"
             >
-              Enviar
+              {t("contactos.submit")}
               <div className="arrow bg-[#27a95b] rounded-full p-1">
                 <img src={arrow} alt="" />
               </div>

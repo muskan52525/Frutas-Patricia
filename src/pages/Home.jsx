@@ -13,17 +13,17 @@ import infra2 from "../assets/Home/infra2.jpg";
 import productsec from "../assets/Home/productsec.jpg";
 import videoimage from "../assets/Home/videoimage.png"
 import { useInView } from "react-intersection-observer";
-
+import { useTranslation } from "react-i18next";
 
 
 
 
 export default function Home({
   items = [
-    { value: 1500, prefix: "+", suffix: "", label: "colaboradores" },
-    { value: "16", label: "nacionalidades" },
-    { value: "33", label: "empresas do grupo" },
-    { value: "700 ha", label: "produção própria" },
+    { value: 1500, prefix: "+", suffix: "", label: "count.item1" },
+    { value: "16", label: "count.item2" },
+    { value: "33", label: "count.item3" },
+    { value: "700 ha", label: "count.item4" },
   ],
   
 })
@@ -32,6 +32,8 @@ export default function Home({
     triggerOnce: true, // only run once
     threshold: 0.3,    // start when 30% is visible
   });
+
+  const { t } = useTranslation();
   return (
     <div className="max-w-auto mx-auto">
       <div className="hero">
@@ -42,16 +44,13 @@ export default function Home({
           {/* Title */}
           <div className="content grid grid-cols-1 lg:grid-cols-2 justify-between pt-8 gap-5 md:gap-20 ">
             <h1 className="text-3xl md:text-5xl max-w-lg font-bold mb-4 justify-end "> 
-              Produtos hortofrutícolas <br /> de qualidade
+              {t("home.title")}
             </h1>
 
             {/* Description */}
             <div className="textcontent flex items-center">
               <p className="text-lg  text-center sm:text-start md:text-lg max-w-lg mb-8 ">
-                A Frutas Patrícia Pilar, é uma empresa 100% nacional, criada com
-                o objetivo de fornecer o mercado hortofrutícola nacional e
-                internacional, assente na produção, distribuição e
-                comercialização.
+                {t("home.desc")}
               </p>
             </div>
           </div>
@@ -113,7 +112,7 @@ export default function Home({
                 )}
               </div>
                 <div className="mt-3 text-[var(--color-gray2)] font-bold text-sm sm:text-2xl">
-                  {it.label}
+                  {t(it.label)}
                 </div>
               </div>
             ))}
@@ -130,16 +129,14 @@ export default function Home({
               {/* Left: Text */}
               <div className="text-center lg:text-left">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--color-dark)] leading-tight">
-                  Infraestruturas
+                  {t("infrahome.title")}
                 </h2>
                 <p className="mt-6 text-gray-700 text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  Com 45.000 m2 de área coberta, a empresa frutas patrícia pilar
-                  possui neste momento uma das maiores e mais tecnológicas
-                  instalações do sector, no país.
+                  {t("infrahome.text")}
                 </p>
                 <div className="mt-8 flex justify-center lg:justify-start">
                   <button onClick={() => window.location.href = "/empresa"} className="inline-flex items-center gap-4 rounded-full px-6 py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                    conhecer infraestruturas
+                    {t("infrahome.button")}
                     <div className="arrow bg-[#27a95b] rounded-full p-1">
                       <img src={arrow} alt="" />
                     </div>
@@ -196,25 +193,24 @@ export default function Home({
               <div className="text-center lg:text-left justify-end grid">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <span className="text-[var(--color-prime)]">
-                    Produção própria:
+                    {t("production.heading")}
                   </span>
                   <br />
                   <span className="text-[var(--color-dark)]">
-                    importância da
+                    {/* importância da
                     <br />
-                    zona oeste
+                    zona oeste */}
+                    {t("production.subheading")}
                   </span>
                 </h2>
 
                 <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  Orgulhamo-nos de produzir diversos produtos em várias regiões
-                  do país, tirando proveito das características próprias de cada
-                  solo e micro-climas únicos.
+                  {t("production.text")}
                 </p>
 
                 <div className="mt-8 flex justify-center lg:justify-start">
                   <button onClick={() => window.location.href = "/production"} className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                    Ver mais
+                    {t("production.button")}
                     <div className="arrow bg-[#27a95b] rounded-full p-1">
                       <img src={arrow} alt="" />
                     </div>

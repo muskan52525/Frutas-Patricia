@@ -1,23 +1,19 @@
 import React from "react";
 import arrow from "../../assets/Empresa/arrow.png";
+import { useTranslation } from "react-i18next";
 
 export default function HistoriaWithSvgArrow() {
+  const { t } = useTranslation();
   return (
     <section className="bg-[#F3F6F7] py-14 sm:py-16 lg:py-25">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Heading + intro (optional) */}
         <header className="text-center max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">
-            A Nossa História
+            {t("empresa.historytitle")}
           </h2>
           <p className="mt-5 text-[var(--color-dark)] leading-relaxed text-base sm:text-lg">
-            A Frutas Patrícia Pilar foi fundada em 1992 com o objetivo de
-            fornecer produtos hortofrutícolas de elevada qualidade,
-            estabelecendo parcerias sólidas com produtores nacionais. Ao longo
-            dos anos, temos expandido significativamente a nossa capacidade de
-            armazenamento e embalagem - um crescimento superior a 300% - o que
-            nos posiciona hoje como uma referência consolidada no mercado
-            hortofrutícola.
+            {t("empresa.historytext")}
           </p>
         </header>
 
@@ -28,14 +24,14 @@ export default function HistoriaWithSvgArrow() {
             <div />
             <MilestoneTop
               title="1995–1998"
-              text="Mudança para os Casais do Rijo, marcando o início da expansão."
+              text="empresa.year1"
               imgSrc={arrow}
               imgAlt="1995–1998"
             />
             <div />
             <MilestoneTop
               title="2000–2018"
-              text="Novas instalações nas Paradas, consolidando o crescimento e expansão no setor."
+              text="empresa.year2"
               imgSrc={arrow}
               imgAlt="2000–2018"
             />
@@ -46,21 +42,21 @@ export default function HistoriaWithSvgArrow() {
           <div className="grid grid-cols-5 gap-6 items-start -mt-8 lg:-mt-9.5">
             <MilestoneBottom
               title="1992–1995"
-              text="Fundação da empresa na Lourinhã, com foco na comercialização de produtos hortofrutícolas."
+              text="empresa.year3"
               imgSrc={arrow}
               imgAlt="1992–1995"
             />
             <div />
             <MilestoneBottom
               title="1998–2000"
-              text="Nova mudança para o Vale da Borra, aumentando a capacidade de operação."
+              text="empresa.year4"
               imgSrc={arrow}
               imgAlt="1998–2000"
             />
             <div />
             <MilestoneBottom
-              title="Atualmente"
-              text="Sede em A-dos-Cunhados, Torres Vedras; evolução contínua e fortalecimento no mercado hortofrutícola."
+              title="empresa.year5t"
+              text="empresa.year5"
               imgSrc={arrow}
               imgAlt="Atualmente"
             />
@@ -72,32 +68,32 @@ export default function HistoriaWithSvgArrow() {
           {[
             {
               t: "1992–1995",
-              d: "Fundação da empresa na Lourinhã, com foco na comercialização de produtos hortofrutícolas.",
+              d: "empresa.year1",
             },
             {
               t: "1995–1998",
-              d: "Mudança para os Casais do Rijo, marcando o início da expansão.",
+              d: "empresa.year2",
             },
             {
               t: "1998–2000",
-              d: "Nova mudança para o Vale da Borra, aumentando a capacidade de operação.",
+              d: "empresa.year3",
             },
             {
               t: "2000–2018",
-              d: "Novas instalações nas Paradas, consolidando o crescimento e expansão no setor.",
+              d: "empresa.year4",
             },
             {
-              t: "Atualmente",
-              d: "Sede em A-dos-Cunhados, Torres Vedras; evolução contínua e fortalecimento no mercado hortofrutícola.",
+              t: "empresa.year5t",
+              d: "empresa.year5",
             },
           ].map((it, i) => (
             <div key={i} className="relative pl-8">
               <img src={arrow} className="absolute rotate-90 w-20 sm:w-15 sm:-left-5 -left-7  top-8 bottom-0" />
               <h4 className="text-emerald-600 font-extrabold text-xl">
-                {it.t}
+                {t(it.t)}
               </h4>
               <p className="mt-1 text-slate-700 text-sm leading-relaxed">
-                {it.d}
+                {t(it.d)}
               </p>
             </div>
           ))}
@@ -109,13 +105,14 @@ export default function HistoriaWithSvgArrow() {
 
 /* ===== helpers (with images) ===== */
 function MilestoneTop({ title, text, imgSrc, imgAlt = "" }) {
+  const { t } = useTranslation();
   return (
     <div className="text-center flex flex-col items-center">
       <div className="px-2 max-w-[16rem]">
         <h3 className="text-[var(--color-prime)] font-bold text-xl lg:text-3xl">
-          {title}
+          {t(title)}
         </h3>
-        <p className="mt-2 text-slate-700 text-sm leading-relaxed">{text}</p>
+        <p className="mt-2 text-slate-700 text-sm leading-relaxed">{t(text)}</p>
       </div>
 
       {/* Image appears UNDER the text (desktop/tablet only) */}
@@ -132,6 +129,7 @@ function MilestoneTop({ title, text, imgSrc, imgAlt = "" }) {
 }
 
 function MilestoneBottom({ title, text, imgSrc, imgAlt = "" }) {
+  const { t } = useTranslation();
   return (
     <div className="text-center flex flex-col items-center">
       {/* Image appears ABOVE the text (desktop/tablet only) */}
@@ -146,9 +144,9 @@ function MilestoneBottom({ title, text, imgSrc, imgAlt = "" }) {
 
       <div className="px-2 max-w-[16rem]">
         <h3 className="text-[var(--color-prime)] font-bold text-xl lg:text-3xl">
-          {title}
+          {t(title)}
         </h3>
-        <p className="mt-2 text-slate-700 text-sm leading-relaxed">{text}</p>
+        <p className="mt-2 text-slate-700 text-sm leading-relaxed">{t(text)}</p>
       </div>
     </div>
   );

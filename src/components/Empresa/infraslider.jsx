@@ -4,16 +4,17 @@ import slider1 from "../../assets/Empresa/slider1.png";
 import slider2 from "../../assets/Empresa/slider2.png";
 import slider3 from "../../assets/Empresa/slider3.png";
 import slider4 from "../../assets/Empresa/slider4.png";
+import { useTranslation } from "react-i18next";
 
 export default function InfraestruturasSlider() {
   const sliderRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
-
+  const { t } = useTranslation();
   const slides = [
     {
-      tag: "Infraestruturas",
-      title: "Porta de embarque",
-      desc: "Atualmente com 24 cais de cargas e descargas, as mesmas permitem uma constante operacionalização e dinâmica de recolha e envio de produtos 24h/dia.",
+      tag: "empresa.infratag",
+      title: "empresa.infratitle1",
+      desc: "empresa.infratext1",
       images: {
         left: slider2,
         main: slider1,
@@ -21,9 +22,9 @@ export default function InfraestruturasSlider() {
       },
     },
     {
-      tag: "Infraestruturas",
-      title: "Armazenamento",
-      desc: "Capacidade para mais de 2000 toneladas de armazenamento em um espaço de quase 5000 m2. Isso garante uma gestão de produtos com qualidade e frescura.",
+      tag: "empresa.infratag",
+      title: "empresa.infratitle2",
+      desc: "empresa.infratext2",
       images: {
         left: slider1,
         main: slider4,
@@ -31,9 +32,9 @@ export default function InfraestruturasSlider() {
       },
     },
     {
-      tag: "Infraestruturas",
-      title: "Câmaras refrigeradas",
-      desc: "Contamos com uma capacidade de armazenamento refrigerado até 10.000 toneladas de produtos, mantidos em atmosfera controlada, garantindo a frescura e qualidade dos produtos.",
+      tag: "empresa.infratag",
+      title: "empresa.infratitle3",
+      desc: "empresa.infratext3",
       images: {
         left: slider4,
         main: slider3,
@@ -41,9 +42,9 @@ export default function InfraestruturasSlider() {
       },
     },
     {
-      tag: "Infraestruturas",
-      title: "Centro de operações",
-      desc: "A zona de embalamento tem uma capacidade para 300 funcionários, que preparam 600 toneladas/dia. Com 14 linhas de embalamento de alta tecnologia para diversas frutas e legumes, incluindo máquinas de flowpack, retrátil e sacos.",
+      tag: "empresa.infratag",
+      title: "empresa.infratitle4",
+      desc: "empresa.infratext4",
       images: {
         left: slider3,
         main: slider2,
@@ -105,22 +106,22 @@ export default function InfraestruturasSlider() {
                 {/* Text */}
                 <div
                   className="lg:col-span-5 flex flex-col justify-center sm:justify-start 
-               min-h-[360px] 
+               lg:min-h-[360px] !min-h-[240px] 
                sm:min-h-[360px]
                mobile-fixed-text"
                 >
                   <div className="flex justify-center sm:justify-start">
                     <span className="inline-flex items-center justify-center rounded-full bg-[var(--color-prime)] text-white px-5 py-2 text-sm font-semibold shadow-sm w-[130px]">
-                      {s.tag}
+                      {t(s.tag)}
                     </span>
                   </div>
 
                   <h2 className="mt-6 whitespace-pre-line text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0F172A]  sm:text-start text-center">
-                    {s.title}
+                    {t(s.title)}
                   </h2>
 
                   <p className="mt-6 text-slate-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
-                    {s.desc}
+                    {t(s.desc)}
                   </p>
                 </div>
 

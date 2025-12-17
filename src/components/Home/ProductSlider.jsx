@@ -14,52 +14,51 @@ import productslider8 from "../../assets/Home/MAÇÃ-ROYAL-GALA.png";
 import productslider9 from "../../assets/Home/MAÇÃ-REINETA.png";
 import productslider10 from "../../assets/Home/PERA-ROCHA.png";
 import productslider4 from "../../assets/Home/ABÓBORA-MUSQUEE.png";
+import { useTranslation } from "react-i18next";
 
 
 const products = [
   {
     id: 1,
-    title: "Pera Rocha",
-    blurb: "Armazenamento em atmosfera controlada ou em frio normal.",
+    title: "products.item1",
+    blurb: "products.item1desc",
     image: productslider10,
   },
   {
     id: 2,
-    title: "Maçã Reineta",
-    blurb: "Armazenamento em atmosfera controlada ou em frio normal.",
+    title: "products.item2",
+    blurb: "products.item2desc",
     image: productslider9,
   },
   {
     id: 3,
-    title: "Maçã Royal Gala",
-    blurb: "Armazenamento em atmosfera controlada ou em frio normal.",
+    title: "products.item3",
+    blurb: "products.item3desc",
     image: productslider8,
   },
   {
     id: 4,
-    title: "Maçã Fuji",
-    blurb: "Textura suave e sabor equilibrado, ótima para sobremesas.",
+    title: "products.item4",
+    blurb: "products.item4desc",
     image: productslider7,
   },
   {
     id: 5,
-    title: "Courgete",
+    title: "products.item5",
     blurb:
-      "Armazenamento em temperatura entre os 5 e os 10ºC e uma humidade relativa de 95%.",
+      "products.item5desc",
     image: productslider5,
   },
   {
     id: 6,
-    title: "Feijão Verde",
-    blurb:
-      "A pré-refrigeração é feita após a colheita, de forma a não comprometer o tempo de con...",
+    title: "products.item6",
+    blurb: "products.item6desc",
     image: productslider6,
   },
   {
     id: 7,
-    title: "Batata Doce",
-    blurb:
-      "As batatas doces são armazenadas num local fresco, mas não escuro e húmido e fr...",
+    title: "products.item7",
+    blurb: "products.item7desc",
     image: productslider3,
   },
   // {
@@ -71,23 +70,20 @@ const products = [
   // },
   {
     id: 9,
-    title: "Abóbora Butternut",
-    blurb:
-      "É feito num local seco, arejado, com temperatura entre 10º a 14ºC e humidade ...",
+    title: "products.item8",
+    blurb: "products.item8desc",
     image: productslider1,
   },
   {
     id: 10,
-    title: "Abóbora Comprida",
-    blurb:
-      "É feito num local seco, arejado, com temperatura entre 10º a 14ºC e humidade ...",
+    title: "products.item9",
+    blurb: "products.item9desc",
     image: productslider2,
   },
   {
     id: 11,
-    title: "Abóbora Musquée",
-    blurb:
-      "É feito num local seco, arejado, com temperatura entre 10º a 14ºC e humidade ...",
+    title: "products.item10",
+    blurb: "products.item10desc",
     image: productslider4,
   },
   // {
@@ -140,20 +136,20 @@ export default function OutrosProdutosSlider() {
   ),
 };
 
-
+  const { t } = useTranslation();
 
   return (
     <section className="w-full bg-[var(--color-graycustom)] py-12 sm:py-16 lg:py-25">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="text-3xl sm:text-3xl lg:text-[48px] font-bold text-[var(--color-dark)]">
-            Outros produtos
+            {t("products.title")}
           </h2>
           <button
             onClick={() => (window.location.href = "/produtos")}
             className="cursor-pointer inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-dark)] hover:opacity-80"
           >
-            Ver todos{" "}
+            {t("products.more")}{" "}
             <span aria-hidden>
               <img src="../src/assets/Home/greenarrow.svg" alt="" />
             </span>
@@ -167,17 +163,17 @@ export default function OutrosProdutosSlider() {
               <article className="grid lg:grid-cols-2 items-center justify-between gap-3 rounded-2xl bg-[var(--color-whitecustom)] px-5 py-5 md:h-[275px] h-[375px]">
                 <div className="max-w-full sm:max-w-xl lg:max-w-lg order-2 lg:order-1">
                   <h3 className="text-lg sm:text-3xl font-extrabold text-[#111827] text-center sm:text-start">
-                    {p.title}
+                    {t(p.title)}
                   </h3>
                   <p className="mt-2 text-sm text-[var(--color-dark)] leading-relaxed text-center sm:text-start">
-                    {p.blurb}
+                    {t(p.blurb)}
                   </p>
                   <div
                     className="flex justify-center sm:justify-start"
                     onClick={handleOnProductRedirect}
                   >
                     <button className="mt-4 inline-flex items-center rounded-full bg-[var(--color-prime)] cursor-pointer px-4 py-1.5 text-lg font-semibold text-[var(--color-whitecustom)] hover:bg-[var(--color-prime)]">
-                      ver mais
+                      {t("products.next")}
                     </button>
                   </div>
                 </div>

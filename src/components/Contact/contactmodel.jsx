@@ -2,7 +2,8 @@ import React, { useEffect, useState, useCallback } from "react";
 import email from "../../assets/Contact/email.png";
 import phone from "../../assets/Contact/phone.png";
 import map from "../../assets/Contact/map.png";
-import ContactBg from "../../assets/Contact/contactBg.jpg"
+import ContactBg from "../../assets/Contact/contactBg.jpg";
+import { useTranslation } from "react-i18next";
 
 /* ------------- department data for the modal ------------- */
 const departments = [
@@ -91,7 +92,7 @@ function DepartmentModal({ open, onClose }) {
 
 export default function ContactStrip() {
   const [modalOpen, setModalOpen] = useState(false);
-
+  const { t } = useTranslation();
   return (
     <section className="py-12 sm:py-16 lg:py-40 bg-cover bg-center bg-no-repeat"
     style={{ backgroundImage: `url(${ContactBg})`}}>
@@ -105,11 +106,11 @@ export default function ContactStrip() {
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
                 <img src={email} alt="" />
               </span>
-              <h3 className="text-xl font-semibold text-bg-[var(--color-dark)] mt-4">Email</h3>
+              <h3 className="text-xl font-semibold text-bg-[var(--color-dark)] mt-4">{t("contactos.emailtitle")}</h3>
             </div>
 
             <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
-              Envie-nos um email com a sua questão e respondemos com a maior brevidade.
+              {t("contactos.emailtext")}
             </p>
             </div>
             <div>
@@ -133,11 +134,11 @@ export default function ContactStrip() {
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
                 <img src={phone} alt="" />
               </span>
-              <h3 className="text-xl mt- font-semibold text-[var(--color-dark)] mt-4">Telefone</h3>
+              <h3 className="text-xl mt- font-semibold text-[var(--color-dark)] mt-4">{t("contactos.phone")}</h3>
             </div>
 
             <p className="mt-1 text-sm text-slate-600">
-              Ligue caso necessite de uma resposta imediata.
+              {t("contactos.phonetext")}
             </p>
            </div>
 
@@ -175,12 +176,12 @@ export default function ContactStrip() {
                 <img src={map} alt="" />
               </span>
               <h3 className="text-xl font-semibold text-[var(--color-dark)] mt-4">
-                Localização
+                {t("contactos.location")}
               </h3>
             </div>
 
             <p className="mt-1 text-sm text-slate-600">
-              Estamos disponíveis para o receber nas nossas instalações.
+              {t("contactos.locationtext")}
             </p>
 
             <div>
@@ -190,7 +191,7 @@ export default function ContactStrip() {
               rel="noreferrer"
               className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
             >
-              Obter direções
+              {t("contactos.locationbutton")}
               <span className="inline-grid place-items-center rounded-ful text-[var(--color-dark)] w-5 h-5">
                 {/* right arrow icon */}
                 <svg
