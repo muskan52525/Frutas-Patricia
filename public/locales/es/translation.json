@@ -177,7 +177,7 @@
         "pp15": "Tomate En Malla"
     },
     "producao" : {
-        "PTMap": "src/assets/production/mapimages/ES/mapp.png",
+        "PTMap": "src/assets/production/mapimages/ES/mapa_es_1.png",
         "producaoheadingp1": "Lo mejor de la",
         "producaoheadingp2" :"producción nacional",
         "producaotext": "Nos enorgullecemos de producir una amplia gama de productos en diferentes regiones de Portugal, aprovechando al máximo las particularidades de cada territorio. La diversidad de suelos y microclimas únicos de norte a sur nos permite cultivar con excelencia, respetando el ritmo de la naturaleza y valorando lo mejor que cada región puede ofrecer. Este enfoque garantiza productos auténticos con identidad propia y refuerza nuestro compromiso con una producción nacional, sostenible y de calidad.",
@@ -188,8 +188,8 @@
         "propiatext2": "El equilibrio entre la brisa marina y la temperatura constante a lo largo del año hace que sea una de las mejores zonas de Europa para la agricultura.",
         "qualidadetitle": "Calidad:",
         "qualidadesubtitle": "nuestras certificaciones",
-        "qualidadetext": "Nuestro Departamento de Calidad trabaja continuamente en la implantación de diversas normas encaminadas a asegurar y garantizar la seguridad alimentaria del consumidor final. Desde el proceso de selección de proveedores, pasando por el seguimiento técnico de los cultivos en el campo, garantizando la mejor conservación de los productos en nuestro centro y finalizando con una selección de los mejores productos que llegan diariamente al consumidor, con la mejor frescura y calidad.",
-        "sustentabilidadetitle": "Sustentabilidade",
+        "qualidadetext": "En Frutas Patrícia Pilar, nos comprometemos a adoptar prácticas más sostenibles, promoviendo el equilibrio con el medio ambiente a través de la elección consciente de los materiales. Al mismo tiempo, invertimos en la cultura interna de la empresa, inculcando en todo el equipo una actitud responsable y alineada con estos valores. Creemos que la responsabilidad medioambiental debe considerarse un acto de conciencia, y no solo una obligación. Como reflejo de este compromiso, contamos con la certificación ISO 14001 y estamos asociados a GRACE–Empresas Responsáveis, lo que refuerza nuestra dedicación a la sostenibilidad y la mejora continua.",
+        "sustentabilidadetitle": "Sostenibilidad",
         "sustentabilidadetext": "Na Frutas Patrícia Pilar, assumimos o compromisso de adoptar práticas mais sustentáveis, promovendo o equilíbrio com o meio ambiente através da escolha consciente de materiais. Paralelamente, investimos na cultura interna da empresa,incutindo em toda a equipa uma atitude responsável e alinhada com estes valores. Acreditamos que a responsabilidade ambiental deve ser encarada como um ato de consciência, e não apenas como uma obrigação. Como reflexo deste compromisso, somos certificados com a norma ISO 14001 e associados à GRACE–Empresas Responsáveis, reforçando a nossa dedicação à sustentabilidade e à melhoria contínua."
     },  
      "marcas": {
