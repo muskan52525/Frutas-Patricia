@@ -9,7 +9,7 @@ import product1 from "../assets/Produtos/product1.jpg";
 import product2 from "../assets/Produtos/product2.jpg";
 import product3 from "../assets/Produtos/product3.jpg";
 import product4 from "../assets/Produtos/product4.jpg";
-import product13 from "../assets/Produtos/product13.jpg";
+import product13 from "../assets/Produtos/product13.png";
 import product14 from "../assets/Produtos/product14.jpg";
 import product15 from "../assets/Produtos/product15.jpg";
 import product5 from "../assets/Produtos/product5.jpg";

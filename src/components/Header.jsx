@@ -18,7 +18,7 @@ const navItems = [
   { label: "header.marcas", href: "/marcas" },
   { label: "header.distribuicao", href: "/distribuicao" },
   { label: "header.leilao", href: "https://leilao.patriciapilar.pt/login.php" },
-  { label: "header.contactos", href: "/contact" },
+  { label: "header.contactos", href: "/contactos" },
 ];
 
 const languages = [
@@ -50,7 +50,7 @@ export default function Header() {
               </a>
             </span>
             </div>
-             <a href="/job" className="hover:opacity-80 block cursor-pointer">
+             <a href="/recrutamento" className="hover:opacity-80 block cursor-pointer">
               {t("header.recrutamento")}
             </a>
            
@@ -246,7 +246,7 @@ export default function Header() {
                       : "hover:bg-emerald-50 hover:text-emerald-600"
                   }`}
                 >
-                  {it.label}
+                  {t(it.label)}
                 </a>
               ) : (
                 // route link
@@ -262,7 +262,7 @@ export default function Header() {
                     }`
                   }
                 >
-                  {it.label}
+                  {t(it.label)}
                 </NavLink>
               )}
             </li>

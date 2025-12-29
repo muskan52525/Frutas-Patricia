@@ -137,7 +137,7 @@ export default function ContactStrip() {
               <h3 className="text-xl mt- font-semibold text-[var(--color-dark)] mt-4">{t("contactos.phone")}</h3>
             </div>
 
-            <p className="mt-1 text-sm text-slate-600">
+            <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
               {t("contactos.phonetext")}
             </p>
            </div>
@@ -180,7 +180,7 @@ export default function ContactStrip() {
               </h3>
             </div>
 
-            <p className="mt-1 text-sm text-slate-600">
+            <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
               {t("contactos.locationtext")}
             </p>
 

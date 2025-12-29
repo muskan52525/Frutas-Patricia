@@ -69,4 +69,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
   }
+  .slick-desktop{
+    display:none !important;
+  }
 }

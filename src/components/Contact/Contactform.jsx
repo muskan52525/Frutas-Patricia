@@ -144,8 +144,9 @@ export default function AuctionContactSimple() {
                 height="18"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5Z" />
+                <path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm3 5a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2H7Zm0 4a1 1 0 0 0 0 2h7a1 1 0 0 0 0-2H7Z" />
               </svg>
             </span>
             <textarea

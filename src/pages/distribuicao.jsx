@@ -57,7 +57,7 @@ export default function Distribution() {
                         rounded-4xl md:rounded-full shadow-xl ring-1 ring-black/5
                         px-6 sm:px-10 py-8"
           >
-            <ul className="grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-y-0 sm:gap-x-12 text-center w-full items-center pr-0 lg:pr-3">
+            <ul className="grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-y-0 sm:gap-x-12 text-center w-full items-center pr-0">
             {/* <ul className="grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-y-0 sm:gap-x-12 text-center max-w-3xl items-center pr-0 lg:pr-3"> */}
               {stats.map((s, i) => (
                 <li

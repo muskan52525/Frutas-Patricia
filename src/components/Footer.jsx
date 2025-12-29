@@ -17,10 +17,10 @@
   ];
 
   const rightPages = [
-    { label: "header.recrutamento", href: "/job" },
+    { label: "header.recrutamento", href: "/recrutamento" },
     { label: "header.leilao", href: "https://leilao.patriciapilar.pt/login.php" },
     { label: "footer.apoios", href: "/support" },
-    { label: "footer.codigos", href: "/code-of-ethics" },
+    { label: "footer.codigos", href: "/códigos-de-conduta" },
   ];
 
   function Social({ href, label, children }) {
@@ -205,7 +205,7 @@
             <p>©2025 DEVTECH.</p>
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 justify-center">
               <li>
-                <a className="hover:text-[#009B3E]" href="/code-of-ethics">
+                <a className="hover:text-[#009B3E]" href="/códigos-de-conduta">
                   {t("footer.codigos")}
                 </a>
               </li>
@@ -226,7 +226,7 @@
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-4 text-sm font-medium text-[#92A7B0] md:flex-row">
             <ul className="flex text-center items-center gap-x-6 gap-y-2 justify-center">
               <li>
-                <a className="hover:text-[#009B3E]" href="/code-of-ethics">
+                <a className="hover:text-[#009B3E]" href="/códigos-de-conduta">
                   {t("footer.codigos")}
                 </a>
               </li>

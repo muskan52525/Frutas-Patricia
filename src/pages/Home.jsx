@@ -15,15 +15,12 @@ import videoimage from "../assets/Home/videoimage.png"
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
 
-
-
-
 export default function Home({
   items = [
     { value: 1500, prefix: "+", suffix: "", label: "count.item1" },
     { value: "16", label: "count.item2" },
     { value: "33", label: "count.item3" },
-    { value: "700 ha", label: "count.item4" },
+    { value: "700", suffix: " ha", label: "count.item4" },
   ],
   
 })
@@ -64,7 +61,7 @@ export default function Home({
                 className="w-full h-50 md:h-auto object-cover"
               />
               {/* Play Button Overlay */}
-              <button className="absolute inset-0 flex items-center justify-center bg-opacity-40 hover:bg-opacity-50 transition">
+              {/* <button className="absolute inset-0 flex items-center justify-center bg-opacity-40 hover:bg-opacity-50 transition">
                 <div className="w-16 h-16 bg-[var(--color-whitecustom)] rounded-full flex items-center justify-center shadow-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +72,7 @@ export default function Home({
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </div>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

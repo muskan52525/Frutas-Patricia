@@ -24,8 +24,10 @@
     "home" : {
         "herosliderh1": "",
         "herosliderh2": "30 years",
-        "herosliderh3": "of bringing the best of the land to you!",
-        "herotext": "Top quality products, chosen and approved by consumers who value the best of national production. Your trust is our greatest pride.",
+        "herosliderh3": "of bringing",
+        "herosliderh4": "the best of the land to you!",
+        "herotext1": "Top quality products, chosen and approved by consumers who value the best of national production.",
+        "herotext2": "Your trust is our greatest pride.",
         "title": "Quality fruit and vegetable products",
         "desc": "Frutas Patrícia Pilar is a 100% national company, created with the objective of supplying the national and international fruit and vegetable market, based on production, distribution and commercialisation.",
         "specialitytag": "Products",

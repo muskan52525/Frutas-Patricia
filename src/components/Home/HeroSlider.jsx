@@ -37,7 +37,8 @@ export default function HeroSlider() {
   return (
     <section className="relative w-full h-[400px] sm:h-[500px] lg:h-[98vh]">
       {/* Background slider */}
-      <Slider ref={sliderRef} {...settings}>
+      <Slider ref={sliderRef} {...settings}
+      className="slick-desktop">
         {slides.map((image, idx) => (
           <div key={idx}>
             <div
@@ -63,10 +64,12 @@ export default function HeroSlider() {
       {/* Static content overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center lg:items-end px-6 lg:px-20 text-center lg:text-right z-10">
         <h2 className="italic text-[var(--color-whitecustom)] text-2xl sm:text-3xl lg:text-[52px] font-bold leading-snug max-w-4xl">
-          {t("home.herosliderh1")} <span className="text-[var(--color-whitecustom) md:text-[var(--color-prime)]">{t("home.herosliderh2")}</span> {t("home.herosliderh3")}
+          {t("home.herosliderh1")} <span className="text-[var(--color-whitecustom) md:text-[var(--color-prime)]">{t("home.herosliderh2")}</span> {t("home.herosliderh3")} <br />
+          {t("home.herosliderh4")}
         </h2>
         <p className="mt-4 text-[var(--color-whitecustom)] text-sm sm:text-base lg:text-xl leading-relaxed max-w-2xl">
-          {t("home.herotext")}
+          {t("home.herotext1")}<br/>
+          {t("home.herotext2")}
         </p>
       </div>
     </section>

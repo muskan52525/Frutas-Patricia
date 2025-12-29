@@ -38,11 +38,11 @@ function App() {
         <Route path="/marcas" element={<Brands />} />
         <Route path="/distribuicao" element={<Distribution />} />
         <Route path="/auction" element={<Auction />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contactos" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/code-of-ethics" element={<Ethics />} />
+        <Route path="/códigos-de-conduta" element={<Ethics />} />
         <Route path="/support" element={<Support />} />
-         <Route path="/job" element={<Job />} />
+         <Route path="/recrutamento" element={<Job />} />
       </Routes>
       <Footer />
     </>
