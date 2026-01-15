@@ -7,17 +7,27 @@ import brand3 from "../assets/production/brand3.png";
 import brand4 from "../assets/production/brand4.png";
 import iso from "../assets/production/iso.png";
 import grace from "../assets/production/grace.png";
-
+import PTMap from "../assets/production/mapimages/PT/mapp.png";
+import ENMap from "../assets/production/mapimages/EN/mapp.png";
+import ESMap from "../assets/production/mapimages/ES/mapp.png";
 import lelio from "../assets/Empresa/lelio.png";
 
 import { useTranslation } from "react-i18next";
 
 export default function Productions() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const mapByLanguage = {
+  pt: PTMap,
+  en: ENMap,
+  es: ESMap,
+};
+
+// fallback safety
+const mapImage = mapByLanguage[i18n.language] || PTMap;
   return (
     <div className="max-w-auto mx-auto">
-      <div className="product py-5">
-        <section className="w-full bg-[var(--color-whitecustom)] py-8 lg:py-20">
+      <div className="product lg:py-5">
+        <section className="w-full bg-[var(--color-whitecustom)] lg:py-20">
           <div className="mx-auto max-w-full pl-0 sm:pl-6 lg:pl-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 gap-12 items-center lg:gap-60">
               {/* Left: Text content */}
@@ -35,7 +45,7 @@ export default function Productions() {
               </div>
               {/* Right: Image */}
               <div className="order-first lg:order-none">
-                <div className="overflow-hidden  rounded-l-2xl shadow-md">
+                <div className="overflow-hidden lg:rounded-l-2xl shadow-md">
                   <img
                     src={productsec}
                     alt="Produção própria zona oeste"
@@ -74,7 +84,7 @@ export default function Productions() {
               <div className="order-2 lg:order-none">
                 <div className="overflow-hidden justify-end flex">
                   <img
-                    src={t("producao.PTMap")}
+                    src={mapImage}
                     alt="Produção própria zona oeste"
                     className="w-[75%] h-auto sm:h-auto md:h-auto lg:h-[82vh] object-contain justify-end flex"
                   />

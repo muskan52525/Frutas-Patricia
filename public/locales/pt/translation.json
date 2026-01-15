@@ -180,7 +180,6 @@
         "pp15": "Tomate Malha"
     },
     "producao" : {
-        "PTMap": "assets/production/mapimages/PT/mapp.png",
         "producaoheadingp1": "O melhor da",
         "producaoheadingp2" :"produção nacional",
         "producaotext": "Orgulhamo-nos de produzir uma vasta gama de produtos em diferentes regiões de Portugal, aproveitando ao máximo as particularidades de cada território. A diversidade dos solos e os microclimas únicos de norte a sul permitem-nos cultivar com excelência, respeitando o ritmo da natureza e valorizando o que cada região tem de melhor. Esta abordagem garante produtos autênticos, com identidade própria, e reforça o nosso compromisso com a produção nacional, sustentável e de qualidade.",
@@ -205,8 +204,8 @@
         "mg1":"CRUSH",
         "mg1desc1": "A marca de tomate de excelência com um sabor e textura intensos.",
         "mg1desc2": "A marca Crush é o sinónimo do melhor tomate produzido em Portugal. Desenvolvido com elevados padrões de qualidade, a Crush leva diariamente até ao consumidor um produto de excelência.",
-        "mg1story": "Nascida com o objetivo de proporcionar ao consumidor a experiência de consumo do melhor tomate produzido em Portugal, a Crush opera com os mais sofisticados meios de produção e controle de qualidade, estabelecidos na zona Oeste do país. Uma das mais importantes e ricas áreas do nosso país onde o clima e o ecossistema se unem de forma a criar um dos melhores locais da Europa para a produção de tomate. A Crush produz várias tipologias de tomate, conseguindo um fornecimento que abrange quase a totalidade do ano.",
-        "mg1story2": "",
+        "mg1story": "Nascida com o objetivo de proporcionar ao consumidor a experiência de consumo do melhor tomate produzido em Portugal, a Crush opera com os mais sofisticados meios de produção e controle de qualidade, estabelecidos na zona Oeste do país. Uma das mais importantes e ricas áreas do nosso país onde o clima e o ecossistema se unem de forma a criar um dos melhores locais da Europa para a produção de tomate.",
+        "mg1story2": "A Crush produz várias tipologias de tomate, conseguindo um fornecimento que abrange quase a totalidade do ano.",
         "mg2": "WESTFARM",
         "mg2desc1": "Produtos premium e de grande qualidade é com a Westfarm.",
         "mg2desc2": "A Westfarm é uma marca dedicada a variedades de artigos premium. Qualidade extra, frescura e apresentação são as suas características.",
@@ -335,7 +334,7 @@
     },
     "distribuicao" : {
         "title": "Frota Lloretrans",
-        "text": "Com uma infraestrutura de transportes terrestres de grande capacidade, assegura a entrega da frescura e qualidade xcecionais dos nossos produtos.",
+        "text": "Com uma infraestrutura de transportes terrestres de grande capacidade, assegura a entrega da frescura e qualidade excecionais dos nossos produtos.",
         "titlep1": "A empresa",
         "titlep2": "Lloretrans",
         "intro": "A Lloretrans é uma empresa especializada no transporte rodoviário de mercadorias, com foco no setor hortofrutícola. Com uma frota de mais de 50 viaturas, equipadas com reboques frigoríficos e sistemas de monitorização em tempo real, assegura a manutenção da qualidade e frescura dos produtos durante todo o transporte.",

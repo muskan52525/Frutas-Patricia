@@ -24,7 +24,7 @@ export default function EmpresaThirtyYears() {
     <div className="max-w-auto mx-auto">
       {/* hero section empresa */}
 
-      <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 sm:pb-0 pt-[30px] lg:pt-[100px] md:pt-50 bg-[url('../src/assets/Home/bg.jpg')] pb-[30px]">
+      <div className="bg-cover bg-center flex flex-col items-center justify-center p-6 sm:pb-0 pt-[50px] lg:pt-[100px] md:pt-50 bg-[url('../src/assets/Home/bg.jpg')] pb-[30px]">
         <div className="relative mx-auto max-w-7xl">
           {/* Top row: title (left) + paragraph (right) */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-15 pb-5 mt-6">

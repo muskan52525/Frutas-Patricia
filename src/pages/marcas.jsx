@@ -206,15 +206,63 @@ function CardsGrid({ items, onCardClick }) {
   );
 }
 
+// function Modal({ children, onClose }) {
+//   return (
+//     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+//       <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+//       <div className="relative z-[101] w-full max-w-5xl rounded-2xl bg-white p-3 sm:p-8 shadow-xl">
+//         <button
+//           onClick={onClose}
+//           aria-label="Fechar"
+//           className="absolute right-3 top-3 rounded-full p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-700 cursor-pointer"
+//         >
+//           <svg
+//             xmlns="http://www.w3.org/2000/svg"
+//             className="h-6 w-6"
+//             viewBox="0 0 24 24"
+//             fill="none"
+//             stroke="currentColor"
+//             strokeWidth="2"
+//           >
+//             <path
+//               strokeLinecap="round"
+//               strokeLinejoin="round"
+//               d="M6 18L18 6M6 6l12 12"
+//             />
+//           </svg>
+//         </button>
+//         {children}
+//       </div>
+//     </div>
+//   );
+// }
+
 function Modal({ children, onClose }) {
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
-      <div className="relative z-[101] w-full max-w-5xl rounded-2xl bg-white p-3 sm:p-8 shadow-xl">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center">
+      {/* Backdrop */}
+      <div
+        className="absolute inset-0 bg-black/50"
+        onClick={onClose}
+      />
+
+      {/* Modal */}
+      <div
+        className="
+          relative z-[101]
+          w-screen h-screen
+          sm:h-auto sm:max-w-5xl sm:rounded-2xl
+          bg-white
+          p-4 sm:p-8
+          shadow-xl
+          overflow-y-auto
+        "
+      >
+        {/* Close button */}
         <button
           onClick={onClose}
           aria-label="Fechar"
-          className="absolute right-3 top-3 rounded-full p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-700 cursor-pointer"
+          className="absolute right-3 top-3 rounded-full p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-700"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -231,8 +279,10 @@ function Modal({ children, onClose }) {
             />
           </svg>
         </button>
+
         {children}
       </div>
     </div>
   );
 }
+
