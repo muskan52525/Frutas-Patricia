@@ -14,7 +14,7 @@ const ProductCard = ({ name, img, showInfo = true }) => {
           <img
             src={img}
             alt={t(name)}
-            className="h-30 lg:h-40 w-auto mt-4 object-cover group-hover:scale-[1.02] transition"
+            className="h-30 lg:h-30 w-auto mt-4 object-cover group-hover:scale-[1.02] transition"
             loading="lazy"
           />
         </div>

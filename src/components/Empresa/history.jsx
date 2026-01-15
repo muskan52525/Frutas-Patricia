@@ -24,14 +24,14 @@ export default function HistoriaWithSvgArrow() {
             <div />
             <MilestoneTop
               title="1995–1998"
-              text="empresa.year1"
+              text="empresa.year2"
               imgSrc={arrow}
               imgAlt="1995–1998"
             />
             <div />
             <MilestoneTop
               title="2000–2018"
-              text="empresa.year2"
+              text="empresa.year4"
               imgSrc={arrow}
               imgAlt="2000–2018"
             />
@@ -42,14 +42,14 @@ export default function HistoriaWithSvgArrow() {
           <div className="grid grid-cols-5 gap-6 items-start -mt-8 lg:-mt-9.5">
             <MilestoneBottom
               title="1992–1995"
-              text="empresa.year3"
+              text="empresa.year1"
               imgSrc={arrow}
               imgAlt="1992–1995"
             />
             <div />
             <MilestoneBottom
               title="1998–2000"
-              text="empresa.year4"
+              text="empresa.year3"
               imgSrc={arrow}
               imgAlt="1998–2000"
             />

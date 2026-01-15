@@ -179,7 +179,7 @@
         "pp15": "Net-Pack Tomato"
     },
     "producao" : {
-        "PTMap": "src/assets/production/mapimages/EN/mapp.png",
+        "PTMap": "assets/production/mapimages/EN/mapp.png",
         "producaoheadingp1": "The best of",
         "producaoheadingp2" :"national production",
         "producaotext": "We pride ourselves on producing a wide range of products in different regions of Portugal, making the most of each territory's particularities. The diversity of soils and unique microclimates from north to south allow us to cultivate with excellence, respecting the rhythm of nature and valuing the best that each region has to offer. This approach guarantees authentic products with their own identity and reinforces our commitment to national, sustainable and quality production.",
@@ -459,5 +459,13 @@
         "clause7p9": "You may request confidentiality of your data and withdraw consent for its inclusion in telephone directories or information services of Frutas Patricia Pilar SA or third parties at any time by contacting the company.",
         "clause8": "Right to File a Complaint",
         "clause8text": "The Data Subject has the right to file a complaint with the supervisory authority."
+    },
+    "CódigosData": {
+        "link1": "https://www.patriciapilar.pt/etica/ING_0.%20Co%CC%81digo%20de%20E%CC%81tica%20e%20Conduta%20Grupo%20Patricia%20Pilar_comprimido.pdf",
+        "link2": "https://www.patriciapilar.pt/etica/ING_1.%202024.12.06.Co%CC%81digo%20de%20Boa%20Conduta%20para%20a%20Prevenc%CC%A7a%CC%83o%20e%20Combate%20ao%20Asse%CC%81dio%20no%20Trabalho_comprimido.pdf",
+        "link3": "https://www.patriciapilar.pt/etica/ING_2.%202024.11.28%20.Co%CC%81digo%20de%20Conduta%20para%20Prevenc%CC%A7a%CC%83o%20da%20Corrupc%CC%A7a%CC%83o%20e%20Infrac%CC%A7o%CC%83es%20Conexas_comprimido.pdf",
+        "link4": "https://www.patriciapilar.pt/etica/ING_2.1.%202024.12.04.Plano%20de%20Prevenc%CC%A7a%CC%83o%20de%20Riscos%20de%20Corrupc%CC%A7a%CC%83o%20e%20Infrac%CC%A7o%CC%83es%20Conexas%20%28PPR%29_comprimido.pdf",
+        "link5": "https://www.patriciapilar.pt/etica/ING_2.2%202024.12.04.Regulamento%20de%20Comunicac%CC%A7a%CC%83o%20de%20Infrac%CC%A7o%CC%83es_comprimido.pdf",
+        "link6": "https://www.patriciapilar.pt/etica/ING_3.%202024.12.19.Co%CC%81digo%20de%20Conduta%20de%20Protec%CC%A7a%CC%83o%20de%20Dados%20%20RGPD%20Grupo%20Patri%CC%81cia%20Pilar_comprimido.pdf"
     }
 }

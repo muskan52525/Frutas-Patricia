@@ -180,7 +180,7 @@
         "pp15": "Tomate Malha"
     },
     "producao" : {
-        "PTMap": "src/assets/production/mapimages/PT/mapp.png",
+        "PTMap": "assets/production/mapimages/PT/mapp.png",
         "producaoheadingp1": "O melhor da",
         "producaoheadingp2" :"produção nacional",
         "producaotext": "Orgulhamo-nos de produzir uma vasta gama de produtos em diferentes regiões de Portugal, aproveitando ao máximo as particularidades de cada território. A diversidade dos solos e os microclimas únicos de norte a sul permitem-nos cultivar com excelência, respeitando o ritmo da natureza e valorizando o que cada região tem de melhor. Esta abordagem garante produtos autênticos, com identidade própria, e reforça o nosso compromisso com a produção nacional, sustentável e de qualidade.",
@@ -460,6 +460,14 @@
         "clause7p9": " Pode a qualquer momento, solicitar a confidencialidade dos seus dados e retirar o seu consentimento para que estes dados sejam divulgados nas listas telefónicas ou serviços informativos da Frutas Patricia Pilar SA ou de terceiros, devendo para o efeito contactar a Frutas Patricia Pilar SA.",
         "clause8": "Direito de Apresentar Reclamação",
         "clause8text": "O Titular de Dados tem o direito de apresentar reclamação à entidade de controlo."
+    },
+    "codigosdata": {
+        "link1": "https://www.patriciapilar.pt/etica/PT_0.%20Co%CC%81digo%20de%20E%CC%81tica%20e%20Conduta%20Grupo%20Patricia%20Pilar_comprimido.pdf",
+        "link2": "https://www.patriciapilar.pt/etica/PT_1.%202024.12.06.Co%CC%81digo%20de%20Boa%20Conduta%20para%20a%20Prevenc%CC%A7a%CC%83o%20e%20Combate%20ao%20Asse%CC%81dio%20no%20Trabalho_comprimido.pdf",
+        "link3": "https://www.patriciapilar.pt/etica/PT_2.%202024.11.28%20.Co%CC%81digo%20de%20Conduta%20para%20Prevenc%CC%A7a%CC%83o%20da%20Corrupc%CC%A7a%CC%83o%20e%20Infrac%CC%A7o%CC%83es%20Conexas_comprimido.pdf",
+        "link4": "https://www.patriciapilar.pt/etica/PT_2.1.%202024.12.04.Plano%20de%20Prevenc%CC%A7a%CC%83o%20de%20Riscos%20de%20Corrupc%CC%A7a%CC%83o%20e%20Infrac%CC%A7o%CC%83es%20Conexas%20%28PPR%29_comprimido.pdf",
+        "link5": "https://www.patriciapilar.pt/etica/PT_2.2%202024.12.04.Regulamento%20de%20Comunicac%CC%A7a%CC%83o%20de%20Infrac%CC%A7o%CC%83es-comprimido.pdf ",
+        "link6": "https://www.patriciapilar.pt/etica/PT_3.%202024.12.19.Co%CC%81digo%20de%20Conduta%20de%20Protec%CC%A7a%CC%83o%20de%20Dados%20%20RGPD%20Grupo%20Patri%CC%81cia%20Pilar_comprimido.pdf"
     }
 }
         
