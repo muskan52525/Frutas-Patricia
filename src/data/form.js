@@ -1,6 +1,7 @@
 // Imports
 import truck1 from "../assets/Distribution/truck1.png";
 import truck2 from "../assets/Distribution/truck2.png";
+import truck2mobile from "../assets/Distribution/truck2_MOBILE.png"
 
 import support1 from "../assets/Support/support1.png";
 import support2 from "../assets/Support/support2.png";
@@ -103,6 +104,7 @@ export const data = [
     images: [
       { src: truck1, alt: "truck1" },
       { src: truck2, alt: "truck2" },
+      {src: truck2mobile, alt:"mobile"}
     ],
   },
   {
@@ -513,37 +515,34 @@ export const data = [
     items:[
        {
         id: 1,
-        title: "Código de Ética e Conduta Grupo Patrícia Pilar",
+        title: "codigosdata.title1",
         link: "codigosdata.link1",
       },
       {
         id: 2,
-        title:
-          "Código de Boa Conduta para a Prevenção e Combate ao Assédio no Trabalho",
+        title: "codigosdata.title2",
         link: "codigosdata.link2",
       },
       {
         id: 3,
-        title:
-          "Código de Conduta para Prevenção da Corrupção e Infrações Conexas",
+        title: "codigosdata.title3",
         link: "codigosdata.link3",
       },
       {
         id: 4,
-        title:
-          "Plano de Prevenção de Riscos de Corrupção e Infrações Conexas (PPR)",
+        title: "codigosdata.title4",
         link: "codigosdata.link4",
       },
       {
         id: 5,
-        title: "Regulamento de Comunicação de Infrações",
+        title: "codigosdata.title5",
         link: "codigosdata.link5",
         
       },
       {
         id: 6,
         title:
-          "Código de Conduta de Proteção de Dados - RGPD Grupo Patrícia Pilar",
+          "codigosdata.title6",
         link: "codigosdata.link6",
       },
     ]

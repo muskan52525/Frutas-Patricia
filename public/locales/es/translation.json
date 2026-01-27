@@ -251,9 +251,9 @@
         "eg3story2":"Con un compromiso de suministro continuo, garantiza productos frescos adaptados a las exigencias del mercado nacional e internacional, consolidándose como un socio fiable y de confianza.",
         "eg4": "MONTE CRISTO",
         "eg4desc1": "Espacios de comercialización de frutas y hortalizas en la zona norte del país.",
-        "eg4desc2": "Empresa familiar con sede en Estarreja que comercializa frutas y hortalizas y otros productos alimentarios.",
-        "eg4story": "Desde 2014, Frutas Monte Cristo se ha consolidado como un nombre líder en la distribución de frutas y verduras en Portugal. Con sede en Estarreja, la empresa opera actualmente 14 tiendas y 7 espacios mayoristas, de norte a sur de Portugal, atendiendo a clientes de diferentes tamaños y sectores.",
-        "eg4story2": "La empresa desempeña un papel activo en la distribución de frutas y hortalizas frescas, complementando su oferta con productos transformados y soluciones adaptadas a las necesidades del mercado. Su estrategia de expansión sostenida y su compromiso permanente con la calidad de sus productos refuerzan su posición como operador líder en el sector hortofrutícola.",
+        "eg4desc2": "Empresa familiar con sede en Estarreja dedicada a la comercialización de frutas y verduras y otros productos alimenticios.",
+        "eg4story": "Desde 2014, Frutas Monte Cristo se ha consolidado como una referencia en la distribución de frutas y verduras en Portugal. Con sede en Estarreja, la empresa cuenta actualmente con 14 tiendas y 7 espacios mayoristas, repartidos por todo el territorio portugués, que atienden a clientes de diferentes tamaños y sectores.",
+        "eg4story2": "Gracias a su eficiente funcionamiento y a su equipo especializado, garantiza frescura, calidad y proximidad en cada entrega, respondiendo con profesionalidad a las exigencias de clientes nacionales e internacionales.",
         "eg5": "VINTAGE FRUIT",
         "eg5desc1": "Importación y exportación de frutas exóticas de calidad.",
         "eg5desc2": "A Vintage Fruit dedica-se ao fornecimento e distribuição de variedades exóticas, como manga, papaia, abacate e maracujá, com especial destaque para as importações da América do Sul.",
@@ -459,11 +459,19 @@
         "clause8text": "El Titular de los Datos tiene derecho a presentar una reclamación ante la autoridad de control."
     },
     "codigosdata": {
+        "codigosdata": {
+        "title1": "Código de Ética y Conducta Grupo Patrícia Pilar",
         "link1": "https://www.patriciapilar.pt/etica/ING_0.%20Co%CC%81digo%20de%20E%CC%81tica%20e%20Conduta%20Grupo%20Patricia%20Pilar_comprimido.pdf",
+        "title2": "Código de Buena Conducta Para la Prevención y la Lucha Contra el Acoso en el Trabajo",
         "link2": "https://www.patriciapilar.pt/etica/ING_1.%202024.12.06.Co%CC%81digo%20de%20Boa%20Conduta%20para%20a%20Prevenc%CC%A7a%CC%83o%20e%20Combate%20ao%20Asse%CC%81dio%20no%20Trabalho_comprimido.pdf",
+        "title3": "Código de Conducta para la Prevención de la Corrupción y Delitos Conexos",
         "link3": "https://www.patriciapilar.pt/etica/ING_2.%202024.11.28%20.Co%CC%81digo%20de%20Conduta%20para%20Prevenc%CC%A7a%CC%83o%20da%20Corrupc%CC%A7a%CC%83o%20e%20Infrac%CC%A7o%CC%83es%20Conexas_comprimido.pdf",
+        "title4": "Plan de Prevención de Riesgos de Corrupción e Infracciones Conexas (PPR)",
         "link4": "https://www.patriciapilar.pt/etica/ING_2.1.%202024.12.04.Plano%20de%20Prevenc%CC%A7a%CC%83o%20de%20Riscos%20de%20Corrupc%CC%A7a%CC%83o%20e%20Infrac%CC%A7o%CC%83es%20Conexas%20%28PPR%29_comprimido.pdf",
+        "title5": "Reglamento sobre la Comunicación de Infracciones",
         "link5": "https://www.patriciapilar.pt/etica/ING_2.2%202024.12.04.Regulamento%20de%20Comunicac%CC%A7a%CC%83o%20de%20Infrac%CC%A7o%CC%83es_comprimido.pdf",
+        "title6": "Código de Conducta de Protección de Datos - RGPD Grupo Patrícia Pilar",
         "link6": "https://www.patriciapilar.pt/etica/ING_3.%202024.12.19.Co%CC%81digo%20de%20Conduta%20de%20Protec%CC%A7a%CC%83o%20de%20Dados%20%20RGPD%20Grupo%20Patri%CC%81cia%20Pilar_comprimido.pdf"
+    }
     }
 }

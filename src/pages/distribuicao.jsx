@@ -10,8 +10,8 @@ export default function Distribution() {
   };
   const stats = [
     { value: "+50", label: "distribuicao.stat1" },
-    { value: "+18", label: "distribuicao.stat2" },
     { value: "+182M", label: "distribuicao.stat3" },
+    { value: "+18", label: "distribuicao.stat2" },    
   ];
   const { t } = useTranslation();
   return (
@@ -33,9 +33,10 @@ export default function Distribution() {
             {section.images.map((img, i) => (
               <figure
                 key={i}
-                className={`relative overflow-hidden rounded-2xl ${
-                  i === 1 ? "lg:col-span-2" : "lg:col-span-1"
-                }`}
+                className={`relative overflow-hidden rounded-2xl 
+                  ${i === 1 ? "lg:col-span-2 hidden lg:block" : "lg:col-span-1"}
+                 ${i === 2 ? "block lg:hidden" : ""}
+                `}
               >
                 <img
                   src={img.src}
@@ -62,7 +63,7 @@ export default function Distribution() {
               {stats.map((s, i) => (
                 <li
                   key={i}
-                  className="flex flex-col items-center justify-center sm:pr-7"
+                  className="flex flex-col items-center justify-center"
                 >
                   <span className="text-3xl sm:text-4xl lg:text-[60px] font-bold leading-none">
                     {s.value}

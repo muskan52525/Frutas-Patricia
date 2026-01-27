@@ -21,7 +21,7 @@ export default function Ethics() {
             className="py-3 sm:py-5 bg-white shadow-[0_4px_23.5px_0_#00000040] rounded-[20px] px-5 sm:px-10"
           >
             <p className="text-sm sm:text-2xl text-black sm:font-bold font-medium">
-              {item.title}
+              {t(item.title)}
             </p>
             <a
               href={t(item.link)}

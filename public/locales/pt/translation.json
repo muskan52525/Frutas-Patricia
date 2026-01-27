@@ -102,7 +102,7 @@
         "bannertitle": "Frutas Patrícia Pilar",
         "bannertext": "A Frutas Patrícia Pilar é uma empresa familiar pertencente à 2ª geração de empresários agrícolas, geração essa que iniciou esta atividade na Lourinhã há mais de 30 anos.",
         "historytitle": "A Nossa História",
-        "historytext": "A Frutas Patrícia Pilar foi fundada em 1992 com o objetivo de fornecer produtos hortofrutícolas de elevada qualidade, estabelecendo parcerias sólidas com produtores nacionais. Ao longo dos anos, temos expandido significativamente a nossa capacidade de armazenamento e embalagem - um crescimento superior a 300% - o que nos posiciona hoje como uma referência consolidada no mercado hortofrutícola.",
+        "historytext": "A Frutas Patrícia Pilar foi fundada em 1992 com o objetivo de fornecer produtos hortofrutícolas de elevada qualidade, estabelecendo parcerias sólidas com produtores nacionais. Ao longo dos anos, temos expandido significativamente a nossa capacidade de embalamento e armazenamento - um crescimento superior a 300% - o que nos posiciona hoje como uma referência consolidada no mercado hortofrutícola.",
         "year1": "Fundação da empresa na Lourinhã, com foco na comercialização de produtos hortofrutícolas.",
         "year2": "Mudança para os Casais do Rijo, marcando o início da expansão.",
         "year3": "Nova mudança para o Vale da Borra, aumentando a capacidade de operação.",
@@ -255,7 +255,7 @@
         "eg4desc1": "Espaços de comercialização de frutas e legumes na zona norte do país.",
         "eg4desc2": "Empresa familiar sediada em Estarreja que se dedica à comercialização de frutas e legumes e outros produtos alimentares.",
         "eg4story": "Desde 2014, a Frutas Monte Cristo tem vindo a afirmar-se como um nome de referência na distribuição hortofrutícola em Portugal. Sediada em Estarreja, a empresa opera atualmente com 14 lojas e 7 espaços grossitas, de Norte a Sul de Portugal, que servem clientes de diferentes dimensões e setores.",
-        "eg4story2": "A empresa assume um papel ativo na distribuição de frutas e legumes frescos, complementando a sua oferta com produtos transformados e soluções adaptadas às exigências do mercado. A estratégia de expansão sustentada e a aposta contínua na qualidade dos produtos reforçam a sua posição como um operador hortofrutícola de referência.",
+        "eg4story2": "Com uma operação eficiente e uma equipa especializada, garante frescura, qualidade e proximidade em cada entrega, respondendo com profissionalismo às exigências de clientes nacionais e internacionais.",
         "eg5": "VINTAGE FRUIT",
         "eg5desc1": "Importação e exportação de frutas exóticas de qualidade.",
         "eg5desc2": "A Vintage Fruit dedica-se ao fornecimento e distribuição de variedades exóticas, como manga, papaia, abacate e maracujá, com especial destaque para as importações da América do Sul.",
@@ -461,11 +461,17 @@
         "clause8text": "O Titular de Dados tem o direito de apresentar reclamação à entidade de controlo."
     },
     "codigosdata": {
+        "title1": "Código de Ética e Conduta Grupo Patrícia Pilar",
         "link1": "https://www.patriciapilar.pt/etica/PT_0.%20Co%CC%81digo%20de%20E%CC%81tica%20e%20Conduta%20Grupo%20Patricia%20Pilar_comprimido.pdf",
+        "title2": "Código de Boa Conduta para a Prevenção e Combate ao Assédio no Trabalho",
         "link2": "https://www.patriciapilar.pt/etica/PT_1.%202024.12.06.Co%CC%81digo%20de%20Boa%20Conduta%20para%20a%20Prevenc%CC%A7a%CC%83o%20e%20Combate%20ao%20Asse%CC%81dio%20no%20Trabalho_comprimido.pdf",
+        "title3": "Código de Conduta para Prevenção da Corrupção e Infrações Conexas",
         "link3": "https://www.patriciapilar.pt/etica/PT_2.%202024.11.28%20.Co%CC%81digo%20de%20Conduta%20para%20Prevenc%CC%A7a%CC%83o%20da%20Corrupc%CC%A7a%CC%83o%20e%20Infrac%CC%A7o%CC%83es%20Conexas_comprimido.pdf",
+        "title4": "Plano de Prevenção de Riscos de Corrupção e Infrações Conexas (PPR)",
         "link4": "https://www.patriciapilar.pt/etica/PT_2.1.%202024.12.04.Plano%20de%20Prevenc%CC%A7a%CC%83o%20de%20Riscos%20de%20Corrupc%CC%A7a%CC%83o%20e%20Infrac%CC%A7o%CC%83es%20Conexas%20%28PPR%29_comprimido.pdf",
+        "title5": "Regulamento de Comunicação de Infrações",
         "link5": "https://www.patriciapilar.pt/etica/PT_2.2%202024.12.04.Regulamento%20de%20Comunicac%CC%A7a%CC%83o%20de%20Infrac%CC%A7o%CC%83es-comprimido.pdf ",
+        "title6": "Código de Conduta de Proteção de Dados - RGPD Grupo Patrícia Pilar",
         "link6": "https://www.patriciapilar.pt/etica/PT_3.%202024.12.19.Co%CC%81digo%20de%20Conduta%20de%20Protec%CC%A7a%CC%83o%20de%20Dados%20%20RGPD%20Grupo%20Patri%CC%81cia%20Pilar_comprimido.pdf"
     }
 }

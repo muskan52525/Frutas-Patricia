@@ -9,13 +9,34 @@ i18n
   .use(initReactI18next)
   .init({
     supportedLngs: ["en", "es", "pt"],
+
     fallbackLng: "pt",
+    lng: "pt", // 👈 FORCE DEFAULT
+
     detection: {
-      order: ["querystring", "localStorage", "navigator", "htmlTag"],
-      caches: ["localStorage"]
+      order: [
+        "querystring",
+        "cookie",        // 👈 ADD THIS
+        "localStorage",
+        "navigator",
+        "htmlTag"
+      ],
+
+      caches: ["localStorage", "cookie"], // 👈 ADD COOKIE
+
+      lookupCookie: "i18next",
+      lookupLocalStorage: "i18nextLng"
     },
+
     backend: {
       loadPath: "/locales/{{lng}}/translation.json"
+    },
+
+    nonExplicitSupportedLngs: true, // 👈 en-US → en
+    cleanCode: true,               // 👈 normalize lang
+
+    interpolation: {
+      escapeValue: false
     }
   });
 

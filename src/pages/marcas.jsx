@@ -92,7 +92,7 @@ export default function ProductsPage() {
         <Modal onClose={onClose}>
           <div className="flex flex-col justify-center items-center sm:text-start sm:grid sm:grid-cols-1 md:grid-cols-2 gap-8 p-5">
             <div className="w-full">
-              <h3 className="text-center sm:text-start text-3xl sm:text-4xl font-extrabold text-slate-900">
+              <h3 className="text-center sm:text-start text-2xl lg:text-3xl font-extrabold text-slate-900">
                 {t(`marcas.${active.name}`)}
               </h3>
 
@@ -150,7 +150,7 @@ export default function ProductsPage() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center w-22 h-22 md:h-full md:w-full lg:h-full -order-1 md:order-0">
+            <div className="flex items-center justify-center w-[35%] h-22 md:h-full md:w-full lg:h-full -order-1 md:order-0">
               <img
                 src={active.logo || active.thumb}
                 alt={active.name}

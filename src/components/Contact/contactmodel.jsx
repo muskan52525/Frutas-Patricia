@@ -94,7 +94,7 @@ export default function ContactStrip() {
   const [modalOpen, setModalOpen] = useState(false);
   const { t } = useTranslation();
   return (
-    <section className="py-12 sm:py-16 lg:py-40 bg-cover bg-center bg-no-repeat"
+    <section className="py-[70px] sm:py-[70px] lg:py-40 bg-cover bg-center bg-no-repeat"
     style={{ backgroundImage: `url(${ContactBg})`}}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

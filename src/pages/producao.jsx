@@ -65,7 +65,6 @@ const mapImage = mapByLanguage[i18n.language] || PTMap;
               {/* Left: Text content */}
               <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-end grid px-5">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
-                  <br />
                   <span className="text-[var(--color-whitecustom)]">
                     {t("producao.propiaheadingp1")}
                     <br />
