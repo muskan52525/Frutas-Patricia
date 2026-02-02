@@ -265,7 +265,7 @@ function Modal({ children, onClose }) {
         <button
           onClick={onClose}
           aria-label="Fechar"
-          className="absolute right-3 top-3 rounded-full p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-700 top-[2%]"
+          className="absolute right-3 top-3 rounded-full p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-700 top-[5%]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg" 
