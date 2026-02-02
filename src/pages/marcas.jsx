@@ -249,6 +249,9 @@ function Modal({ children, onClose }) {
       {/* Modal */}
       <div
         className="
+           min-h-dvh flex items-center justify-center
+            pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]
+            md:min-h-auto md:block md:items-start md:justify-start md:pt-0 md:pb-0
           relative z-[101]
           w-screen h-screen
           sm:h-auto sm:max-w-5xl sm:rounded-2xl
@@ -262,10 +265,10 @@ function Modal({ children, onClose }) {
         <button
           onClick={onClose}
           aria-label="Fechar"
-          className="absolute right-3 top-3 rounded-full p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-700"
+          className="absolute right-3 top-3 rounded-full p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-700 top-[15%] md:top-[2%]"
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg" 
             className="h-6 w-6"
             viewBox="0 0 24 24"
             fill="none"
