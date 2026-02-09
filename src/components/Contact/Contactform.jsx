@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { Turnstile } from "@marsidev/react-turnstile";
 import arrow from "../../assets/Home/rightarrow.svg";
 import { useTranslation } from "react-i18next";
 
 export default function AuctionContactSimple() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState(null); // null | "success" | "error"
+  const [turnstileToken, setTurnstileToken] = useState(null);
+  const turnstileRef = useRef();
+
+  const { t } = useTranslation();
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -14,33 +19,101 @@ export default function AuctionContactSimple() {
       return;
     }
 
-    // eslint-disable-next-line no-unused-vars
-    const data = Object.fromEntries(new FormData(form).entries());
-    // TODO: send `data` to your API/email service here
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
 
-    setSent(true);
-    form.reset();
-    setTimeout(() => setSent(false), 3000);
+    // Honeypot check
+    if (data.website) {
+      // Silently return or log suspicion
+      console.warn("Honeypot field filled.");
+      return;
+    }
+
+    if (!turnstileToken) {
+      alert(t("contactos.turnstile_error") || "Please complete the security check.");
+      return;
+    }
+
+    // Prepare payload
+    const payload = {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+      website: data.website, // should be empty string
+      turnstile_token: turnstileToken,
+      phone: data.phone, // Add phone to payload if backend accepts it, otherwise remove
+      subject: data.subject // Add subject to payload if backend accepts it, otherwise remove
+    };
+
+    try {
+      // Use /api/contact.php directly since it's on the same domain or proxied
+      // Note: User specified https://www.patriciapilar.pt/api/contact.php
+      // Using relative path to avoid CORS issues if on same domain, 
+      // but if developing locally against remote prod, we might need full URL + proxy or CORS handling on server.
+      // Assuming Vite proxy or direct call to production URL if allowed.
+      // User said: "simply fetch("/api/contact.php") if the site runs on https://www.patriciapilar.pt"
+      // Since specific instructions were given, let's use the full production URL if not on same origin?
+      // Actually user said: "fetch("/api/contact.php") if the site runs on https://www.patriciapilar.pt"
+      // Let's try relative first if mapped, or full URL.
+      // Given local dev, calling production endpoint might have CORS issues unless configured.
+      // Let's use the full URL as requested for clarity, or relative if on same domain.
+      // User provided URL: https://www.patriciapilar.pt/api/contact.php
+
+      const response = await fetch("https://www.patriciapilar.pt/api/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const result = await response.json();
+
+      if (result.ok) {
+        setStatus("success");
+        form.reset();
+        if (turnstileRef.current) {
+          turnstileRef.current.reset();
+        }
+        setTurnstileToken(null);
+        setTimeout(() => setStatus(null), 5000);
+      } else {
+        console.error("Server error:", result);
+        setStatus("error");
+        if (turnstileRef.current) {
+          turnstileRef.current.reset();
+        }
+        setTurnstileToken(null);
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      setStatus("error");
+    }
   };
-  const { t } = useTranslation();
   return (
     <section className="bg-[var(--color-whitecustom)] py-12 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <header className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-extrabold text-[var(--color-dark)]">
             {t("contactos.formtitle")}
-          </h2> 
+          </h2>
           <p className="mt-3 text-[var(--color-gray2)]">
-            {t("contactos.formsubtitle")} 
+            {t("contactos.formsubtitle")}
             <br className="hidden sm:block" />
-           {t("contactos.formsubtitle2")}
+            {t("contactos.formsubtitle2")}
           </p>
           <div className="mt-6 h-px bg-slate-200" />
         </header>
 
-        {sent && (
+        {status === "success" && (
           <div className="mt-6 rounded-lg bg-[var(--color-whitecustom)] px-4 py-3 text-emerald-800">
             {t("contactos.sucessmsg")}
+          </div>
+        )}
+        {status === "error" && (
+          <div className="mt-6 rounded-lg bg-red-50 px-4 py-3 text-red-800">
+            {t("contactos.errormsg") || "Something went wrong. Please try again later."}
           </div>
         )}
 
@@ -155,6 +228,26 @@ export default function AuctionContactSimple() {
               rows={6}
               placeholder={t("contactos.message")}
               className="w-full pl-10 rounded-lg border border-slate-300 bg-white p-3 text-[15px] outline-none focus:border-emerald-600 placeholder:text-[#92A7B0]"
+            />
+          </div>
+
+          {/* Honeypot field (hidden) */}
+          <input
+            type="text"
+            name="website"
+            style={{ display: "none" }}
+            tabIndex={-1}
+            autoComplete="off"
+          />
+
+          {/* Turnstile */}
+          <div className="md:col-span-2 flex justify-center sm:justify-start">
+            <Turnstile
+              ref={turnstileRef}
+              siteKey="0x4AAAAAACZmjNgvwSi2T4yP"
+              onSuccess={setTurnstileToken}
+              onError={() => console.error("Turnstile error")}
+              onExpire={() => setTurnstileToken(null)}
             />
           </div>
 
