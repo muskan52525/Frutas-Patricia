@@ -1,4 +1,3 @@
-// src/pages/PrivacyPolicy.jsx
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -40,7 +39,7 @@ function PrivacyPolicy() {
         {t("privacypolicy.clause2p1")}
       </p>
       <p className="mb-4">
-       {t("privacypolicy.clause2p2")}
+        {t("privacypolicy.clause2p2")}
       </p>
       <p className="mb-4">
         {t("privacypolicy.clause2p3")}
@@ -66,7 +65,7 @@ function PrivacyPolicy() {
         {t("privacypolicy.data1")}
       </h2>
       <p className="mb-4">
-       {t("privacypolicy.data1text1")}
+        {t("privacypolicy.data1text1")}
       </p>
       <p className="mb-4">
         {t("privacypolicy.data1text2")}
@@ -170,7 +169,7 @@ function PrivacyPolicy() {
       </p>
 
       <h2 className="text-3xl text-[var(--color-prime)] font-bold mt-11 mb-3">
-        ​{t("privacypolicy.clause5")}
+        {t("privacypolicy.clause5")}
       </h2>
       <h2 className="text-xl text-[var(--color-dark)] font-bold mb-5 mt-3">
         {t("privacypolicy.clause5subtitle")}

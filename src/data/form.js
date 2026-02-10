@@ -1,4 +1,3 @@
-// Imports
 import truck1 from "../assets/Distribution/truck1.png";
 import truck2 from "../assets/Distribution/truck2.png";
 import truck2mobile from "../assets/Distribution/truck2_MOBILE.png"
@@ -104,7 +103,7 @@ export const data = [
     images: [
       { src: truck1, alt: "truck1" },
       { src: truck2, alt: "truck2" },
-      {src: truck2mobile, alt:"mobile"}
+      { src: truck2mobile, alt: "mobile" }
     ],
   },
   {
@@ -166,10 +165,10 @@ export const data = [
         name: "mg1",
         short: "mg1desc1",
         mheading: "mg1desc2",
-        story:["mg1story","mg1story2"],
+        story: ["mg1story", "mg1story2"],
         logo: mbrand1,
         thumb: pbrands1,
-            button: {
+        button: {
           show: false,
           label: "modalbutton",
           link: "https://madamepilar.pt/",
@@ -180,10 +179,10 @@ export const data = [
         name: "mg2",
         short: "mg2desc1",
         mheading: "mg2desc2",
-        story:["mg2story","mg2story2"],
+        story: ["mg2story", "mg2story2"],
         logo: mbrand2,
         thumb: pbrands2,
-            button: {
+        button: {
           show: false,
           label: "modalbutton",
           link: "https://madamepilar.pt/",
@@ -194,10 +193,10 @@ export const data = [
         name: "mg3",
         short: "mg3desc1",
         mheading: "mg3desc2",
-        story:["mg3story","mg3story2"],
+        story: ["mg3story", "mg3story2"],
         logo: mbrand3,
         thumb: pbrands3,
-            button: {
+        button: {
           show: false,
           label: "modalbutton",
           link: "https://madamepilar.pt/",
@@ -208,10 +207,10 @@ export const data = [
         name: "mg4",
         short: "mg4desc1",
         mheading: "mg4desc2",
-        story:["mg4story","mg4story2"],
+        story: ["mg4story", "mg4story2"],
         logo: mbrand4,
         thumb: pbrands4,
-            button: {
+        button: {
           show: false,
           label: "modalbutton",
           link: "https://madamepilar.pt/",
@@ -222,10 +221,10 @@ export const data = [
         name: "mg5",
         short: "mg5desc1",
         mheading: "mg5desc2",
-        story:["mg5story","mg5story2"],
+        story: ["mg5story", "mg5story2"],
         logo: mbrand5,
         thumb: pbrands5,
-            button: {
+        button: {
           show: false,
           label: "modalbutton",
           link: "https://madamepilar.pt/",
@@ -236,10 +235,10 @@ export const data = [
         name: "mg6",
         short: "mg6desc1",
         mheading: "mg6desc2",
-        story:["mg6story","mg6story2"],
+        story: ["mg6story", "mg6story2"],
         logo: mbrand6,
         thumb: pbrands6,
-            button: {
+        button: {
           show: false,
           label: "modalbutton",
           link: "https://madamepilar.pt/",
@@ -247,10 +246,10 @@ export const data = [
       },
       {
         id: "MADAME PILAR",
-       name: "mg7",
+        name: "mg7",
         short: "mg7desc1",
         mheading: "mg7desc2",
-        story:["mg7story","mg7story2"],
+        story: ["mg7story", "mg7story2"],
         logo: mbrand7,
         thumb: pbrands7,
         button: {
@@ -269,7 +268,7 @@ export const data = [
         name: "eg1",
         short: "eg1desc1",
         mheading: "eg1desc2",
-        story:["eg1story","eg1story2"],
+        story: ["eg1story", "eg1story2"],
         logo: mbrand8,
         thumb: pbrands8,
         button: {
@@ -283,7 +282,7 @@ export const data = [
         name: "eg2",
         short: "eg2desc1",
         mheading: "eg2desc2",
-        story:["eg2story","eg2story2"],
+        story: ["eg2story", "eg2story2"],
         logo: mbrand9,
         thumb: pbrands9,
         button: {
@@ -294,10 +293,10 @@ export const data = [
       },
       {
         id: "TOMATES",
-         name: "eg3",
+        name: "eg3",
         short: "eg3desc1",
         mheading: "eg3desc2",
-        story:["eg3story","eg3story2"],
+        story: ["eg3story", "eg3story2"],
         logo: mbrand10,
         thumb: pbrands10,
         button: {
@@ -308,10 +307,10 @@ export const data = [
       },
       {
         id: "MONTE",
-         name: "eg4",
+        name: "eg4",
         short: "eg4desc1",
         mheading: "eg4desc2",
-        story:["eg4story","eg4story2"],
+        story: ["eg4story", "eg4story2"],
         logo: mbrand11,
         thumb: pbrands11,
         button: {
@@ -320,39 +319,22 @@ export const data = [
           link: "https://montecristo.pt/",
         },
       },
-      // {
-      //   id: "DEMODOURO",
-      //   name: "DEMODOURO",
-      //   short: "Produtora de maçãs, cerejas e castanhas da encosta do Douro.",
-      //   mheading:
-      //     "A Demodouro dedica-se à produção e comercialização de frutas como maçãs, uvas e cerejas provenientes da bela encosta do Douro.",
-      //   story: [
-      //     "Empresa portuguesa especializada na produção e comercialização de frutas frescas, com foco na tradição e respeito pelo meio ambiente. Localizada nas encostas do Douro e nas terras do Demo, no norte de Portugal, dedica-se principalmente à produção de maçã, cereja e castanha, sendo a maçã o seu principal produto.",
-      //     "Trabalhando em estreita colaboração com produtores locais, a empresa assegura a frescura e qualidade dos frutos, garantindo que são colhidos no ponto ideal de maturação para preservar o sabor e a autenticidade da sua origem.",
-      //   ],
-      //   logo: mbrand12,
-      //   thumb: pbrands12,
-      //   button: {
-      //     show: true,
-      //     label: "modalbutton",
-      //     link: "https://demodouro.pt/",
-      //   },
-      // },
+
       {
         id: "VINTAGE",
-         name: "eg5",
+        name: "eg5",
         short: "eg5desc1",
         mheading: "eg5desc2",
-        story:["eg5story","eg5story2"],
+        story: ["eg5story", "eg5story2"],
         logo: mbrand13,
         thumb: pbrands14,
       },
       {
         id: "DOLCE",
-         name: "eg6",
+        name: "eg6",
         short: "eg6desc1",
         mheading: "eg6desc2",
-        story:["eg6story","eg6story2"],
+        story: ["eg6story", "eg6story2"],
         logo: mbrand14,
         thumb: pbrands15,
         button: {
@@ -366,16 +348,16 @@ export const data = [
         name: "eg7",
         short: "eg7desc1",
         mheading: "eg7desc2",
-        story:["eg7story","eg7story2"],
+        story: ["eg7story", "eg7story2"],
         logo: mbrand15,
         thumb: pbrands13,
       },
       {
         id: "HORTORIBA",
-         name: "eg8",
+        name: "eg8",
         short: "eg8desc1",
         mheading: "eg8desc2",
-        story:["eg8story","eg8story2"],
+        story: ["eg8story", "eg8story2"],
         logo: mbrand16,
         thumb: pbrands16,
         button: {
@@ -386,10 +368,10 @@ export const data = [
       },
       {
         id: "LAPIFRUTAS",
-         name: "eg9",
+        name: "eg9",
         short: "eg9desc1",
         mheading: "eg9desc2",
-        story:["eg9story","eg9story2"],
+        story: ["eg9story", "eg9story2"],
         logo: mbrand17,
         thumb: pbrands17,
         button: {
@@ -400,10 +382,10 @@ export const data = [
       },
       {
         id: "POMMEIDEIAS",
-         name: "eg10",
+        name: "eg10",
         short: "eg10desc1",
         mheading: "eg10desc2",
-        story:["eg10story","eg10story2"],
+        story: ["eg10story", "eg10story2"],
         logo: mbrand18,
         thumb: pbrands18,
       },
@@ -412,7 +394,7 @@ export const data = [
         name: "eg11",
         short: "eg11desc1",
         mheading: "eg11desc2",
-        story:["eg11story","eg11story2"],
+        story: ["eg11story", "eg11story2"],
         logo: mbrand19,
         thumb: pbrands19,
         button: {
@@ -426,7 +408,7 @@ export const data = [
         name: "eg12",
         short: "eg12desc1",
         mheading: "eg12desc2",
-        story:["eg12story","eg12story2"],
+        story: ["eg12story", "eg12story2"],
         logo: mbrand20,
         thumb: pbrands20,
       },
@@ -435,7 +417,7 @@ export const data = [
         name: "eg13",
         short: "eg13desc1",
         mheading: "eg13desc2",
-        story:["eg13story","eg13story2"],
+        story: ["eg13story", "eg13story2"],
         logo: mbrand21,
         thumb: pbrands21,
       },
@@ -444,16 +426,16 @@ export const data = [
         name: "eg14",
         short: "eg14desc1",
         mheading: "eg14desc2",
-        story:["eg14story","eg14story2"],
+        story: ["eg14story", "eg14story2"],
         logo: mbrand22,
         thumb: pbrands22,
       },
       {
         id: "FRUTAS",
-         name: "eg15",
+        name: "eg15",
         short: "eg15desc1",
         mheading: "eg15desc2",
-        story:["eg15story","eg15story2"],
+        story: ["eg15story", "eg15story2"],
         logo: mbrand23,
         thumb: pbrands23,
         button: {
@@ -467,7 +449,7 @@ export const data = [
         name: "eg16",
         short: "eg16desc1",
         mheading: "eg16desc2",
-        story:["eg16story","eg16story2"],
+        story: ["eg16story", "eg16story2"],
         logo: mbrand24,
         thumb: pbrands24,
         button: {
@@ -478,10 +460,10 @@ export const data = [
       },
       {
         id: "SOCIEDADE",
-         name: "eg17",
+        name: "eg17",
         short: "eg17desc1",
         mheading: "eg17desc2",
-        story:["eg17story","eg17story2"],
+        story: ["eg17story", "eg17story2"],
         logo: mbrand25,
         thumb: pbrands25,
       },
@@ -490,7 +472,7 @@ export const data = [
         name: "eg18",
         short: "eg18desc1",
         mheading: "eg18desc2",
-        story:["eg18story","eg18story2"],
+        story: ["eg18story", "eg18story2"],
         logo: mbrand26,
         thumb: pbrands26,
         button: {
@@ -504,16 +486,16 @@ export const data = [
         name: "eg19",
         short: "eg19desc1",
         mheading: "eg19desc2",
-        story:["eg19story","eg19story2"],
+        story: ["eg19story", "eg19story2"],
         logo: mbrand27,
         thumb: pbrands27,
       },
     ],
   },
   {
-    id:"CódigosData",
-    items:[
-       {
+    id: "CódigosData",
+    items: [
+      {
         id: 1,
         title: "codigosdata.title1",
         link: "codigosdata.link1",
@@ -537,7 +519,7 @@ export const data = [
         id: 5,
         title: "codigosdata.title5",
         link: "codigosdata.link5",
-        
+
       },
       {
         id: 6,

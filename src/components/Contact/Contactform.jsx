@@ -47,17 +47,6 @@ export default function AuctionContactSimple() {
 
     try {
       // Use /api/contact.php directly since it's on the same domain or proxied
-      // Note: User specified https://www.patriciapilar.pt/api/contact.php
-      // Using relative path to avoid CORS issues if on same domain, 
-      // but if developing locally against remote prod, we might need full URL + proxy or CORS handling on server.
-      // Assuming Vite proxy or direct call to production URL if allowed.
-      // User said: "simply fetch("/api/contact.php") if the site runs on https://www.patriciapilar.pt"
-      // Since specific instructions were given, let's use the full production URL if not on same origin?
-      // Actually user said: "fetch("/api/contact.php") if the site runs on https://www.patriciapilar.pt"
-      // Let's try relative first if mapped, or full URL.
-      // Given local dev, calling production endpoint might have CORS issues unless configured.
-      // Let's use the full URL as requested for clarity, or relative if on same domain.
-      // User provided URL: https://www.patriciapilar.pt/api/contact.php
 
       const response = await fetch("https://www.patriciapilar.pt/api/contact.php", {
         method: "POST",

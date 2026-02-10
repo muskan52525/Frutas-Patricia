@@ -61,13 +61,7 @@ const products = [
     blurb: "products.item7desc",
     image: productslider3,
   },
-  // {
-  //   id: 8,
-  //   title: "Feijão Verde",
-  //   blurb:
-  //     "A pré-refrigeração é feita após a colheita, de forma a não comprometer o tempo de con...",
-  //   image: productslider6,
-  // },
+
   {
     id: 9,
     title: "products.item8",
@@ -86,13 +80,8 @@ const products = [
     blurb: "products.item10desc",
     image: productslider4,
   },
-  // {
-  //   id: 12,
-  //   title: "Abóbora Comprida",
-  //   blurb: "Armazenamento em atmosfera controlada ou em frio normal.",
-  //   image: productslider10,
-  // },
-]; 
+
+];
 
 
 
@@ -116,25 +105,25 @@ export default function OutrosProdutosSlider() {
     navigate("/produtos");
   };
 
- const settings = {
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 450,
-  slidesToShow: slidesToShow,
-  slidesToScroll: slidesToShow,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  mobileFirst: false,   // <-- THIS FIXES THE MOBILE BREAKPOINT
+  const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 450,
+    slidesToShow: slidesToShow,
+    slidesToScroll: slidesToShow,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    mobileFirst: false,   // <-- THIS FIXES THE MOBILE BREAKPOINT
 
-  dotsClass: "slick-dots custom-dots",
-  customPaging: () => <button className="dot" />,
-  appendDots: (dots) => (
-    <div className="mt-8">
-      <ul className="custom-dots-row">{dots}</ul>
-    </div>
-  ),
-};
+    dotsClass: "slick-dots custom-dots",
+    customPaging: () => <button className="dot" />,
+    appendDots: (dots) => (
+      <div className="mt-8">
+        <ul className="custom-dots-row">{dots}</ul>
+      </div>
+    ),
+  };
 
   const { t } = useTranslation();
 

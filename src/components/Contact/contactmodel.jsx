@@ -40,7 +40,7 @@ function DepartmentModal({ open, onClose }) {
           aria-label="Fechar"
           className="absolute right-3 top-3 rounded-full p-2 text-slate-600 hover:bg-slate-100 cursor-pointer"
         >
-          {/* replace with your svg x icon if you have */}
+
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
             <path
               d="M6 6l12 12M18 6L6 18"
@@ -95,121 +95,121 @@ export default function ContactStrip() {
   const { t } = useTranslation();
   return (
     <section className="py-[70px] sm:py-[70px] lg:py-40 bg-cover bg-center bg-no-repeat"
-    style={{ backgroundImage: `url(${ContactBg})`}}>
+      style={{ backgroundImage: `url(${ContactBg})` }}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Card: Email */}
           <article className="text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex justify-between flex-col">
               <div>
-              <div className="flex-1 items-center gap-3">
-              <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src={email} alt="" />
-              </span>
-              <h3 className="text-xl font-semibold text-bg-[var(--color-dark)] mt-4">{t("contactos.emailtitle")}</h3>
-            </div>
+                <div className="flex-1 items-center gap-3">
+                  <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
+                    <img src={email} alt="" />
+                  </span>
+                  <h3 className="text-xl font-semibold text-bg-[var(--color-dark)] mt-4">{t("contactos.emailtitle")}</h3>
+                </div>
 
-            <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
-              {t("contactos.emailtext")}
-            </p>
-            </div>
-            <div>
+                <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
+                  {t("contactos.emailtext")}
+                </p>
+              </div>
+              <div>
 
-            <button
-              onClick={() => window.location.href = "mailto:geral@patriciapilar.pt"}
-              className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
-            >
-              geral@patriciapilar.pt
-            </button>
-            </div>
+                <button
+                  onClick={() => window.location.href = "mailto:geral@patriciapilar.pt"}
+                  className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
+                >
+                  geral@patriciapilar.pt
+                </button>
+              </div>
             </div>
 
           </article>
 
           {/* Card: Telefone */}
           <article className="flex text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
-          <div className="flex justify-between flex-col" >
-             <div>
-             <div className="flex-1 items-center gap-3">
-              <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src={phone} alt="" />
-              </span>
-              <h3 className="text-xl mt- font-semibold text-[var(--color-dark)] mt-4">{t("contactos.phone")}</h3>
-            </div>
+            <div className="flex justify-between flex-col" >
+              <div>
+                <div className="flex-1 items-center gap-3">
+                  <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
+                    <img src={phone} alt="" />
+                  </span>
+                  <h3 className="text-xl mt- font-semibold text-[var(--color-dark)] mt-4">{t("contactos.phone")}</h3>
+                </div>
 
-            <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
-              {t("contactos.phonetext")}
-            </p>
-           </div>
+                <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
+                  {t("contactos.phonetext")}
+                </p>
+              </div>
 
-            <div>
-              <a
-              href="tel:+351261982465"
-              className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
-            >
-              (+351) 261 982 465
-              <span className="inline-grid place-items-center rounded-ful text-[var(--color-whitecustom)] w-5 h-5">
-                {/* right arrow icon */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  viewBox="0 0 20 20"
-                  fill="#009b3e"
+              <div>
+                <a
+                  href="tel:+351261982465"
+                  className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 11-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-            </a>
+                  (+351) 261 982 465
+                  <span className="inline-grid place-items-center rounded-ful text-[var(--color-whitecustom)] w-5 h-5">
+                    {/* right arrow icon */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="#009b3e"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 11-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
             </div>
-          </div>
           </article>
 
           {/* Card: Localização */}
           <article className=" text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
-          <div className="flex justify-between flex-col">
-            <div className="flex-1 items-center gap-3">
-              <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src={map} alt="" />
-              </span>
-              <h3 className="text-xl font-semibold text-[var(--color-dark)] mt-4">
-                {t("contactos.location")}
-              </h3>
-            </div>
+            <div className="flex justify-between flex-col">
+              <div className="flex-1 items-center gap-3">
+                <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
+                  <img src={map} alt="" />
+                </span>
+                <h3 className="text-xl font-semibold text-[var(--color-dark)] mt-4">
+                  {t("contactos.location")}
+                </h3>
+              </div>
 
-            <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
-              {t("contactos.locationtext")}
-            </p>
+              <p className="mt-1 text-sm text-bg-[var(--color-gray2)]">
+                {t("contactos.locationtext")}
+              </p>
 
-            <div>
-            <a
-              href="https://maps.app.goo.gl/CVMjXaqMgQmVcpV16"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
-            >
-              {t("contactos.locationbutton")}
-              <span className="inline-grid place-items-center rounded-ful text-[var(--color-dark)] w-5 h-5">
-                {/* right arrow icon */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  viewBox="0 0 20 20"
-                  fill="#009b3e"
+              <div>
+                <a
+                  href="https://maps.app.goo.gl/CVMjXaqMgQmVcpV16"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 11-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-            </a>
+                  {t("contactos.locationbutton")}
+                  <span className="inline-grid place-items-center rounded-ful text-[var(--color-dark)] w-5 h-5">
+                    {/* right arrow icon */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="#009b3e"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 11-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
 
-            </div>
+              </div>
             </div>
           </article>
         </div>

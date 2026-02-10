@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from "react";
 import CountUp from "react-countup";
 import Specialties from "../components/Home/Specialties.jsx";
@@ -22,9 +21,8 @@ export default function Home({
     { value: "33", label: "count.item3" },
     { value: "700", suffix: " ha", label: "count.item4" },
   ],
-  
-})
- {
+
+}) {
   const { ref, inView } = useInView({
     triggerOnce: true, // only run once
     threshold: 0.3,    // start when 30% is visible
@@ -40,7 +38,7 @@ export default function Home({
         <div className="max-w-7xl w-full justify-center text-[var(--color-whitecustom)] item-center text-center md:text-left pt-8 gap-10">
           {/* Title */}
           <div className="content grid grid-cols-1 lg:grid-cols-2 justify-between pt-8 gap-5 md:gap-20 ">
-            <h1 className="text-3xl md:text-5xl max-w-lg font-bold mb-4 justify-end "> 
+            <h1 className="text-3xl md:text-5xl max-w-lg font-bold mb-4 justify-end ">
               {t("home.title")}
             </h1>
 
@@ -61,18 +59,7 @@ export default function Home({
                 className="w-full h-50 md:h-auto object-cover"
               />
               {/* Play Button Overlay */}
-              {/* <button className="absolute inset-0 flex items-center justify-center bg-opacity-40 hover:bg-opacity-50 transition">
-                <div className="w-16 h-16 bg-[var(--color-whitecustom)] rounded-full flex items-center justify-center shadow-lg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-[var(--color-prime)]"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </button> */}
+
             </div>
           </div>
         </div>
@@ -86,37 +73,37 @@ export default function Home({
         <CertificationHero />
       </div>
       <div className="counter py-5 md:py-8">
-      <section className="w-full bg-[var(--color-whitecustom)]" ref={ref}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 items-center">
-            {items.map((it, idx) => (
-              <div
-                key={idx}
-                className="text-center lg:text-center flex flex-col lg:items-center"
-              >
-                {/* Animated Counter */}
-                <div className="text-3xl sm:text-6xl font-bold text-[var(--color-prime)] leading-none">
-                {inView ? (
-                  <CountUp
-                    start={0}
-                    end={parseInt(it.value)}
-                    duration={4}
-                    prefix={it.prefix}
-                    suffix={it.suffix}
-                  />
-                ) : (
-                  `${it.prefix}0${it.suffix}` // initial before animation
-                )}
-              </div>
-                <div className="mt-3 text-[var(--color-gray2)] font-bold text-sm sm:text-2xl">
-                  {t(it.label)}
+        <section className="w-full bg-[var(--color-whitecustom)]" ref={ref}>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 items-center">
+              {items.map((it, idx) => (
+                <div
+                  key={idx}
+                  className="text-center lg:text-center flex flex-col lg:items-center"
+                >
+                  {/* Animated Counter */}
+                  <div className="text-3xl sm:text-6xl font-bold text-[var(--color-prime)] leading-none">
+                    {inView ? (
+                      <CountUp
+                        start={0}
+                        end={parseInt(it.value)}
+                        duration={4}
+                        prefix={it.prefix}
+                        suffix={it.suffix}
+                      />
+                    ) : (
+                      `${it.prefix}0${it.suffix}` // initial before animation
+                    )}
+                  </div>
+                  <div className="mt-3 text-[var(--color-gray2)] font-bold text-sm sm:text-2xl">
+                    {t(it.label)}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
 
       {/* infra section */}
       <div className="infra">
@@ -194,9 +181,7 @@ export default function Home({
                   </span>
                   <br />
                   <span className="text-[var(--color-dark)]">
-                    {/* importância da
-                    <br />
-                    zona oeste */}
+
                     {t("production.subheading")}
                   </span>
                 </h2>

@@ -60,10 +60,10 @@ export default function InfraestruturasSlider() {
 
   useEffect(() => {
     // if (isMobile) {
-      const interval = setInterval(() => {
-        sliderRef.current?.slickNext();
-      }, 10000);
-      return () => clearInterval(interval);
+    const interval = setInterval(() => {
+      sliderRef.current?.slickNext();
+    }, 10000);
+    return () => clearInterval(interval);
     // }
   }, []);
 
@@ -92,8 +92,7 @@ export default function InfraestruturasSlider() {
     ],
   };
 
-  // const prev = () => sliderRef.current?.slickPrev();
-  // const next = () => sliderRef.current?.slickNext();
+
 
   return (
     <section className="bg-[#F3F6F7] py-12 sm:py-16 lg:py-20">

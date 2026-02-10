@@ -30,14 +30,14 @@ import brand26 from "../../assets/Comman/brand26.png";
 
 
 const DEFAULT_LOGOS = [
-  // { src: brand1, alt: "Demo Douro" },
+
   { src: brand2, alt: "Hortoriba" },
   { src: brand25, alt: "Seal" },
   { src: brand4, alt: "QLT" },
   { src: brand8, alt: "Medal" },
   { src: brand7, alt: "Lloretrans" },
   { src: brand6, alt: "PDR" },
-  { src: brand5, alt: "Fresh Exacta" },  
+  { src: brand5, alt: "Fresh Exacta" },
   { src: brand9, alt: "Seal" },
   { src: brand10, alt: "Seal" },
   { src: brand11, alt: "Seal" },
@@ -49,10 +49,10 @@ const DEFAULT_LOGOS = [
   { src: brand17, alt: "Seal" },
   { src: brand18, alt: "Seal" },
   { src: brand20, alt: "Seal" },
-  { src: brand19, alt: "Seal" },  
+  { src: brand19, alt: "Seal" },
   { src: brand21, alt: "Seal" },
   { src: brand23, alt: "Seal" },
-  { src: brand22, alt: "Seal" },  
+  { src: brand22, alt: "Seal" },
   { src: brand3, alt: "Vitam Pavel" },
   { src: brand24, alt: "Seal" },
   { src: brand26, alt: "Seal" },
@@ -66,7 +66,7 @@ export default function BrandMarqueeSlick({
 }) {
   const sliderRef = useRef(null);
   const [paused, setPaused] = useState(false);
-  const [slidesToShow, setSlidesToShow] = useState(9); 
+  const [slidesToShow, setSlidesToShow] = useState(9);
 
   const logos = useMemo(() => (items?.length ? items : DEFAULT_LOGOS), [items]);
 
@@ -95,18 +95,18 @@ export default function BrandMarqueeSlick({
   }, [interval, paused, logos.length]);
 
   const settings = {
-  arrows: false,
-  dots: false,
-  infinite: logos.length > slidesToShow,
-  speed: 3000,
-  autoplay: true,
-  autoplaySpeed: 0,   // IMPORTANT for continuous scroll
-  cssEase: "linear",
-  slidesToShow,
-  slidesToScroll: 1,
-  swipeToSlide: false,
-  touchMove: true,
-};
+    arrows: false,
+    dots: false,
+    infinite: logos.length > slidesToShow,
+    speed: 3000,
+    autoplay: true,
+    autoplaySpeed: 0,   // IMPORTANT for continuous scroll
+    cssEase: "linear",
+    slidesToShow,
+    slidesToScroll: 1,
+    swipeToSlide: false,
+    touchMove: true,
+  };
   return (
     <section
       className={`${className} py-0 sm:py-4`}
