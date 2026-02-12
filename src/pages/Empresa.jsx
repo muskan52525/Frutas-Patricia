@@ -20,6 +20,7 @@ import { useTranslation } from "react-i18next";
 
 export default function EmpresaThirtyYears() {
   const { t } = useTranslation();
+
   return (
     <div className="max-w-auto mx-auto">
       {/* hero section empresa */}
@@ -182,7 +183,7 @@ export default function EmpresaThirtyYears() {
 
               <div className="lg:col-span-6 flex justify-end">
                 <p className="text-center sm:text-start text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-sm">
-                 {t("empresa.linhastext")}
+                  {t("empresa.linhastext")}
                 </p>
               </div>
             </div>
@@ -289,7 +290,7 @@ export default function EmpresaThirtyYears() {
                 </h2>
 
                 <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                 {t("empresa.lileotext")}
+                  {t("empresa.lileotext")}
                 </p>
               </div>
             </div>
@@ -298,7 +299,7 @@ export default function EmpresaThirtyYears() {
       </div>
 
       {/* infra slider */}
-      <div className="infraslider">
+      <div className="infraslider" id="infrastructure">
         <Infraslider />
       </div>
       {/* Brand Slider Section */}

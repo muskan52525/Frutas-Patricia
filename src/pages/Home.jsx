@@ -13,6 +13,7 @@ import productsec from "../assets/Home/productsec.jpg";
 import videoimage from "../assets/Home/videoimage.png"
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export default function Home({
   items = [
@@ -29,6 +30,8 @@ export default function Home({
   });
 
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   return (
     <div className="max-w-auto mx-auto">
       <div className="hero">
@@ -119,7 +122,7 @@ export default function Home({
                   {t("infrahome.text")}
                 </p>
                 <div className="mt-8 flex justify-center lg:justify-start">
-                  <button onClick={() => window.location.href = "/empresa"} className="inline-flex items-center gap-4 rounded-full px-6 py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+                  <button onClick={() => navigate("/empresa#infrastructure")} className="inline-flex items-center gap-4 rounded-full px-6 py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
                     {t("infrahome.button")}
                     <div className="arrow bg-[#27a95b] rounded-full p-1">
                       <img src={arrow} alt="" />
@@ -191,7 +194,7 @@ export default function Home({
                 </p>
 
                 <div className="mt-8 flex justify-center lg:justify-start">
-                  <button onClick={() => window.location.href = "/production"} className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+                  <button onClick={() => window.location.href = "/producao"} className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
                     {t("production.button")}
                     <div className="arrow bg-[#27a95b] rounded-full p-1">
                       <img src={arrow} alt="" />

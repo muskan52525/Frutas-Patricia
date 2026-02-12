@@ -11,8 +11,7 @@ import Contact from "./pages/Contact.jsx";
 import Support from "./pages/Support.jsx";
 import Empresa from "./pages/Empresa";
 import Produtos from "./pages/Produtos.jsx";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 import { Routes, Route } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -22,13 +21,9 @@ import "./App.css";
 import Home from "./pages/Home.jsx";
 
 function App() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -42,7 +37,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/códigos-de-conduta" element={<Ethics />} />
         <Route path="/support" element={<Support />} />
-         <Route path="/recrutamento" element={<Job />} />
+        <Route path="/recrutamento" element={<Job />} />
       </Routes>
       <Footer />
     </>

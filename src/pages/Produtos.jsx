@@ -52,7 +52,7 @@ export default function Produtos() {
 
   return (
     <main className="bg-[#F3F6F7] py-12 sm:py-16 lg:py-25">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0 mt-6">
         {/* Section 1 (static text) */}
         <header className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-3xl lg:text-[48px] font-bold text-slate-900">

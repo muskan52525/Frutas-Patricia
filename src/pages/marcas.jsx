@@ -53,7 +53,7 @@ export default function ProductsPage() {
 
   return (
     <section className="bg-[#F5F7F8] py-12 sm:py-16 lg:py-25">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 mt-6">
         {/* ====== MARCAS DO GRUPO ====== */}
         <header className="text-center max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-extrabold text-slate-900">

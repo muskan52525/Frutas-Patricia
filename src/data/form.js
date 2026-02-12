@@ -68,6 +68,7 @@ import mbrand24 from "../assets/Brands/mbrand24.png";
 import mbrand25 from "../assets/Brands/mbrand25.png";
 import mbrand26 from "../assets/Brands/mbrand26.png";
 import mbrand27 from "../assets/Brands/mbrand27.png";
+import mbrand28 from "../assets/Brands/mbrand28.png";
 
 import pbrands1 from "../assets/Brands/pbrands1.png";
 import pbrands2 from "../assets/Brands/pbrands2.png";
@@ -96,6 +97,7 @@ import pbrands24 from "../assets/Brands/pbrands24.png";
 import pbrands25 from "../assets/Brands/pbrands25.png";
 import pbrands26 from "../assets/Brands/pbrands26.png";
 import pbrands27 from "../assets/Brands/pbrands27.png";
+import pbrands28 from "../assets/Brands/pbrands28.png";
 
 export const data = [
   {
@@ -256,6 +258,20 @@ export const data = [
           show: true,
           label: "modalbutton",
           link: "https://madamepilar.pt/",
+        },
+      },
+      {
+        id: "HAPPY FRUIT",
+        name: "mg8",
+        short: "mg8desc1",
+        mheading: "mg8desc2",
+        story: ["mg8story", "mg8story2"],
+        logo: mbrand28,
+        thumb: pbrands28,
+        button: {
+          show: true,
+          label: "modalbutton",
+          link: " https://happyfruit.pt/",
         },
       },
     ],
